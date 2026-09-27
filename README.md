@@ -17,7 +17,7 @@ The page uses Bootstrap 5.3 from its CDN and native browser JavaScript modules. 
 ## Structure
 
 - `index.html` — semantic English baseline and page landmarks.
-- `assets/css/theme.css` — Bootstrap theme overrides and the black-and-blue visual identity.
+- `assets/css/theme.css` — Bootstrap theme overrides and the black-and-dark-green visual identity.
 - `assets/images/profile.jpg` — official profile photograph supplied for the portfolio.
 - `src/domain/` and `src/application/` — locale rules and use-case behavior, independent of the browser UI.
 - `src/adapters/browser/` — browser URL integration.

@@ -79,7 +79,7 @@ src/
 
 ## Phase 0: Research
 
-See [research.md](research.md). The existing Bootstrap 5.3.3 CDN integration is retained. Bootstrap responsive layout and components are used for structure and navigation, with custom theme variables limited to the black-and-blue visual identity. Bilingual content stays in matched locale modules, with the URL query identifying the active language.
+See [research.md](research.md). The existing Bootstrap 5.3.3 CDN integration is retained. Bootstrap responsive layout and components are used for structure and navigation, with custom theme variables limited to the black-and-dark-green visual identity. Bilingual content stays in matched locale modules, with the URL query identifying the active language.
 
 ## Phase 1: Design
 

@@ -17,7 +17,7 @@
 
 **Purpose**: Establish design tokens and independent locale policy before story-specific presentation.
 
-- [x] T003 [P] Define centralized Bootstrap-compatible black and blue theme variables, readable text, focus states, and portfolio-specific presentation rules in `assets/css/theme.css`.
+- [x] T003 [P] Define centralized Bootstrap-compatible black and dark-green theme variables, readable text, focus states, and portfolio-specific presentation rules in `assets/css/theme.css`.
 - [x] T004 [P] Define supported locale identifiers and pure fallback/selection policy in `src/domain/locale.js`.
 - [x] T005 Implement the locale-selection use case without DOM or Bootstrap dependencies in `src/application/select-locale.js`.
 - [x] T006 Implement browser query-string read/write behavior in `src/adapters/browser/locale-url.js`.
@@ -60,7 +60,7 @@
 - [x] T015 [US4] Define pt-BR copy matching the English locale schema and essential facts in `src/content/pt-BR.js`.
 - [x] T016 [US4] Implement locale-aware rendering, selector state, document language/title/description updates, and English fallback in `src/presentation/render-page.js`.
 - [x] T017 [US4] Add the dependency composition root and progressive enhancement startup in `src/main.js` and connect it from `index.html`.
-- [x] T018 [US4] Ensure responsive portrait cropping, visible focus, black-dominant/blue-accent contrast, and narrow-screen layout in `assets/css/theme.css` and `index.html`.
+- [x] T018 [US4] Ensure responsive portrait cropping, visible focus, black-dominant/green-accent contrast, and narrow-screen layout in `assets/css/theme.css` and `index.html`.
 
 ## Phase 7: Polish and cross-cutting concerns
 
@@ -99,3 +99,9 @@ Deliver the P1 recruiter journey and at least one safe, complete case study firs
 **Purpose**: Make the featured stories recognizable by company and initiative while reducing the text shown in each card.
 
 - [x] T024 Add approved company/project attribution, concise summaries and contributions, localized parity, and matching English no-script content; update the spec and case-study model to capture the editorial requirement (FR-019).
+
+## Phase 10: Dark-green visual direction
+
+**Purpose**: Replace the previous blue accent system with dark green while retaining readable contrast and Bootstrap consistency.
+
+- [x] T025 Update Bootstrap color tokens, component states, portrait frame, cards, timeline, decision panels, repository overview, and visual requirements to the black-and-dark-green palette (FR-016, SC-009).
