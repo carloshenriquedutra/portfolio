@@ -42,7 +42,7 @@ Personality should come through in practical curiosity, candor, light humor abou
 - Do not create an extensive personal biography, professional diary, or account of organizational conflicts.
 - Do not position Carlos as a candidate for Engineering Manager or people manager roles.
 - Do not promise availability, compensation, visa or immigration outcomes, international credential equivalence, or business results without appropriate evidence.
-- Do not publish code, data, internal architecture, client names, corporate system details, or materials owned by employers.
+- Do not publish code, data, internal architecture, client names, corporate system details, or materials owned by employers. Employer names may be used in selected-work labels when the user has explicitly approved them; this approval covers Gobrax and COPAPA.
 - Do not turn the site into a sales page for a consulting firm, agency, or SaaS product.
 - Do not change the current hosting provider as part of this portfolio feature.
 - Do not invent metrics, testimonials, certifications, titles, responsibilities, or outcomes.
@@ -268,6 +268,7 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 - **FR-016**: The visual identity MUST use black as the primary background color and shades of blue as secondary accents, with legible, contrasting text and interaction states.
 - **FR-017**: The portfolio MUST use the user-supplied official profile photo as its primary professional portrait, preserving the image and displaying it with responsive, undistorted cropping.
 - **FR-018**: The portfolio SHOULD present selected, sanitized engineering decision stories that explain context, alternatives, rationale, trade-offs, and evidence for revisiting a decision.
+- **FR-019**: Each selected-work card MUST identify the employer or project owner and the specific initiative with a clear descriptive label. Cards MUST remain scannable, using a short project summary and a concise statement of Carlos's contribution before optional technologies or public evidence.
 
 ## 9. Content, privacy, and trust requirements
 
@@ -279,7 +280,7 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 - Do not claim that a system is currently in production without confirming its status and permission to describe it.
 - Use first person to explain individual contribution and collective wording for team outcomes.
 - Add a brief note that the case studies describe the author’s professional contribution and omit protected details if this helps explain abstractions.
-- Review any content that could reveal trade secrets or employer information before publication.
+- Review any content that could reveal trade secrets or employer information before publication. The user explicitly approved the employer names Gobrax and COPAPA for identifying selected work; this does not approve client names, internal metrics, or sensitive implementation details.
 
 ## 10. Experience, accessibility, and presentation requirements
 
@@ -318,7 +319,7 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 - **SC-002**: A visitor can reach a case study from the home page in no more than two navigation actions.
 - **SC-003**: Every displayed contact and profile link reaches the correct destination during the release review.
 - **SC-004**: Every published case study presents the problem, individual contribution, approach, and outcome, or explains why no public metric is available.
-- **SC-005**: No metric, screenshot, client name, or employer detail is published without accuracy and permission checks.
+- **SC-005**: No metric, screenshot, client name, or employer detail is published without accuracy and permission checks; Gobrax and COPAPA are approved for selected-work attribution.
 - **SC-006**: Core content remains readable and navigable in a narrow mobile viewport and by keyboard.
 - **SC-007**: English and Portuguese communicate the same essential facts about role, experience, education, projects, and contact.
 - **SC-008**: Every claim about production, financial impact, scale, or performance has evidence or clearly qualified language identifiable during editorial review.

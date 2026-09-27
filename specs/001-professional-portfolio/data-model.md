@@ -28,9 +28,8 @@ The English module defines the baseline content. The pt-BR module must not silen
 | Field | Rule |
 |---|---|
 | `id` | Stable unique slug, shared across locales. |
-| `title`, `context`, `problem` | Required localized concise content; do not identify a protected client or employer system. |
-| `role`, `approach`, `outcome` | Required distinction between Carlos's contribution and team outcomes; use substantiated or qualified results. |
-| `tradeoffs` | Optional only when no meaningful public-safe detail is available. |
+| `company`, `project` | Required attribution in each locale. Employer names Gobrax and COPAPA are approved for these cards; never substitute a client name or internal project codename. |
+| `title`, `summary`, `contribution` | Required localized concise content. Keep cards scannable and distinguish Carlos's contribution from team outcomes. |
 | `technologies` | Only technologies actually used in the described case. |
 | `evidenceUrl` | Optional verified public URL; no private source links. |
 | `publicationStatus` | Content is rendered only when editorially approved; unapproved candidate narratives are excluded. |
@@ -57,4 +56,4 @@ Channel, destination, localized accessible label, and whether the destination op
 - A `CaseStudy` may reference skill names and public evidence, but must not reveal restricted source data.
 - `Experience` and `Education` are ordered chronologically for display.
 - Contact actions may be shared between locales while their accessible labels are localized.
-- Metrics, employer names, screenshots, or detailed architecture that lack explicit approval must not enter rendered content.
+- Metrics, screenshots, client names, or detailed architecture that lack explicit approval must not enter rendered content. Employer names Gobrax and COPAPA are explicitly approved for selected-work attribution.

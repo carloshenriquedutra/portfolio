@@ -24,7 +24,7 @@ Replace the existing Portuguese-only analyst landing page with an English-first,
 
 **Performance Goals**: Render meaningful English content immediately from HTML; keep the page lightweight, avoid blocking third-party dependencies beyond Bootstrap, and preserve usable content if optional images or scripting fail
 
-**Constraints**: Keep hosting unchanged; no backend, analytics, application framework, build tooling, or GCP hosting work; Bootstrap remains 5.3.x; use the supplied portrait locally; avoid unapproved private/employer information; strict Clean Architecture and Clean Code boundaries
+**Constraints**: Keep hosting unchanged; no backend, analytics, application framework, build tooling, or GCP hosting work; Bootstrap remains 5.3.x; use the supplied portrait locally; publish only approved employer attributions and omit client/internal information; strict Clean Architecture and Clean Code boundaries
 
 **Scale/Scope**: One responsive portfolio page, English and pt-BR copy, four or fewer curated case studies, career/education/skills/contact sections
 

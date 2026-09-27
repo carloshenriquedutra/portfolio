@@ -93,3 +93,9 @@ Deliver the P1 recruiter journey and at least one safe, complete case study firs
 
 - [x] T022 Set the responsive portrait image height to `auto` in `assets/css/theme.css` so the HTML's intrinsic 1920 × 1920 dimensions do not produce a tall, narrow crop (FR-017, US4/AC3; partial).
 - [x] T023 Version the theme stylesheet URL in `index.html` and size `.portrait-frame` as a square in `assets/css/theme.css`, ensuring browsers fetch the corrected portrait rules and keep the image undistorted (FR-017, US4/AC3; partial).
+
+## Phase 9: Selected-work editorial refinement
+
+**Purpose**: Make the featured stories recognizable by company and initiative while reducing the text shown in each card.
+
+- [x] T024 Add approved company/project attribution, concise summaries and contributions, localized parity, and matching English no-script content; update the spec and case-study model to capture the editorial requirement (FR-019).
