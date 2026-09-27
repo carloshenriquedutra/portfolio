@@ -12,8 +12,8 @@ const en = {
   },
   about: {
     title: "From business question to dependable data",
-    body: "My path runs through commercial intelligence, Customer Success, RevOps, and data engineering. That mix taught me to ask what a number will help someone decide before choosing how to build the pipeline that produces it.",
-    detail: "I work as a senior technical individual contributor: shaping architecture, building useful data products, and staying close to the operational problem. A dashboard is only as trustworthy as the definitions and systems underneath it."
+    body: "My path runs through RevOps, Data Analytics and Data Engineering. That mix taught me to ask what a number will help someone decide before choosing how to build the pipeline that produces it.",
+    detail: "I work as a senior technical individual contributor: shaping architecture, building useful data products, and staying close to the business problem. A dashboard is only as trustworthy as the definitions and systems underneath it."
   },
   work: { title: "Selected work", intro: "A few examples of the questions I enjoy untangling. Sensitive implementation details stay where they belong: private." },
   caseLabels: { summary: "The work", contribution: "My contribution" },

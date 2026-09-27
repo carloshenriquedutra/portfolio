@@ -156,6 +156,8 @@ The home page should present, in a logical order:
 
 The first viewport must communicate the target role and provide at least one useful action. Core content must remain understandable without animations or images.
 
+The About summary should connect Carlos's path through RevOps, Data Analytics, and Data Engineering to his habit of starting with the decision a number should support. It should describe his senior technical individual-contributor role, architecture and data-product work, and the relationship between dashboard trust, definitions, and underlying systems.
+
 ### 6.2 Case studies
 
 Each selected-work card should use a concise, consistent format:

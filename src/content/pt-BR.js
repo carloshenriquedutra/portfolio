@@ -12,8 +12,8 @@ const ptBR = {
   },
   about: {
     title: "Da pergunta de negócio a dados confiáveis",
-    body: "Minha trajetória passa por inteligência comercial, Customer Success, RevOps e engenharia de dados. Essa mistura me ensinou a perguntar que decisão um número vai apoiar antes de escolher como construir o pipeline que o produz.",
-    detail: "Atuo como profissional técnico sênior: desenho arquitetura, construo produtos de dados úteis e mantenho proximidade com o problema operacional. Um dashboard só é confiável quanto as definições e os sistemas por trás dele."
+    body: "Minha trajetória passa por RevOps, Análise de Dados e Engenharia de Dados. Essa combinação me ensinou a perguntar que decisão um número pode ajudar alguém a tomar antes de escolher como construir o pipeline que vai produzi-lo.",
+    detail: "Atuo como especialista técnico sênior, com foco em contribuição técnica individual: desenho arquiteturas, construo produtos de dados úteis e mantenho proximidade com o problema de negócio. Um dashboard só é tão confiável quanto as definições e os sistemas que o sustentam."
   },
   work: { title: "Trabalhos selecionados", intro: "Alguns exemplos de perguntas que gosto de investigar. Detalhes sensíveis de implementação ficam onde devem ficar: em privado." },
   caseLabels: { summary: "O trabalho", contribution: "Minha contribuição" },
