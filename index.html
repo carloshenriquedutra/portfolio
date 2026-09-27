@@ -1,128 +1,124 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carlos Dutra · Senior Data Analyst Portfolio</title>
-    <meta name="description" content="Portfólio técnico de Análise de Dados com foco em métricas, insights de negócio e decisões orientadas por dados." />
-    <meta name="author" content="Carlos Dutra" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <style>
-        :root {
-            --brand: #0d6efd;
-            --bg-soft: #f6f8fb;
-        }
-
-        body {
-            background: linear-gradient(180deg, #ffffff 0%, var(--bg-soft) 100%);
-        }
-
-        .hero {
-            background: #ffffff;
-            border: 1px solid #e9ecef;
-            border-radius: 1rem;
-        }
-
-        .section-card {
-            background: #ffffff;
-            border: 1px solid #e9ecef;
-            border-radius: 1rem;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Senior Data Engineer building dependable data foundations for better decisions.">
+    <meta name="author" content="Carlos Dutra">
+    <title>Carlos Dutra · Senior Data Engineer</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
 </head>
 <body>
-<main class="container py-5">
-    <header class="hero p-4 p-md-5 mb-4 shadow-sm">
-        <p class="text-uppercase text-primary fw-semibold mb-2">Portfolio</p>
-        <h1 class="display-5 fw-bold mb-3">Carlos Dutra</h1>
-        <p class="lead mb-0">
-            Analista de Dados Sênior com foco em transformar dados em insights
-            acionáveis para produto, operação e estratégia.
-        </p>
-    </header>
+<a class="skip-link" href="#main-content" data-copy="interface.skipLink">Skip to content</a>
+<header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation" data-copy-attribute="interface.mainNavigation:aria-label">
+        <div class="container py-2">
+            <a class="navbar-brand fw-bold" href="#home">Carlos Dutra<span class="brand-mark" aria-hidden="true">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav" aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation" data-copy-attribute="interface.toggleNavigation:aria-label">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="portfolioNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="#about" data-copy="nav.about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work" data-copy="nav.work">Selected work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience" data-copy="nav.experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-copy="nav.contact">Contact</a></li>
+                    <li class="nav-item language-switcher">
+                        <span class="visually-hidden" id="language-label">Language</span>
+                        <div class="btn-group btn-group-sm" role="group" aria-labelledby="language-label">
+                            <button class="btn btn-language active" type="button" data-locale="en" aria-pressed="true">EN</button>
+                            <button class="btn btn-language" type="button" data-locale="pt-BR" aria-pressed="false">PT-BR</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
-    <section id="sobre" class="section-card p-4 p-md-5 mb-4 shadow-sm">
-        <h2 class="h3 mb-3">Sobre este portfólio</h2>
-        <p class="mb-3">
-            Este site reúne projetos reais de análise de dados, com foco em problemas
-            de negócio, definição de métricas, exploração de dados e comunicação de insights.
-        </p>
-        <p class="mb-0">
-            Cada projeto mostra o processo analítico completo: pergunta, dados,
-            método, resultado e impacto.
-        </p>
+<main id="main-content" class="container">
+    <section id="home" class="hero-section row align-items-center g-5 py-5 py-lg-6" aria-labelledby="hero-title">
+        <div class="col-12 col-lg-7 order-2 order-lg-1">
+            <p class="eyebrow mb-3" data-copy="hero.eyebrow">Senior Data Engineer · Analytics &amp; Platforms</p>
+            <h1 id="hero-title" class="display-3 fw-bold mb-4" data-copy="hero.title">I build the data foundation behind better decisions.</h1>
+            <p class="hero-intro lead mb-3" data-copy="hero.intro">I like the part before the dashboard: figuring out what the numbers mean, where they came from, and what someone can safely do with them.</p>
+            <p class="hero-note mb-4" data-copy="hero.note">Curious by default. Particular about definitions. Friendly to the person who has to maintain it next.</p>
+            <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-primary btn-lg" href="#work" data-copy="hero.workAction">Explore selected work</a>
+                <a class="btn btn-outline-light btn-lg" href="#contact" data-copy="hero.contactAction">Get in touch</a>
+            </div>
+        </div>
+        <div class="col-12 col-lg-5 order-1 order-lg-2 text-center">
+            <div class="portrait-frame mx-auto">
+                <img src="assets/images/profile.jpg" class="profile-portrait" alt="Carlos Dutra smiling in his official profile portrait" width="1920" height="1920" fetchpriority="high">
+            </div>
+            <p class="portrait-caption mt-3 mb-0" data-copy="interface.portraitCaption">Data, decisions, and the occasional spreadsheet plot twist.</p>
+        </div>
     </section>
 
-    <section id="projetos" class="section-card p-4 p-md-5 mb-4 shadow-sm">
-        <h2 class="h3 mb-4">Projetos</h2>
-        <div class="card border-0 bg-light">
-            <div class="card-body">
-                <h3 class="h5 card-title">Pytrends</h3>
-                <p class="card-text mb-2">Projeto real de análise de tendências de busca com Python.</p>
-                <p class="card-text mb-3">Ênfase em coleta de dados, análise exploratória e geração de insights.</p>
-                <a class="btn btn-primary" href="https://github.com/carloshenriquedutra/pytrends" target="_blank" rel="noopener noreferrer">
-                    Ver repositório
-                </a>
+    <section id="about" class="content-section row g-4 py-5" aria-labelledby="about-title">
+        <div class="col-12 col-lg-4"><p class="section-kicker" data-copy="interface.aboutKicker">01 / THE THREAD</p><h2 id="about-title" data-copy="about.title">From business question to dependable data</h2></div>
+        <div class="col-12 col-lg-8 section-copy"><p data-copy="about.body">My path runs through commercial intelligence, Customer Success, RevOps, and data engineering. That mix taught me to ask what a number will help someone decide before choosing how to build the pipeline that produces it.</p><p data-copy="about.detail">I work as a senior technical individual contributor: shaping architecture, building useful data products, and staying close to the operational problem. A dashboard is only as trustworthy as the definitions and systems underneath it.</p></div>
+    </section>
+
+    <section id="work" class="content-section py-5" aria-labelledby="work-title">
+        <div class="row mb-4 align-items-end"><div class="col-12 col-lg-8"><p class="section-kicker" data-copy="interface.workKicker">02 / SELECTED WORK</p><h2 id="work-title" data-copy="work.title">Selected work</h2></div><div class="col-12 col-lg-4"><p class="section-intro mb-0" data-copy="work.intro">A few examples of the questions I enjoy untangling. Sensitive implementation details stay where they belong: private.</p></div></div>
+        <div id="case-studies" class="row row-cols-1 row-cols-lg-2 g-4" aria-live="polite">
+            <article class="col"><div class="card case-card h-100"><div class="card-body p-4"><span class="badge rounded-pill text-bg-primary mb-3">Data platform</span><h3 class="h4 card-title">A calmer path from operational data to decisions</h3><p class="case-detail"><strong>Context:</strong> A growing operation had useful information spread across systems, while recurring reports depended on fragile manual steps.</p><p class="case-detail"><strong>Problem:</strong> Create a repeatable foundation that lets teams use consistent measures without turning every new question into a one-off extract.</p><p class="case-detail"><strong>My contribution:</strong> I helped shape the data model and engineering approach, connected the work to how business teams consumed it, and focused effort on shared definitions with the highest reuse.</p><p class="case-detail"><strong>Approach:</strong> Separate ingestion, transformation, and consumption; model around business processes; make refresh behavior and data quality visible; prefer reusable rules over copies of logic in individual reports.</p><p class="case-detail"><strong>Outcome:</strong> Teams gained a more dependable route from operational records to analysis, with less reliance on ad hoc handling. Specific internal scale and performance figures are intentionally omitted.</p><p class="case-detail"><strong>Trade-off:</strong> Agreeing on what a measure means can be harder than writing the SQL—and saves the next five reports from disagreeing.</p><ul class="list-inline mb-0"><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Data engineering</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Dimensional modeling</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Orchestration</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">SQL</li></ul></div></div></article>
+            <article class="col"><div class="card case-card h-100"><div class="card-body p-4"><span class="badge rounded-pill text-bg-primary mb-3">Commercial intelligence</span><h3 class="h4 card-title">Putting the market into the sales map</h3><p class="case-detail"><strong>Context:</strong> Commercial planning needed a clearer view of where market potential and existing activity aligned.</p><p class="case-detail"><strong>Problem:</strong> Combine public and business information to inform territory conversations without treating estimates as certainty.</p><p class="case-detail"><strong>My contribution:</strong> I worked on data preparation and market modeling, translating source limitations into assumptions people could discuss.</p><p class="case-detail"><strong>Approach:</strong> Align geographic and business entities, compare observed activity with external context, and distinguish measured facts from projections.</p><p class="case-detail"><strong>Outcome:</strong> The analysis provided a more structured basis for discussing coverage and opportunity. Historical projections are not presented as realized results.</p><p class="case-detail"><strong>Trade-off:</strong> Clear assumptions mattered more than decorative precision when source values were estimates.</p><ul class="list-inline mb-0"><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Market modeling</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Geospatial analysis</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Business intelligence</li></ul></div></div></article>
+            <article class="col"><div class="card case-card h-100"><div class="card-body p-4"><span class="badge rounded-pill text-bg-primary mb-3">Public project</span><h3 class="h4 card-title">Search trends as a question, not a forecast</h3><p class="case-detail"><strong>Context:</strong> Search interest can offer a useful signal about how attention changes over time.</p><p class="case-detail"><strong>Problem:</strong> Explore what trend data can and cannot say when comparing topics and periods.</p><p class="case-detail"><strong>My contribution:</strong> I built a public Python analysis around available search-interest data.</p><p class="case-detail"><strong>Approach:</strong> Collect, inspect, and compare normalized trends while treating sampling and relative scale as limitations, not absolute demand.</p><p class="case-detail"><strong>Outcome:</strong> The project is reproducible and demonstrates exploratory analysis with a public data source.</p><p class="case-detail"><strong>Trade-off:</strong> Search interest is not sales, intent, or a population-wide survey. It is one signal, useful when described honestly.</p><ul class="list-inline mb-0"><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Python</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Pytrends</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Exploratory analysis</li></ul><a class="btn btn-outline-light mt-3" href="https://github.com/carloshenriquedutra/pytrends" target="_blank" rel="noopener noreferrer">View the public repository</a></div></div></article>
+        </div>
+        <div class="decision-panel mt-4 p-4 p-lg-5">
+            <p class="section-kicker" data-copy="interface.decisionsKicker">ENGINEERING NOTES</p><h3 class="h3 mb-4">How I like to make decisions</h3>
+            <div id="decision-stories" class="row row-cols-1 row-cols-lg-3 g-4">
+                <div class="col"><article class="decision-story h-100"><h4>Put a business rule where it can be governed</h4><p class="case-detail"><strong>Situation:</strong> A measure reused across dashboards can drift as each copy is adjusted for a local need.</p><p class="case-detail"><strong>Options considered:</strong> Duplicate the calculation in each report, or maintain one reviewed definition in a shared analytical layer.</p><p class="case-detail"><strong>Choice:</strong> Keep reusable business rules in the shared layer and let each consumer focus on its own question.</p><p class="case-detail"><strong>Trade-off:</strong> Agreeing early takes work but avoids almost-identical versions later.</p><p class="case-detail"><strong>Revisit when:</strong> A measure has genuinely different meanings by context or shared ownership slows a valid change.</p></article></div>
+                <div class="col"><article class="decision-story h-100"><h4>Model the thing people mean—not just the row we received</h4><p class="case-detail"><strong>Situation:</strong> A source row may represent a person, an employment relationship, or a point-in-time operational event.</p><p class="case-detail"><strong>Options considered:</strong> Count convenient source rows directly, or define the business entity and grain first.</p><p class="case-detail"><strong>Choice:</strong> Name the grain and identity explicitly, then build measures against that meaning.</p><p class="case-detail"><strong>Trade-off:</strong> The model asks more questions up front, while preventing totals that answer the wrong question.</p><p class="case-detail"><strong>Revisit when:</strong> Lifecycle rules, source identity, or the supported decision changes.</p></article></div>
+                <div class="col"><article class="decision-story h-100"><h4>Make repetition safe</h4><p class="case-detail"><strong>Situation:</strong> Scheduled work can fail partway through and run again; retries are part of normal operations.</p><p class="case-detail"><strong>Options considered:</strong> Treat reruns as exceptional manual repairs, or design explicit contracts and repeatable processing.</p><p class="case-detail"><strong>Choice:</strong> Prefer idempotent processing and observable outcomes so retries are predictable.</p><p class="case-detail"><strong>Trade-off:</strong> Clear run state takes design effort but reduces silent duplicate or missing data.</p><p class="case-detail"><strong>Revisit when:</strong> Observed failures show that recovery is too costly or hides useful evidence.</p></article></div>
             </div>
         </div>
     </section>
 
-    <section id="contato" class="section-card p-4 p-md-5 shadow-sm">
-        <h2 class="h3 mb-4">Contato</h2>
-        <div class="row g-3">
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card h-100 border-success-subtle">
-                    <div class="card-body">
-                        <h3 class="h5 card-title">WhatsApp</h3>
-                        <p class="card-text mb-3">Fale comigo direto para oportunidades e projetos.</p>
-                        <a class="btn btn-success" href="https://wa.me/5541992545537" target="_blank" rel="noopener noreferrer">
-                            Chamar no WhatsApp
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card h-100 border-primary-subtle">
-                    <div class="card-body">
-                        <h3 class="h5 card-title">E-mail</h3>
-                        <p class="card-text mb-3">Prefere e-mail? Me envie uma mensagem.</p>
-                        <a class="btn btn-outline-primary" href="mailto:henrique.r.dutra@gmail.com">
-                            henrique.r.dutra@gmail.com
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card h-100 border-info-subtle">
-                    <div class="card-body">
-                        <h3 class="h5 card-title">LinkedIn</h3>
-                        <p class="card-text mb-3">Conecte-se comigo para acompanhar minha trajetória.</p>
-                        <a class="btn btn-outline-info" href="https://www.linkedin.com/in/carlos-henrique-dutra/" target="_blank" rel="noopener noreferrer">
-                            Ver perfil no LinkedIn
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card h-100 border-dark-subtle">
-                    <div class="card-body">
-                        <h3 class="h5 card-title">GitHub</h3>
-                        <p class="card-text mb-3">Veja meus repositórios e acompanhe os próximos projetos.</p>
-                        <a class="btn btn-outline-dark" href="https://github.com/carloshenriquedutra" target="_blank" rel="noopener noreferrer">
-                            Acessar meu GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <section id="skills" class="content-section py-5" aria-labelledby="skills-title">
+        <p class="section-kicker" data-copy="interface.skillsKicker">03 / TOOLBOX</p><h2 id="skills-title" data-copy="skills.title">Tools are useful. Judgment is the job.</h2>
+        <div id="skill-groups" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3 mt-2">
+            <div class="col"><article class="skill-group h-100"><h3 class="h5">Data platforms</h3><p class="mb-0">Google Cloud · BigQuery · Databricks · AWS</p></article></div>
+            <div class="col"><article class="skill-group h-100"><h3 class="h5">Engineering</h3><p class="mb-0">Python · SQL · Airflow · Dataform · dbt · Airbyte</p></article></div>
+            <div class="col"><article class="skill-group h-100"><h3 class="h5">Modeling &amp; reliability</h3><p class="mb-0">Data warehouse · Dimensional modeling · ELT · Data quality · Governance</p></article></div>
+            <div class="col"><article class="skill-group h-100"><h3 class="h5">Applied AI</h3><p class="mb-0">RAG · Embeddings · Vertex AI · Gemini · Vector search</p></article></div>
+            <div class="col"><article class="skill-group h-100"><h3 class="h5">Business context</h3><p class="mb-0">People Analytics · RevOps · Logistics · Customer Success · Commercial intelligence</p></article></div>
         </div>
     </section>
 
-    <footer class="text-muted mt-4 px-1">
-        <p class="mb-0">
-            Este portfólio é vivo e evolui com novos projetos, hipóteses testadas
-            e aprendizados de negócio.
-        </p>
-    </footer>
+    <section id="experience" class="content-section py-5" aria-labelledby="experience-title">
+        <p class="section-kicker" data-copy="interface.experienceKicker">04 / CAREER</p><h2 id="experience-title" data-copy="experience.title">A career close to the problem</h2>
+        <div id="experience-list" class="timeline mt-4">
+            <article class="timeline-item"><p class="timeline-dates">2026–present</p><h3 class="h5">MadeiraMadeira</h3><p class="mb-1 fw-semibold">Data engineering</p><p>Building data products and platform capabilities in a large digital business.</p></article>
+            <article class="timeline-item"><p class="timeline-dates">2023–2026</p><h3 class="h5">Gobrax</h3><p class="mb-1 fw-semibold">Data engineering</p><p>Worked across operational data, analytics engineering, and platform foundations in a logistics technology context.</p></article>
+            <article class="timeline-item"><p class="timeline-dates">2020–2022</p><h3 class="h5">Leads2b</h3><p class="mb-1 fw-semibold">Customer Success analytics</p><p>Connected customer and commercial questions with analysis and operational insight.</p></article>
+            <article class="timeline-item"><p class="timeline-dates">2013–2018</p><h3 class="h5">COPAPA</h3><p class="mb-1 fw-semibold">Commercial intelligence</p><p>Built an early foundation in automation, sales information, and practical business analysis.</p></article>
+        </div>
+    </section>
+
+    <section id="education" class="content-section row g-4 py-5" aria-labelledby="education-title">
+        <div class="col-12 col-lg-4"><p class="section-kicker" data-copy="interface.educationKicker">05 / LEARNING</p><h2 id="education-title" data-copy="education.title">Education</h2></div>
+        <div id="education-list" class="col-12 col-lg-8 education-list"><article><h3 class="h5">Computer Science</h3><p>Descomplica Faculdade Digital · 2025–2028 · In progress</p></article><article><h3 class="h5">Data Analytics · Lato Sensu postgraduate degree</h3><p>Descomplica Faculdade Digital · 2021–2022 · Completed</p></article><article><h3 class="h5">Business Administration</h3><p>UNOPAR · 2015–2018 · Completed</p></article></div>
+    </section>
+
+    <section id="contact" class="contact-section my-5 p-4 p-md-5" aria-labelledby="contact-title">
+        <div class="row g-4 align-items-end"><div class="col-12 col-lg-7"><p class="section-kicker" data-copy="interface.contactKicker">06 / SAY HELLO</p><h2 id="contact-title" class="display-6 fw-bold" data-copy="contact.title">Have a good data problem?</h2><p class="section-intro mb-0" data-copy="contact.intro">I’m always interested in thoughtful engineering, useful data products, and conversations that start with a real question.</p></div>
+        <div class="col-12 col-lg-5"><div class="d-flex flex-wrap gap-2 justify-content-lg-end contact-links">
+            <a class="btn btn-primary" href="mailto:henrique.r.dutra@gmail.com" data-copy="contact.email">Email</a>
+            <a class="btn btn-outline-light" href="https://www.linkedin.com/in/carlos-henrique-dutra/" target="_blank" rel="noopener noreferrer" data-copy="contact.linkedin">LinkedIn</a>
+            <a class="btn btn-outline-light" href="https://github.com/carloshenriquedutra" target="_blank" rel="noopener noreferrer" data-copy="contact.github">GitHub</a>
+            <a class="btn btn-outline-light" href="https://wa.me/5541992545537" target="_blank" rel="noopener noreferrer" data-copy="contact.whatsapp">WhatsApp</a>
+        </div></div></div>
+    </section>
 </main>
+<footer class="container site-footer py-4"><p class="mb-0" data-copy="contact.footer">Built with curiosity, a little healthy skepticism, and fewer spreadsheets than strictly necessary.</p></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<script type="module" src="src/main.js"></script>
 </body>
 </html>
