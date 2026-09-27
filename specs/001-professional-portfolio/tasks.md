@@ -44,11 +44,11 @@
 
 ## Phase 5: User Story 3 — Technical peer or potential collaborator (Priority: P2)
 
-**Goal**: Make public projects and technical interests easy to explore and contact.
+**Goal**: Make selected technical work and interests easy to explore, with clear contact paths.
 
-**Independent acceptance**: A visitor can understand the public Pytrends project, follow its valid repository link, and reach clearly labeled professional contact profiles.
+**Independent acceptance**: A visitor can understand the selected technical initiatives and reach clearly labeled professional contact profiles.
 
-- [x] T013 [US3] Add the public Pytrends project and categorized skill summaries supported by the supplied history in `src/content/en.js`.
+- [x] T013 [US3] Add the initial public project and categorized skill summaries supported by the supplied history in `src/content/en.js`.
 - [x] T014 [US3] Render projects, grouped skills, experience, education, and verified contact destinations using semantic Bootstrap components in `src/presentation/render-page.js`.
 
 ## Phase 6: User Story 4 — Brazilian visitor (Priority: P2)
@@ -85,7 +85,7 @@
 
 ## Implementation Strategy
 
-Deliver the P1 recruiter journey and at least one safe, complete case study first. Continue with public project/contact context, then finish pt-BR parity and responsive/accessibility polish. Preserve the static English baseline throughout and do not publish or deploy as part of this task.
+Deliver the P1 recruiter journey and safe, concise case studies first. Continue with project/contact context, then finish pt-BR parity and responsive/accessibility polish. Preserve the static English baseline throughout.
 
 ## Phase 8: Convergence
 
@@ -105,3 +105,9 @@ Deliver the P1 recruiter journey and at least one safe, complete case study firs
 **Purpose**: Replace the previous blue accent system with dark green while retaining readable contrast and Bootstrap consistency.
 
 - [x] T025 Update Bootstrap color tokens, component states, portrait frame, cards, timeline, decision panels, repository overview, and visual requirements to the black-and-dark-green palette (FR-016, SC-009).
+
+## Phase 11: Selected work and engineering notes
+
+**Purpose**: Replace the earlier featured-project lineup with the four user-selected initiatives and give Engineering Notes the requested technical depth in both locales and the no-script baseline.
+
+- [x] T026 Update English and pt-BR Selected Work to exactly four concise, attributed cases; expand Engineering Notes into technically precise decision records; synchronize the static English baseline and feature documents; record future social-feed ideas in `todo.md` (FR-020, FR-021).

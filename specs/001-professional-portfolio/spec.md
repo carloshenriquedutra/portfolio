@@ -34,7 +34,7 @@ Personality should come through in practical curiosity, candor, light humor abou
 2. Demonstrate technical depth through case studies, decisions, and verifiable outcomes.
 3. Explain a career that spans data analysis, commercial intelligence, Customer Success, RevOps, and data engineering without making it feel unfocused.
 4. Make the experience accessible to recruiters and hiring teams in Canada and other international markets, with English as the primary language and Brazilian Portuguese available.
-5. Make it easy to contact Carlos and navigate to LinkedIn, GitHub, email, and public projects.
+5. Make it easy to contact Carlos and navigate to LinkedIn, GitHub, email, and selected technical work.
 6. Distinguish a technical specialist who owns problems end to end from a profile focused on formal people management.
 
 ## 3. Non-goals
@@ -66,30 +66,30 @@ The recruiter opens the site and identifies the target role, seniority, core sta
 
 ### 4.2 User Story 2 — Technical leader or hiring manager (Priority: P1)
 
-The leader evaluates case studies that explain the problem, context, decisions, trade-offs, individual contribution, outcome, and disclosure limits. They can distinguish Carlos’s work from team outcomes.
+The leader scans four selected-work cards to identify each organization, initiative, technical scope, and Carlos’s contribution, then reads the engineering notes to understand modeling and architecture decisions.
 
 **Why this priority**: Hiring teams need credible evidence of technical depth and individual contribution before starting an interview process.
 
-**Independent test**: At least one complete case study demonstrates engineering judgment and clearly connects the technical solution to business use.
+**Independent test**: Each selected-work card names its organization and project and explains the technical contribution; the engineering notes contain specific decisions and trade-offs rather than generic advice.
 
 **Acceptance scenarios**:
 
-1. **Given** a hiring manager opens a published case study, **when** they review it, **then** they can identify context, problem, Carlos’s contribution, approach, outcome, and disclosure limits.
-2. **Given** a case includes team outcomes, **when** its contribution is described, **then** Carlos’s work is distinguishable from the team’s work.
-3. **Given** no public metric is approved, **when** the case describes results, **then** it uses approved qualitative wording rather than an invented number.
+1. **Given** a hiring manager scans Selected Work, **when** they review a card, **then** they can identify the organization, initiative, high-level problem, and Carlos’s contribution.
+2. **Given** a hiring manager reads an Engineering Note, **when** they review the decision, **then** they can identify the technical constraint, alternatives, decision, engineering trade-off, and evidence that could justify revisiting it.
+3. **Given** a selected case has no approved public metric, **when** it describes outcomes, **then** it does not invent or imply a quantified result.
 
 ### 4.3 User Story 3 — Technical peer or potential collaborator (Priority: P2)
 
-The visitor explores public projects, repositories, and topics of interest to understand Carlos’s practices, curiosity, and potential common ground.
+The visitor explores selected technical initiatives and topics of interest to understand Carlos’s practices, curiosity, and potential common ground.
 
 **Why this priority**: Public projects and technical work can create useful peer connections and support independent evaluation.
 
-**Independent test**: The projects section provides working links and enough context to decide what to explore.
+**Independent test**: Selected Work and Engineering Notes provide enough context to understand each question, method, and evidence boundary.
 
 **Acceptance scenarios**:
 
-1. **Given** a visitor opens the projects section, **when** they scan a project entry, **then** they can understand its question, method, and available evidence.
-2. **Given** a public repository is available, **when** the visitor follows its link, **then** the destination opens successfully and securely.
+1. **Given** a visitor opens Selected Work, **when** they scan a project entry, **then** they can understand its question, method, and available evidence.
+2. **Given** a visitor reads an Engineering Note, **when** they reach its conclusion, **then** they can identify the trade-off and condition for revisiting the decision.
 
 ### 4.4 User Story 4 — Brazilian visitor (Priority: P2)
 
@@ -157,32 +157,26 @@ The first viewport must communicate the target role and provide at least one use
 
 ### 6.2 Case studies
 
-Each selected case study should use a consistent format:
+Each selected-work card should use a concise, consistent format:
 
-- **Context**: industry, problem, and constraints, without disclosing confidential information.
-- **Question**: what needed to change or become possible.
-- **Carlos’s role**: decisions and work he personally owned, distinct from collaboration and team execution.
-- **Approach**: sources, flow, modeling, architecture at an appropriate level, and reasons for key choices.
-- **Outcome**: a verifiable effect on scale, time, reliability, revenue, retention, manual work, or decision-making capacity.
-- **Trade-offs and learning**: limitations, alternatives, or next steps that demonstrate technical judgment.
-- **Technologies**: only those actually used in that case.
-- **Public evidence**: repository, sanitized screenshot, generic diagram, or verifiable description, when authorized.
+- **Organization and initiative**: make the company and project recognizable at a glance.
+- **The work**: summarize the problem and intended capability in one short paragraph.
+- **Carlos’s contribution**: state the technical work he personally designed or implemented.
+- **Technologies**: list only tools used in the described initiative.
+- **Evidence and outcomes**: include only public-safe, approved information; leave metrics out when they have not been cleared.
 
 If a number has not been cleared for publication, use approved qualitative wording or omit it; never replace it with an estimate presented as fact.
 
-### 6.3 Candidate case studies based on the career history
+### 6.3 Selected case studies for the first release
 
-**Case A — Modern data platform for a logistics SaaS company (priority candidate)**: migration and setup of a BigQuery Data Warehouse, ingestion with Airbyte, orchestration with Apache Airflow, transformation with dbt Core, and integration of operational sources such as PostgreSQL, Odoo, and HubSpot. It may discuss automating refreshes for 200+ Power BI reports and billing models for a fleet maintenance program, after verifying disclosure permission and metric approval.
+The Selected Work section MUST contain exactly four blocks, in this order:
 
-**Case B — Market modeling for commercial decisions**: combining IBGE demographic data, ERP sales data, and industry sources to estimate market potential by market area, understand market share, and inform a sales territory redesign. The career history mentions 4,700+ customers, hundreds of municipalities, and projected outcomes for a proposal; the site must clearly distinguish observed results from projections and verify permission to use data and numbers.
+1. **MadeiraMadeira — Lumi employee assistant**: describe an AI assistant that helps employees navigate People policies and processes. Explain the author's role in designing and building it, and describe retrieval-augmented generation at a high level. Do not expose internal prompts, source documents, employee data, security controls, or deployment details.
+2. **MadeiraMadeira — People Analytics platform, raw to Gold**: describe establishing the cloud data platform and analytical layers through Gold. At a high level, technologies may include BigQuery, Dataform, Cloud Composer/Apache Airflow, Cloud Run, and Terraform. Do not expose employee data, internal identifiers, detailed access policies, or security configurations. Do not imply that ongoing work is complete.
+3. **Gobrax — HubSpot CRM modeling in BigQuery**: describe dbt models that normalize CRM properties, deduplicate mutable records, resolve company/deal/contact/activity relationships, and publish curated analytical views. The private source repository is reference material only; its name, URL, code, and links MUST NOT appear on the portfolio.
+4. **COPAPA — Market sizing and sales territory planning**: describe combining demographic, ERP sales, and industry data to estimate municipal market potential and share for a proposed territory redesign. Clearly distinguish estimates and proposals from realized outcomes.
 
-**Case C — Cloud People Analytics platform**: initial architecture and evolution of a platform using GCP, BigQuery, Dataform, Cloud Composer/Airflow, Cloud Run, and Terraform, including Raw, Silver, and Gold layers, quality, and governance. Keep the case at an approved generic level, without exposing employee data, internal system structure, configurations, or security controls.
-
-**Case D — Lumi, a corporate RAG assistant**: an assistant integrated with Google Chat to help employees find answers in internal policies and processes. The career history records Python, Clean Architecture, Google ADK, Vertex AI/Gemini, embeddings, and Firestore vector search, hosted on AWS ECS. Publish the name, architecture, screenshots, performance, or product details only after confirming employer permission. Explain evaluation, limitations, and safeguards without unsupported claims about autonomy or accuracy.
-
-**Case E — Public Pytrends project**: analysis of search trends with Python, consistent with the link already present on the current site. It should explain the analytical question, data sources and limitations, method, reproducible findings, and link to the repository.
-
-Cases A–D are editorial candidates and do not imply publication permission. Select two to four strong cases for the first release; prefer verifiable depth over quantity.
+The user explicitly selected these four cases and approved their organization/project attribution. Each card MUST remain concise and include a clear company/project label, a short description of the work, the author's individual contribution, and only technologies supported by that project. No case may contain private source links, unapproved metrics, employee/customer records, or unsupported outcomes.
 
 ### 6.4 Professional experience
 
@@ -221,14 +215,16 @@ Keep the public links already present on the site: email, LinkedIn, GitHub, and 
 
 The repository documentation and architecture decision records (ADRs) contain useful evidence of technical judgment. The portfolio may turn selected decisions into short, public-safe “decision stories” that explain the situation, the options considered, the choice, its trade-offs, and what evidence could justify revisiting it. These stories should show how Carlos reasons, not reproduce internal documentation.
 
-Promising themes include:
+Engineering Notes should read like concise technical decision records: state the failure mode or constraint, identify the design alternatives, name the invariant or decision, and explain its operational cost and reconsideration trigger. Use precise terms such as grain, key, cardinality, deduplication, materialization, partitioning, retrieval, and generation when they explain the reasoning.
 
-- **Define the right boundary for business logic**: keep reusable business rules in a governed analytical layer instead of duplicating them in individual dashboards or consumers.
-- **Model the real grain and identity**: distinguish a person from an employment relationship or other operational record so counts and lifecycle analysis remain meaningful.
-- **Build privacy into the data path**: minimize sensitive identifiers, limit access to what each use case requires, and enforce authorization before restricted information reaches an AI response.
-- **Keep probabilistic AI inside deterministic product workflows**: use a model for bounded semantic interpretation while the application controls authorization, state transitions, validation, and delivery.
-- **Make failure and repetition safe**: prefer explicit contracts, deterministic processing, idempotency, and observable outcomes so retries and recurring pipelines do not silently corrupt results.
-- **Treat architecture decisions as revisable**: record the rationale and trade-offs, then supersede or revoke a decision when production evidence shows the original approach is no longer the best fit.
+The initial notes should cover:
+
+- **Declare model grain before joining entities**: avoid fan-out and invalid measures by defining keys, grain, temporal meaning, and bridge relationships before aggregation.
+- **Separate source conformance from analytical semantics**: assign source parsing/type normalization and deduplication to Silver, then business facts and dimensions to Gold.
+- **Choose materialization and partitioning by workload**: materialize dimensions consistently and partition high-volume facts on event time, with clustering selected from actual filter patterns.
+- **Keep retrieval separate from generation**: retrieve relevant, current knowledge before model generation; describe retrieval coverage and freshness as system dependencies rather than promising that RAG prevents hallucinations.
+
+Do not turn the notes into a glossary or internal ADR dump. Keep each story understandable to a senior engineering reader without private source links. Do not expose employee data, internal identifiers, security controls, or implementation details beyond the approved high-level project descriptions.
 
 These are candidate narratives, not permission to disclose the underlying employer implementations. Keep product names, internal architecture, workforce data, identifiers, security details, and operational specifics out of public stories unless expressly cleared. A decision story should be understandable without private source links and should avoid implying that every choice was made by Carlos alone when it involved a team.
 
@@ -251,9 +247,9 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 ## 8. Functional requirements
 
 - **FR-001**: The site MUST prominently present the name, target title, and professional value proposition.
-- **FR-002**: The site MUST provide direct navigation to About, Case Studies/Projects, Experience, Education, and Contact.
+- **FR-002**: The site MUST provide direct navigation to About, Selected Work, Experience, Education, and Contact.
 - **FR-003**: The site MUST open in English by default and provide a visible, accessible selector to switch between English and Brazilian Portuguese, clearly indicating the active language.
-- **FR-004**: The site MUST present case studies with context, problem, individual contribution, approach, outcome, and evidence or disclosure limitations.
+- **FR-004**: The site MUST present the four selected-work cards with enough context to identify the problem, Carlos's individual contribution, and the technical approach at a concise scan level. Any outcome claims MUST be supported and distinguish estimates from realized results.
 - **FR-005**: The site MUST distinguish observed outcomes from estimates, goals, and projections.
 - **FR-006**: The site MUST provide working email, LinkedIn, GitHub, and WhatsApp links after their destinations have been verified.
 - **FR-007**: The site MUST allow direct access to a case study by URL or navigation if case studies are presented on separate pages.
@@ -269,6 +265,8 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 - **FR-017**: The portfolio MUST use the user-supplied official profile photo as its primary professional portrait, preserving the image and displaying it with responsive, undistorted cropping.
 - **FR-018**: The portfolio SHOULD present selected, sanitized engineering decision stories that explain context, alternatives, rationale, trade-offs, and evidence for revisiting a decision.
 - **FR-019**: Each selected-work card MUST identify the employer or project owner and the specific initiative with a clear descriptive label. Cards MUST remain scannable, using a short project summary and a concise statement of Carlos's contribution before optional technologies or public evidence.
+- **FR-020**: The Selected Work section MUST contain exactly four blocks, in the order and scope approved in Section 6.3: Lumi employee assistant, People Analytics platform through Gold, HubSpot CRM modeling in BigQuery, and COPAPA market sizing. It MUST NOT include the private source repository name, URL, or link.
+- **FR-021**: Engineering Notes MUST use technically precise, evidence-based decision narratives that identify constraints, alternatives, the selected design, trade-offs, and evidence for revisiting a decision; they MUST avoid generic advice and unsupported guarantees.
 
 ## 9. Content, privacy, and trust requirements
 
@@ -280,7 +278,7 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 - Do not claim that a system is currently in production without confirming its status and permission to describe it.
 - Use first person to explain individual contribution and collective wording for team outcomes.
 - Add a brief note that the case studies describe the author’s professional contribution and omit protected details if this helps explain abstractions.
-- Review any content that could reveal trade secrets or employer information before publication. The user explicitly approved the employer names Gobrax and COPAPA for identifying selected work; this does not approve client names, internal metrics, or sensitive implementation details.
+- Review any content that could reveal trade secrets or employer information before publication. The user selected the four initiatives and approved high-level attribution to MadeiraMadeira, Gobrax, and COPAPA. This does not approve client names, internal metrics, employee data, private source links, or sensitive implementation details.
 
 ## 10. Experience, accessibility, and presentation requirements
 
@@ -318,7 +316,7 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 - **SC-001**: In a 10-second review of the home page, at least 4 out of 5 representative visitors can identify the target role, primary specialty, and main call to action.
 - **SC-002**: A visitor can reach a case study from the home page in no more than two navigation actions.
 - **SC-003**: Every displayed contact and profile link reaches the correct destination during the release review.
-- **SC-004**: Every published case study presents the problem, individual contribution, approach, and outcome, or explains why no public metric is available.
+- **SC-004**: Each selected-work card presents the problem, individual contribution, and technical approach; any outcome claims are supported, and estimates are distinguished from realized results.
 - **SC-005**: No metric, screenshot, client name, or employer detail is published without accuracy and permission checks; Gobrax and COPAPA are approved for selected-work attribution.
 - **SC-006**: Core content remains readable and navigable in a narrow mobile viewport and by keyboard.
 - **SC-007**: English and Portuguese communicate the same essential facts about role, experience, education, projects, and contact.
@@ -330,7 +328,6 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 
 - If publication permission for a corporate case is unavailable, show only an approved generic description or omit the case.
 - If a case has no approved metrics, explain the qualitative outcome without inventing a substitute measure.
-- If a repository link becomes unavailable or private, hide the repository action while keeping the case summary.
 - If a PDF resume becomes inconsistent with the site, temporarily remove its download until both are synchronized.
 - If one language version is incomplete, do not present the selector as if parity were ready; communicate availability or hide the unfinished route.
 - On narrow screens, reflow navigation, cards, and diagrams into a column without cutting essential content.
@@ -341,7 +338,8 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 ## 13. Content entities
 
 - **Professional profile**: public name, title, summary, optional location, languages, and professional links.
-- **Case study**: title, context, problem, role, approach, technologies, outcomes, trade-offs, disclosure restrictions, and evidence links.
+- **Selected work card**: company/project attribution, concise context, individual contribution, high-level technical approach, and technologies supported by the initiative.
+- **Engineering note**: technical situation, alternatives, explicit design decision, trade-off, and evidence that could justify revisiting it.
 - **Experience**: organization, public title, dates, optional work arrangement/location, and summarized contributions.
 - **Education**: institution, program, degree, dates, status, and optional description.
 - **Skill**: name, category, and optional relationship to supporting experiences/cases.
@@ -349,10 +347,10 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 
 ## 14. Assumptions and open decisions
 
-- The existing repository contains `index.html` with Bootstrap 5.3.3 via CDN and a linked Pytrends project; this specification defines experience and content without requiring a technology migration.
+- The existing repository contains `index.html` with Bootstrap 5.3.3 via CDN; this specification defines experience and content without requiring a technology migration.
 - The existing HTML already loads Bootstrap 5.3.3 via CDN; the first version should remain on the 5.3.x line and reuse official responsive patterns.
 - The current GitHub Pages hosting arrangement remains unchanged; migration to another hosting provider is outside this feature.
-- The first release will contain two to four case studies, subject to review and permission. Suggested order: logistics/SaaS platform, commercial modeling, Pytrends project, and—if authorized—the People Analytics platform or Lumi.
+- The first release contains exactly the four selected initiatives listed in Section 6.3; it removes the previously featured Pytrends project from the Selected Work section.
 - Resume availability, photography placement, exact location, and visual evidence still need clarification.
 - Historical figures are leads for editorial research, not automatic permission to publish.
 - Public copy will be derived from the private history, but confidential, personal, or deliberately omitted content remains out of the product.

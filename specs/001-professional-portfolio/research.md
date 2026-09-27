@@ -36,8 +36,14 @@
 
 ## Decision 5: Treat unapproved work history as editorially restricted
 
-**Decision**: Use public-safe, high-level case narratives and the existing public Pytrends link. Do not publish confidential product architecture, employee/customer data, internal source links, or unapproved figures. Where a corporate case cannot be safely described, omit it or use an approved generic account.
+**Decision**: Use the four initiatives selected by the user: Lumi, the People Analytics platform through Gold, HubSpot CRM modeling in BigQuery, and COPAPA market sizing. Keep descriptions public-safe and concise. Do not publish confidential product architecture, employee/customer data, private source links, or unapproved figures. The earlier Pytrends example is not part of the selected-work section in this release.
 
 **Rationale**: The private history was supplied as source material, not as blanket permission to publish every detail. This preserves credibility and privacy.
 
 **Alternatives considered**: Including every career detail or historical metric would increase disclosure and accuracy risk without being necessary to explain the candidate's judgment.
+
+## Decision 6: Make engineering notes technical decision records
+
+**Decision**: Write Engineering Notes around specific constraints, alternatives, selected invariants, operational trade-offs, and observable reconsideration triggers. Cover grain/cardinality, medallion-layer boundaries, workload-aware materialization and partitioning, and retrieval as an input to generation.
+
+**Rationale**: The user asked for a more technical voice. Decision records demonstrate computer-science reasoning through concrete system properties, rather than generic engineering advice or an internal ADR dump.
