@@ -63,6 +63,8 @@ Channel, destination, localized accessible label, and whether the destination op
 
 | Field | Rule |
 |---|---|
+| `company`, `project` | Name the organization and specific initiative associated with the decision; render these before the business problem and technical analysis. |
+| `businessProblem` | State the business need or decision context that motivated the technical work. Render immediately after company/project attribution and before technical constraints. |
 | `title` | State one technical decision or invariant in concrete terms. |
 | `situation` | Identify the system constraint, failure mode, or data-shape problem. |
 | `options` | Describe viable alternatives at the architectural or modeling level. |

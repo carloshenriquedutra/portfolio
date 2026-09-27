@@ -215,7 +215,7 @@ Keep the public links already present on the site: email, LinkedIn, GitHub, and 
 
 The repository documentation and architecture decision records (ADRs) contain useful evidence of technical judgment. The portfolio may turn selected decisions into short, public-safe “decision stories” that explain the situation, the options considered, the choice, its trade-offs, and what evidence could justify revisiting it. These stories should show how Carlos reasons, not reproduce internal documentation.
 
-Engineering Notes should read like concise technical decision records: state the failure mode or constraint, identify the design alternatives, name the invariant or decision, and explain its operational cost and reconsideration trigger. Use precise terms such as grain, key, cardinality, deduplication, materialization, partitioning, retrieval, and generation when they explain the reasoning.
+Each Engineering Note MUST begin with the company and project it concerns, followed by the motivating business problem. Only then should it present the technical constraint, alternatives, design decision, trade-off, and evidence that could justify revisiting the decision. The notes should read like concise technical decision records and use precise terms such as grain, key, cardinality, deduplication, materialization, partitioning, retrieval, and generation when they explain the reasoning.
 
 The initial notes should cover:
 
@@ -267,6 +267,7 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 - **FR-019**: Each selected-work card MUST identify the employer or project owner and the specific initiative with a clear descriptive label. Cards MUST remain scannable, using a short project summary and a concise statement of Carlos's contribution before optional technologies or public evidence.
 - **FR-020**: The Selected Work section MUST contain exactly four blocks, in the order and scope approved in Section 6.3: Lumi employee assistant, People Analytics platform through Gold, HubSpot CRM modeling in BigQuery, and COPAPA market sizing. It MUST NOT include the private source repository name, URL, or link.
 - **FR-021**: Engineering Notes MUST use technically precise, evidence-based decision narratives that identify constraints, alternatives, the selected design, trade-offs, and evidence for revisiting a decision; they MUST avoid generic advice and unsupported guarantees.
+- **FR-022**: Every Engineering Note MUST identify its company and project first, then state the motivating business problem before presenting technical analysis.
 
 ## 9. Content, privacy, and trust requirements
 

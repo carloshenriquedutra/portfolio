@@ -46,7 +46,9 @@ function renderDecisions(container, decisions, labels) {
     const column = element("div", "col");
     const story = element("article", "decision-story h-100");
     story.append(
+      element("p", "section-kicker mb-2", `${decision.company} · ${decision.project}`),
       element("h4", "", decision.title),
+      paragraph(labels.businessProblem, decision.businessProblem),
       paragraph(labels.context, decision.situation),
       paragraph(labels.options, decision.options),
       paragraph(labels.choice, decision.choice),

@@ -111,3 +111,9 @@ Deliver the P1 recruiter journey and safe, concise case studies first. Continue 
 **Purpose**: Replace the earlier featured-project lineup with the four user-selected initiatives and give Engineering Notes the requested technical depth in both locales and the no-script baseline.
 
 - [x] T026 Update English and pt-BR Selected Work to exactly four concise, attributed cases; expand Engineering Notes into technically precise decision records; synchronize the static English baseline and feature documents; record future social-feed ideas in `todo.md` (FR-020, FR-021).
+
+## Phase 12: Engineering-note attribution
+
+**Purpose**: Give every engineering decision story explicit company, project, and business context before the technical reasoning.
+
+- [x] T027 Add localized company/project attribution and business-problem statements to each Engineering Note; render the same reading order in the JavaScript view and static English baseline; update the content model and specification (FR-022).
