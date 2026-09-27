@@ -129,3 +129,9 @@ Deliver the P1 recruiter journey and safe, concise case studies first. Continue 
 **Purpose**: Explain the retrieval decision without unsupported statements about internal policy or model-update cadence.
 
 - [x] T029 Reframe the Lumi technical constraint around source traceability, remove claims about relative update rates, and align the English/pt-BR copy and static fallback (FR-024).
+
+## Phase 15: Dark-navy visual direction
+
+**Purpose**: Restore dark-blue/navy accents while keeping black as the dominant background and preserving readable contrast.
+
+- [x] T030 Replace current green accents with dark-blue/navy Bootstrap tokens and component states; align the current palette in the specification, plan, README, and acceptance walkthrough (FR-016, SC-009).

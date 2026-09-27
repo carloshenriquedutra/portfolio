@@ -104,7 +104,7 @@ The visitor selects Brazilian Portuguese, understands the same positioning, and 
 1. **Given** a visitor is on an English page, **when** they select Brazilian Portuguese, **then** the corresponding Portuguese page opens with the same essential content.
 2. **Given** a visitor is on the Portuguese version, **when** they select English, **then** the corresponding English page opens and reports English as its programmatic language.
 3. **Given** an English or Portuguese home page is displayed, **when** the visitor views the hero, **then** the official portrait is used with a responsive crop that does not distort the image.
-4. **Given** the page uses the black-and-dark-green palette, **when** the visitor reads text or uses a control, **then** content and interaction states remain legible and distinguishable.
+4. **Given** the page uses the black-and-dark-navy palette, **when** the visitor reads text or uses a control, **then** content and interaction states remain legible and distinguishable.
 
 ## 5. Positioning and narrative
 
@@ -263,7 +263,7 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 - **FR-013**: Content MUST include only professional facts and metrics whose accuracy and publication permission have been verified.
 - **FR-014**: Visitors MUST be able to understand Carlos’s contribution within outcomes produced by a team.
 - **FR-015**: The Computer Science degree MUST be presented as in progress until completion is confirmed.
-- **FR-016**: The visual identity MUST use black as the primary background color and dark green as the secondary accent, with legible, contrasting text and interaction states. Lighter green may be used sparingly for foreground text and focus indicators when needed for contrast.
+- **FR-016**: The visual identity MUST use black as the primary background color and dark blue/navy as the secondary accent, with legible, contrasting text and interaction states. Lighter blue may be used sparingly for foreground text and focus indicators when needed for contrast.
 - **FR-017**: The portfolio MUST use the user-supplied official profile photo as its primary professional portrait, preserving the image and displaying it with responsive, undistorted cropping.
 - **FR-018**: The portfolio SHOULD present selected, sanitized engineering decision stories that explain context, alternatives, rationale, trade-offs, and evidence for revisiting a decision.
 - **FR-019**: Each selected-work card MUST identify the employer or project owner and the specific initiative with a clear descriptive label. Cards MUST remain scannable, using a short project summary and a concise statement of Carlos's contribution before optional technologies or public evidence.
@@ -309,9 +309,9 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 - Bootstrap accordion may be used for secondary content, such as education details, if it remains discoverable and accessible. Avoid carousels and interactive components without a clear reading benefit.
 - Keep Bootstrap on the 5.3.x line for the first implementation to match the existing HTML. Load JavaScript only for behaviors in use; components using `collapse` require the corresponding JavaScript.
 - Bootstrap alone does not guarantee accessibility or visual quality: semantics, contrast, focus, hierarchy, and content remain subject to this specification.
-- The palette must use black as the dominant background color. Dark green must serve as the secondary accent for links, actions, selected states, and small visual details; it must not compete with content or replace black as the primary identity. Use lighter green only for foreground text or focus indicators when dark green alone would not provide sufficient contrast.
-- Define Bootstrap theme color tokens centrally, including theme CSS variables and component classes as needed, so buttons, links, navbar, cards, and interaction states are consistent with the black background and dark-green accent.
-- Essential text and elements on the black background must use colors with sufficient contrast. Validate green shades in each context, especially link text, keyboard focus, and buttons; use dark-green surfaces with contrasting text and lighter green foreground accents where needed to retain readability.
+- The palette must use black as the dominant background color. Dark blue/navy must serve as the secondary accent for links, actions, selected states, and small visual details; it must not compete with content or replace black as the primary identity. Use lighter blue only for foreground text or focus indicators when dark navy alone would not provide sufficient contrast.
+- Define Bootstrap theme color tokens centrally, including theme CSS variables and component classes as needed, so buttons, links, navbar, cards, and interaction states are consistent with the black background and dark-navy accent.
+- Essential text and elements on the black background must use colors with sufficient contrast. Validate blue shades in each context, especially link text, keyboard focus, and buttons; use dark-navy surfaces with contrasting text and lighter-blue foreground accents where needed to retain readability.
 - The visual design should suggest precision, curiosity, and warmth. Avoid a generic corporate dashboard aesthetic, excessive gradients, repetitive cards, heavy animation, and meaningless stock photography.
 - The identity may subtly reference maps, flows, data layers, or engineering notes, but readability and contrast come first.
 - Keep content available over common mobile connections and do not require visitors to run code or create an account.
@@ -326,7 +326,7 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 - **SC-006**: Core content remains readable and navigable in a narrow mobile viewport and by keyboard.
 - **SC-007**: English and Portuguese communicate the same essential facts about role, experience, education, projects, and contact.
 - **SC-008**: Every claim about production, financial impact, scale, or performance has evidence or clearly qualified language identifiable during editorial review.
-- **SC-009**: The combination of black background, dark-green accents, supporting foreground colors, and text remains distinguishable and readable for content and interactive controls throughout the page.
+- **SC-009**: The combination of black background, dark-blue/navy accents, supporting foreground colors, and text remains distinguishable and readable for content and interactive controls throughout the page.
 - **SC-010**: A reader can switch from English to pt-BR and back using the visible selector without encountering mixed or missing essential content.
 
 ## 12. Edge cases

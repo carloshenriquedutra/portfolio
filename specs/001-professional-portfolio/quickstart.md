@@ -21,7 +21,7 @@ From the repository root, run `python3 -m http.server 8000`, then open `http://l
 6. Review the portrait at desktop and narrow mobile widths. Confirm the supplied image remains unaltered, the face stays visible, and the image does not distort.
 7. Inspect a narrow viewport and a wide viewport. Confirm Bootstrap layout stacks and expands appropriately without horizontal scrolling; navigation remains operable when collapsed.
 8. Navigate with keyboard only. Confirm visible focus, logical heading order, accessible navigation/selector labels, and controls that do not rely on hover.
-9. Check text, links, focus indicators, and buttons against the black background. Confirm dark-green accents remain distinguishable and readable; lighter green may support foreground text and focus visibility.
+9. Check text, links, focus indicators, and buttons against the black background. Confirm dark-blue/navy accents remain distinguishable and readable; lighter blue may support foreground text and focus visibility.
 10. Disable JavaScript and reload. Confirm the English baseline and core portfolio/contact content remain readable; the language switch may be unavailable in this mode.
 
 ## Release editorial checks
