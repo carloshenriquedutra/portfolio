@@ -141,3 +141,4 @@ Deliver the P1 recruiter journey and safe, concise case studies first. Continue 
 **Purpose**: Replace the humorous portrait caption with only the localized professional title.
 
 - [x] T031 Replace the portrait caption with `Senior Data Engineer` in English and `Engenheiro de Dados Sênior` in pt-BR, update the no-script HTML baseline and portrait-title styling, and verify both locale strings match FR-025 and SC-011 in `index.html`, `src/content/en.js`, `src/content/pt-BR.js`, and `assets/css/theme.css`.
+- [x] T032 Remove the role eyebrow above the hero headline from the English baseline and both locale records, remove its unused style, and verify that the main headline begins the hero copy in both languages per FR-026 and SC-012 in `index.html`, `src/content/en.js`, `src/content/pt-BR.js`, and `assets/css/theme.css`.

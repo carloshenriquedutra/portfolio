@@ -37,7 +37,7 @@ h2 { font-size: clamp(2rem, 4vw, 3.1rem); }
 .btn-language.active, .btn-language[aria-pressed="true"] { color: #fff; background: #123b63; border-color: #174a78; font-weight: 700; }
 .hero-section { min-height: min(780px, calc(100svh - 5rem)); }
 .hero-section h1 { max-width: 15ch; }
-.eyebrow, .section-kicker { color: var(--portfolio-navy-soft); font-size: .78rem; font-weight: 750; letter-spacing: .16em; text-transform: uppercase; }
+.section-kicker { color: var(--portfolio-navy-soft); font-size: .78rem; font-weight: 750; letter-spacing: .16em; text-transform: uppercase; }
 .hero-intro { max-width: 42rem; color: #d8deea; }
 .hero-note, .section-intro { color: var(--portfolio-muted); }
 .portrait-title { color: var(--bs-body-color); font-size: 1.125rem; font-weight: 650; }

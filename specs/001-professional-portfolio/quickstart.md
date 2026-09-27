@@ -13,7 +13,7 @@ From the repository root, run `python3 -m http.server 8000`, then open `http://l
 
 ## Acceptance walkthrough
 
-1. Open the home page without a query parameter. Confirm that English is active, the Senior Data Engineer positioning is visible in the first viewport, and a primary portfolio/contact action is available.
+1. Open the home page without a query parameter. Confirm that English is active, the main headline starts the hero copy without a role eyebrow above it, the Senior Data Engineer title appears below the portrait, and a primary portfolio/contact action is available.
 2. Use the language selector to switch to pt-BR. Confirm that visible copy, page metadata, active selection, and the document's programmatic language update; essential sections and factual content remain present.
 3. Switch back to English and reload. Confirm that English remains the default when no `lang` query parameter is present.
 4. Follow the project, profile, and contact links. Confirm their labels describe the destination and external links use safe new-tab behavior where applicable.

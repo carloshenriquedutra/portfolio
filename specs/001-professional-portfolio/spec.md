@@ -146,7 +146,7 @@ The portfolio should present Carlos’s deliberate preference for a senior techn
 
 The home page should present, in a logical order:
 
-1. Identity, title, value proposition, and optional city or country/time zone.
+1. Identity, value proposition, and optional city or country/time zone; the main headline begins the hero text, with no role eyebrow above it. The localized professional title appears below the portrait.
 2. Primary actions: view case studies, download a resume when an approved file exists, contact, and open LinkedIn/GitHub.
 3. A quick About summary with the business-and-engineering thread.
 4. Featured case studies.
@@ -276,6 +276,7 @@ Place only Carlos's localized professional title directly beneath the portrait: 
 - **FR-023**: Engineering Notes MUST list the Lumi decision first and reverse the previous note order, keeping the same order in both locales and the static HTML baseline.
 - **FR-024**: Engineering Notes MUST avoid unverified employer-specific operational claims; the Lumi retrieval rationale MUST describe source traceability without asserting policy or model change rates.
 - **FR-025**: The text directly beneath the portrait MUST contain only Carlos's localized professional title: “Senior Data Engineer” in English or “Engenheiro de Dados Sênior” in pt-BR. It MUST NOT contain a tagline or descriptive sentence.
+- **FR-026**: The hero MUST NOT display a role or specialty eyebrow above its main headline in either language. The main headline MUST be the first text in the hero copy column.
 
 ## 9. Content, privacy, and trust requirements
 
@@ -333,6 +334,7 @@ Place only Carlos's localized professional title directly beneath the portrait: 
 - **SC-009**: The combination of black background, dark-blue/navy accents, supporting foreground colors, and text remains distinguishable and readable for content and interactive controls throughout the page.
 - **SC-010**: A reader can switch from English to pt-BR and back using the visible selector without encountering mixed or missing essential content.
 - **SC-011**: On both language versions, the only text directly beneath the portrait is the localized title “Senior Data Engineer” or “Engenheiro de Dados Sênior”.
+- **SC-012**: On both language versions, no role or specialty eyebrow appears above the hero's main headline.
 
 ## 12. Edge cases
 

@@ -5,7 +5,6 @@ const en = {
   nav: { about: "About", work: "Selected work", experience: "Experience", contact: "Contact", language: "Language" },
   interface: { skipLink: "Skip to content", mainNavigation: "Main navigation", toggleNavigation: "Toggle navigation", aboutKicker: "01 / THE THREAD", workKicker: "02 / SELECTED WORK", decisionsKicker: "ENGINEERING NOTES", skillsKicker: "03 / TOOLBOX", experienceKicker: "04 / CAREER", educationKicker: "05 / LEARNING", contactKicker: "06 / SAY HELLO", portraitTitle: "Senior Data Engineer" },
   hero: {
-    eyebrow: "Senior Data Engineer · Analytics & Platforms",
     title: "I build the data foundation behind better decisions.",
     intro: "I like the part before the dashboard: figuring out what the numbers mean, where they came from, and what someone can safely do with them.",
     note: "Curious by default. Particular about definitions. I enjoy making complex systems easier to reason about.",

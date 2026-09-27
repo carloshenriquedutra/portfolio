@@ -19,6 +19,7 @@
 - [x] Success criteria avoid implementation details.
 - [x] Acceptance scenarios are defined for each user story.
 - [x] Portrait copy is explicit: the localized professional title appears beneath the image with no tagline.
+- [x] The hero starts with the main headline and has no role or specialty eyebrow above it.
 - [x] Edge cases are identified.
 - [x] Scope is clearly bounded, including no hosting-provider change and no publication of unapproved employer details.
 - [x] Dependencies and assumptions are identified.
