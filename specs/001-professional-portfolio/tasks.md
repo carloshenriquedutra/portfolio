@@ -92,3 +92,4 @@ Deliver the P1 recruiter journey and at least one safe, complete case study firs
 **Purpose**: Correct the official portrait's rendered aspect ratio, found during review of the published page.
 
 - [x] T022 Set the responsive portrait image height to `auto` in `assets/css/theme.css` so the HTML's intrinsic 1920 × 1920 dimensions do not produce a tall, narrow crop (FR-017, US4/AC3; partial).
+- [x] T023 Version the theme stylesheet URL in `index.html` and size `.portrait-frame` as a square in `assets/css/theme.css`, ensuring browsers fetch the corrected portrait rules and keep the image undistorted (FR-017, US4/AC3; partial).

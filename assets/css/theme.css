@@ -40,8 +40,8 @@ h2 { font-size: clamp(2rem, 4vw, 3.1rem); }
 .eyebrow, .section-kicker { color: var(--portfolio-blue-soft); font-size: .78rem; font-weight: 750; letter-spacing: .16em; text-transform: uppercase; }
 .hero-intro { max-width: 42rem; color: #d5deea; }
 .hero-note, .portrait-caption, .section-intro { color: var(--portfolio-muted); }
-.portrait-frame { width: min(100%, 390px); padding: .65rem; background: linear-gradient(145deg, #17375c, #0c1118 48%); border: 1px solid #233b57; border-radius: 50% 50% 1.5rem 1.5rem; box-shadow: 0 1rem 5rem rgb(20 73 132 / 20%); }
-.profile-portrait { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; object-position: center 38%; border-radius: 50% 50% 1rem 1rem; }
+.portrait-frame { width: min(100%, 390px); aspect-ratio: 1; padding: .65rem; background: linear-gradient(145deg, #17375c, #0c1118 48%); border: 1px solid #233b57; border-radius: 50% 50% 1.5rem 1.5rem; box-shadow: 0 1rem 5rem rgb(20 73 132 / 20%); }
+.profile-portrait { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 38%; border-radius: 50% 50% 1rem 1rem; }
 .content-section { border-top: 1px solid rgb(174 185 199 / 16%); scroll-margin-top: 5rem; }
 .section-copy { color: #cbd5e1; font-size: 1.1rem; }
 .case-card { --bs-card-bg: var(--portfolio-surface); --bs-card-border-color: #293443; --bs-card-color: #e9eef5; border-radius: 1rem; transition: border-color .18s ease, transform .18s ease; }
