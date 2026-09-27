@@ -2,6 +2,8 @@
 
 An English-first, bilingual (English / Brazilian Portuguese) professional portfolio for Carlos Dutra, Senior Data Engineer. It focuses on how business questions become dependable data products, with selected work, career context, and engineering decisions.
 
+Visit the live portfolio: <https://carloshenriquedutra.github.io/portfolio/>.
+
 ## Run locally
 
 From the repository root, start a static server:
