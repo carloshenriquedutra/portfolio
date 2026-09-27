@@ -3,7 +3,7 @@ const ptBR = {
   pageTitle: "Carlos Dutra · Engenheiro de Dados Sênior",
   description: "Engenheiro de Dados Sênior criando bases de dados confiáveis para decisões melhores.",
   nav: { about: "Sobre", work: "Trabalhos", experience: "Experiência", contact: "Contato", language: "Idioma" },
-  interface: { skipLink: "Pular para o conteúdo", mainNavigation: "Navegação principal", toggleNavigation: "Alternar navegação", aboutKicker: "01 / A TRAJETÓRIA", workKicker: "02 / TRABALHOS SELECIONADOS", decisionsKicker: "NOTAS DE ENGENHARIA", skillsKicker: "03 / FERRAMENTAS", experienceKicker: "04 / CARREIRA", educationKicker: "05 / FORMAÇÃO", contactKicker: "06 / VAMOS CONVERSAR", portraitCaption: "Dados, decisões e uma ou outra reviravolta na planilha." },
+  interface: { skipLink: "Pular para o conteúdo", mainNavigation: "Navegação principal", toggleNavigation: "Alternar navegação", aboutKicker: "01 / A TRAJETÓRIA", workKicker: "02 / TRABALHOS SELECIONADOS", decisionsKicker: "NOTAS DE ENGENHARIA", skillsKicker: "03 / FERRAMENTAS", experienceKicker: "04 / CARREIRA", educationKicker: "05 / FORMAÇÃO", contactKicker: "06 / VAMOS CONVERSAR", portraitTitle: "Engenheiro de Dados Sênior" },
   hero: {
     eyebrow: "Engenheiro de Dados Sênior · Analytics e Plataformas",
     title: "Construo a base de dados por trás de decisões melhores.",

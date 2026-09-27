@@ -19,6 +19,7 @@ The site stores content in version-controlled static files. The entities below a
 | `locale` | Exactly `en` or `pt-BR`. |
 | `pageTitle`, `description` | Required localized document metadata. |
 | `navigation` | Required labels for all visible section links and the language selector. |
+| `portraitTitle` | Required localized professional title shown directly beneath the portrait; no tagline or descriptive sentence. |
 | `profile`, `sections` | Same structural keys and essential facts for both supported languages. |
 
 The English module defines the baseline content. The pt-BR module must not silently omit a required section or alter factual claims.

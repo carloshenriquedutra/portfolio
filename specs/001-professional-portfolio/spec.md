@@ -105,6 +105,7 @@ The visitor selects Brazilian Portuguese, understands the same positioning, and 
 2. **Given** a visitor is on the Portuguese version, **when** they select English, **then** the corresponding English page opens and reports English as its programmatic language.
 3. **Given** an English or Portuguese home page is displayed, **when** the visitor views the hero, **then** the official portrait is used with a responsive crop that does not distort the image.
 4. **Given** the page uses the black-and-dark-navy palette, **when** the visitor reads text or uses a control, **then** content and interaction states remain legible and distinguishable.
+5. **Given** the portrait is displayed in either language, **when** the visitor reads the text directly beneath it, **then** they see only the localized professional title.
 
 ## 5. Positioning and narrative
 
@@ -236,6 +237,8 @@ Use the photo supplied by the user on 2026-09-26 as the official profile portrai
 
 Keep the face clearly visible on large and small screens; use responsive cropping without distorting the aspect ratio and allow the focal point to be repositioned when needed. Integrate the image with the black background without a dominant decorative frame. If informative, provide short alternative text such as the person’s name; if purely decorative beside an already announced name, use empty alternative text to avoid repetition in screen readers.
 
+Place only Carlos's localized professional title directly beneath the portrait: “Senior Data Engineer” in English and “Engenheiro de Dados Sênior” in pt-BR. Do not place a tagline or other descriptive sentence in this position.
+
 ## 7. Languages and localization
 
 - English is the portfolio’s default and primary language: visitors without a previously selected language must see the home page in English.
@@ -272,6 +275,7 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 - **FR-022**: Every Engineering Note MUST identify its company and project first, then state the motivating business problem before presenting technical analysis.
 - **FR-023**: Engineering Notes MUST list the Lumi decision first and reverse the previous note order, keeping the same order in both locales and the static HTML baseline.
 - **FR-024**: Engineering Notes MUST avoid unverified employer-specific operational claims; the Lumi retrieval rationale MUST describe source traceability without asserting policy or model change rates.
+- **FR-025**: The text directly beneath the portrait MUST contain only Carlos's localized professional title: “Senior Data Engineer” in English or “Engenheiro de Dados Sênior” in pt-BR. It MUST NOT contain a tagline or descriptive sentence.
 
 ## 9. Content, privacy, and trust requirements
 
@@ -328,6 +332,7 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 - **SC-008**: Every claim about production, financial impact, scale, or performance has evidence or clearly qualified language identifiable during editorial review.
 - **SC-009**: The combination of black background, dark-blue/navy accents, supporting foreground colors, and text remains distinguishable and readable for content and interactive controls throughout the page.
 - **SC-010**: A reader can switch from English to pt-BR and back using the visible selector without encountering mixed or missing essential content.
+- **SC-011**: On both language versions, the only text directly beneath the portrait is the localized title “Senior Data Engineer” or “Engenheiro de Dados Sênior”.
 
 ## 12. Edge cases
 

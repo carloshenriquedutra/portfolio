@@ -24,7 +24,7 @@ Replace the existing Portuguese-only analyst landing page with an English-first,
 
 **Performance Goals**: Render meaningful English content immediately from HTML; keep the page lightweight, avoid blocking third-party dependencies beyond Bootstrap, and preserve usable content if optional images or scripting fail
 
-**Constraints**: Keep hosting unchanged; no backend, analytics, application framework, build tooling, or GCP hosting work; Bootstrap remains 5.3.x; use the supplied portrait locally; use black with dark-blue/navy accents; publish only approved employer attributions and omit client/internal information; strict Clean Architecture and Clean Code boundaries
+**Constraints**: Keep hosting unchanged; no backend, analytics, application framework, build tooling, or GCP hosting work; Bootstrap remains 5.3.x; use the supplied portrait locally with only the localized professional title beneath it; use black with dark-blue/navy accents; publish only approved employer attributions and omit client/internal information; strict Clean Architecture and Clean Code boundaries
 
 **Scale/Scope**: One responsive portfolio page, English and pt-BR copy, exactly four curated case studies, technical engineering notes, career/education/skills/contact sections
 
@@ -75,7 +75,7 @@ src/
 └── main.js                        # Composition root / progressive enhancement entry point
 ```
 
-**Structure Decision**: Keep a single deployable page, but separate stable locale policy and use-case behavior from browser URL/DOM/Bootstrap details. English copy is present in semantic HTML as the no-JavaScript baseline; the application module enhances the page and switches equivalent locale data. Bootstrap remains an outer presentation dependency. Avoid creating generic repositories, service layers, or abstractions without a concrete reason.
+**Structure Decision**: Keep a single deployable page, but separate stable locale policy and use-case behavior from browser URL/DOM/Bootstrap details. English copy is present in semantic HTML as the no-JavaScript baseline; the application module enhances the page and switches equivalent locale data, including the title beneath the portrait. Bootstrap remains an outer presentation dependency. Avoid creating generic repositories, service layers, or abstractions without a concrete reason.
 
 ## Phase 0: Research
 

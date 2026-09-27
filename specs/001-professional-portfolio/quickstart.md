@@ -18,7 +18,7 @@ From the repository root, run `python3 -m http.server 8000`, then open `http://l
 3. Switch back to English and reload. Confirm that English remains the default when no `lang` query parameter is present.
 4. Follow the project, profile, and contact links. Confirm their labels describe the destination and external links use safe new-tab behavior where applicable.
 5. Review case-study content. Confirm each published case identifies the problem, individual contribution, approach, and substantiated or carefully qualified outcome; confirm no private details or invented metrics appear.
-6. Review the portrait at desktop and narrow mobile widths. Confirm the supplied image remains unaltered, the face stays visible, and the image does not distort.
+6. Review the portrait at desktop and narrow mobile widths in English and pt-BR. Confirm the supplied image remains unaltered and undistorted, the face stays visible, and the only text directly below it is the localized professional title.
 7. Inspect a narrow viewport and a wide viewport. Confirm Bootstrap layout stacks and expands appropriately without horizontal scrolling; navigation remains operable when collapsed.
 8. Navigate with keyboard only. Confirm visible focus, logical heading order, accessible navigation/selector labels, and controls that do not rely on hover.
 9. Check text, links, focus indicators, and buttons against the black background. Confirm dark-blue/navy accents remain distinguishable and readable; lighter blue may support foreground text and focus visibility.

@@ -135,3 +135,9 @@ Deliver the P1 recruiter journey and safe, concise case studies first. Continue 
 **Purpose**: Restore dark-blue/navy accents while keeping black as the dominant background and preserving readable contrast.
 
 - [x] T030 Replace current green accents with dark-blue/navy Bootstrap tokens and component states; align the current palette in the specification, plan, README, and acceptance walkthrough (FR-016, SC-009).
+
+## Phase 16: Portrait title copy
+
+**Purpose**: Replace the humorous portrait caption with only the localized professional title.
+
+- [x] T031 Replace the portrait caption with `Senior Data Engineer` in English and `Engenheiro de Dados Sênior` in pt-BR, update the no-script HTML baseline and portrait-title styling, and verify both locale strings match FR-025 and SC-011 in `index.html`, `src/content/en.js`, `src/content/pt-BR.js`, and `assets/css/theme.css`.
