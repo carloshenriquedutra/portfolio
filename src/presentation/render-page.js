@@ -5,8 +5,8 @@ function element(tagName, className, text) {
   return node;
 }
 
-function paragraph(label, value, className = "case-detail mb-3") {
-  const node = element("p", className);
+function paragraph(label, value) {
+  const node = element("p", "case-detail mb-3");
   const labelNode = element("strong", "", `${label}: `);
   node.append(labelNode, document.createTextNode(value));
   return node;
@@ -19,7 +19,7 @@ function renderCases(container, cases, labels) {
     const body = element("div", "card-body p-4 p-lg-4");
     const badge = element("span", "badge rounded-pill text-bg-primary mb-3", `${study.company} · ${study.project}`);
     const title = element("h3", "h4 card-title", study.title);
-    body.append(badge, title, paragraph(labels.summary, study.summary), paragraph(labels.contribution, study.contribution, "case-detail mb-3"));
+    body.append(badge, title, paragraph(labels.summary, study.summary), paragraph(labels.contribution, study.contribution));
     if (study.technologies.length) {
       const techList = element("ul", "list-inline mb-0");
       for (const technology of study.technologies) {
