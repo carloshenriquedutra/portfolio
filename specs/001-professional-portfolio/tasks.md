@@ -86,3 +86,9 @@
 ## Implementation Strategy
 
 Deliver the P1 recruiter journey and at least one safe, complete case study first. Continue with public project/contact context, then finish pt-BR parity and responsive/accessibility polish. Preserve the static English baseline throughout and do not publish or deploy as part of this task.
+
+## Phase 8: Convergence
+
+**Purpose**: Correct the official portrait's rendered aspect ratio, found during review of the published page.
+
+- [x] T022 Set the responsive portrait image height to `auto` in `assets/css/theme.css` so the HTML's intrinsic 1920 × 1920 dimensions do not produce a tall, narrow crop (FR-017, US4/AC3; partial).
