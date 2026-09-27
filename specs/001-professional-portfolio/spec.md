@@ -217,6 +217,8 @@ The repository documentation and architecture decision records (ADRs) contain us
 
 Each Engineering Note MUST begin with the company and project it concerns, followed by the motivating business problem. Only then should it present the technical constraint, alternatives, design decision, trade-off, and evidence that could justify revisiting the decision. The notes should read like concise technical decision records and use precise terms such as grain, key, cardinality, deduplication, materialization, partitioning, retrieval, and generation when they explain the reasoning.
 
+Engineering Notes MUST NOT imply unverified employer-specific operating patterns or comparative change rates. For Lumi, explain retrieval in terms of traceable source grounding and the approved knowledge base, without speculating about policy-update cadence or internal operations.
+
 The initial notes should appear in this order:
 
 1. **Lumi — Keep retrieval separate from generation**: retrieve relevant, current knowledge before model generation; describe retrieval coverage and freshness as system dependencies rather than promising that RAG prevents hallucinations.
@@ -269,6 +271,7 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 - **FR-021**: Engineering Notes MUST use technically precise, evidence-based decision narratives that identify constraints, alternatives, the selected design, trade-offs, and evidence for revisiting a decision; they MUST avoid generic advice and unsupported guarantees.
 - **FR-022**: Every Engineering Note MUST identify its company and project first, then state the motivating business problem before presenting technical analysis.
 - **FR-023**: Engineering Notes MUST list the Lumi decision first and reverse the previous note order, keeping the same order in both locales and the static HTML baseline.
+- **FR-024**: Engineering Notes MUST avoid unverified employer-specific operational claims; the Lumi retrieval rationale MUST describe source traceability without asserting policy or model change rates.
 
 ## 9. Content, privacy, and trust requirements
 

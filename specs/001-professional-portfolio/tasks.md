@@ -123,3 +123,9 @@ Deliver the P1 recruiter journey and safe, concise case studies first. Continue 
 **Purpose**: Lead with the Lumi case and reverse the previous order of the engineering decisions.
 
 - [x] T028 Reverse the four Engineering Notes in both locale datasets and the static fallback, placing Lumi first; document the approved order (FR-023).
+
+## Phase 14: Lumi note accuracy
+
+**Purpose**: Explain the retrieval decision without unsupported statements about internal policy or model-update cadence.
+
+- [x] T029 Reframe the Lumi technical constraint around source traceability, remove claims about relative update rates, and align the English/pt-BR copy and static fallback (FR-024).
