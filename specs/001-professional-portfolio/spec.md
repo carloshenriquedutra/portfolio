@@ -146,7 +146,7 @@ The portfolio should present Carlos’s deliberate preference for a senior techn
 
 The home page should present, in a logical order:
 
-1. Identity, value proposition, and optional city or country/time zone; the main headline begins the hero text, with no role eyebrow above it. The localized professional title appears below the portrait.
+1. Identity, value proposition, and optional city or country/time zone; the main headline begins the hero text, with no role eyebrow above it. Carlos's name and localized professional title, separated by a comma, appear below the portrait.
 2. Primary actions: view case studies, download a resume when an approved file exists, contact, and open LinkedIn/GitHub.
 3. A quick About summary with the business-and-engineering thread.
 4. Featured case studies.
@@ -237,7 +237,7 @@ Use the photo supplied by the user on 2026-09-26 as the official profile portrai
 
 Keep the face clearly visible on large and small screens; use responsive cropping without distorting the aspect ratio and allow the focal point to be repositioned when needed. Integrate the image with the black background without a dominant decorative frame. If informative, provide short alternative text such as the person’s name; if purely decorative beside an already announced name, use empty alternative text to avoid repetition in screen readers.
 
-Place only Carlos's localized professional title directly beneath the portrait: “Senior Data Engineer” in English and “Engenheiro de Dados Sênior” in pt-BR. Do not place a tagline or other descriptive sentence in this position.
+Place Carlos's name and localized professional title directly beneath the portrait, separated by a comma: “Carlos Dutra, Senior Data Engineer” in English and “Carlos Dutra, Engenheiro de Dados Sênior” in pt-BR. Do not place a tagline or other descriptive sentence in this position.
 
 ## 7. Languages and localization
 
@@ -275,7 +275,7 @@ Place only Carlos's localized professional title directly beneath the portrait: 
 - **FR-022**: Every Engineering Note MUST identify its company and project first, then state the motivating business problem before presenting technical analysis.
 - **FR-023**: Engineering Notes MUST list the Lumi decision first and reverse the previous note order, keeping the same order in both locales and the static HTML baseline.
 - **FR-024**: Engineering Notes MUST avoid unverified employer-specific operational claims; the Lumi retrieval rationale MUST describe source traceability without asserting policy or model change rates.
-- **FR-025**: The text directly beneath the portrait MUST contain only Carlos's localized professional title: “Senior Data Engineer” in English or “Engenheiro de Dados Sênior” in pt-BR. It MUST NOT contain a tagline or descriptive sentence.
+- **FR-025**: The text directly beneath the portrait MUST show Carlos's name followed by his localized professional title, separated by a comma: “Carlos Dutra, Senior Data Engineer” in English or “Carlos Dutra, Engenheiro de Dados Sênior” in pt-BR. It MUST NOT contain a tagline or descriptive sentence.
 - **FR-026**: The hero MUST NOT display a role or specialty eyebrow above its main headline in either language. The main headline MUST be the first text in the hero copy column.
 
 ## 9. Content, privacy, and trust requirements
@@ -333,7 +333,7 @@ Place only Carlos's localized professional title directly beneath the portrait: 
 - **SC-008**: Every claim about production, financial impact, scale, or performance has evidence or clearly qualified language identifiable during editorial review.
 - **SC-009**: The combination of black background, dark-blue/navy accents, supporting foreground colors, and text remains distinguishable and readable for content and interactive controls throughout the page.
 - **SC-010**: A reader can switch from English to pt-BR and back using the visible selector without encountering mixed or missing essential content.
-- **SC-011**: On both language versions, the only text directly beneath the portrait is the localized title “Senior Data Engineer” or “Engenheiro de Dados Sênior”.
+- **SC-011**: On both language versions, the text directly beneath the portrait is “Carlos Dutra, Senior Data Engineer” or “Carlos Dutra, Engenheiro de Dados Sênior”, with the name and role separated by a comma.
 - **SC-012**: On both language versions, no role or specialty eyebrow appears above the hero's main headline.
 
 ## 12. Edge cases

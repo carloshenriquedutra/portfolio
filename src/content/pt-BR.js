@@ -3,7 +3,7 @@ const ptBR = {
   pageTitle: "Carlos Dutra · Engenheiro de Dados Sênior",
   description: "Engenheiro de Dados Sênior criando bases de dados confiáveis para decisões melhores.",
   nav: { about: "Sobre", work: "Trabalhos", experience: "Experiência", contact: "Contato", language: "Idioma" },
-  interface: { skipLink: "Pular para o conteúdo", mainNavigation: "Navegação principal", toggleNavigation: "Alternar navegação", aboutKicker: "01 / A TRAJETÓRIA", workKicker: "02 / TRABALHOS SELECIONADOS", decisionsKicker: "NOTAS DE ENGENHARIA", skillsKicker: "03 / FERRAMENTAS", experienceKicker: "04 / CARREIRA", educationKicker: "05 / FORMAÇÃO", contactKicker: "06 / VAMOS CONVERSAR", portraitTitle: "Engenheiro de Dados Sênior" },
+  interface: { skipLink: "Pular para o conteúdo", mainNavigation: "Navegação principal", toggleNavigation: "Alternar navegação", aboutKicker: "01 / A TRAJETÓRIA", workKicker: "02 / TRABALHOS SELECIONADOS", decisionsKicker: "NOTAS DE ENGENHARIA", skillsKicker: "03 / FERRAMENTAS", experienceKicker: "04 / CARREIRA", educationKicker: "05 / FORMAÇÃO", contactKicker: "06 / VAMOS CONVERSAR", portraitTitle: "Carlos Dutra, Engenheiro de Dados Sênior" },
   hero: {
     title: "Construo a base de dados por trás de decisões melhores.",
     intro: "Gosto da parte que vem antes do dashboard: entender o que os números significam, de onde vieram e o que alguém pode fazer com segurança a partir deles.",

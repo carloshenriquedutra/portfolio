@@ -3,7 +3,7 @@ const en = {
   pageTitle: "Carlos Dutra · Senior Data Engineer",
   description: "Senior Data Engineer building dependable data foundations for better decisions.",
   nav: { about: "About", work: "Selected work", experience: "Experience", contact: "Contact", language: "Language" },
-  interface: { skipLink: "Skip to content", mainNavigation: "Main navigation", toggleNavigation: "Toggle navigation", aboutKicker: "01 / THE THREAD", workKicker: "02 / SELECTED WORK", decisionsKicker: "ENGINEERING NOTES", skillsKicker: "03 / TOOLBOX", experienceKicker: "04 / CAREER", educationKicker: "05 / LEARNING", contactKicker: "06 / SAY HELLO", portraitTitle: "Senior Data Engineer" },
+  interface: { skipLink: "Skip to content", mainNavigation: "Main navigation", toggleNavigation: "Toggle navigation", aboutKicker: "01 / THE THREAD", workKicker: "02 / SELECTED WORK", decisionsKicker: "ENGINEERING NOTES", skillsKicker: "03 / TOOLBOX", experienceKicker: "04 / CAREER", educationKicker: "05 / LEARNING", contactKicker: "06 / SAY HELLO", portraitTitle: "Carlos Dutra, Senior Data Engineer" },
   hero: {
     title: "I build the data foundation behind better decisions.",
     intro: "I like the part before the dashboard: figuring out what the numbers mean, where they came from, and what someone can safely do with them.",
