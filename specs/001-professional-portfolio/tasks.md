@@ -117,3 +117,9 @@ Deliver the P1 recruiter journey and safe, concise case studies first. Continue 
 **Purpose**: Give every engineering decision story explicit company, project, and business context before the technical reasoning.
 
 - [x] T027 Add localized company/project attribution and business-problem statements to each Engineering Note; render the same reading order in the JavaScript view and static English baseline; update the content model and specification (FR-022).
+
+## Phase 13: Engineering-note order
+
+**Purpose**: Lead with the Lumi case and reverse the previous order of the engineering decisions.
+
+- [x] T028 Reverse the four Engineering Notes in both locale datasets and the static fallback, placing Lumi first; document the approved order (FR-023).

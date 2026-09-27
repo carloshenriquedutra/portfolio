@@ -217,12 +217,12 @@ The repository documentation and architecture decision records (ADRs) contain us
 
 Each Engineering Note MUST begin with the company and project it concerns, followed by the motivating business problem. Only then should it present the technical constraint, alternatives, design decision, trade-off, and evidence that could justify revisiting the decision. The notes should read like concise technical decision records and use precise terms such as grain, key, cardinality, deduplication, materialization, partitioning, retrieval, and generation when they explain the reasoning.
 
-The initial notes should cover:
+The initial notes should appear in this order:
 
-- **Declare model grain before joining entities**: avoid fan-out and invalid measures by defining keys, grain, temporal meaning, and bridge relationships before aggregation.
-- **Separate source conformance from analytical semantics**: assign source parsing/type normalization and deduplication to Silver, then business facts and dimensions to Gold.
-- **Choose materialization and partitioning by workload**: materialize dimensions consistently and partition high-volume facts on event time, with clustering selected from actual filter patterns.
-- **Keep retrieval separate from generation**: retrieve relevant, current knowledge before model generation; describe retrieval coverage and freshness as system dependencies rather than promising that RAG prevents hallucinations.
+1. **Lumi — Keep retrieval separate from generation**: retrieve relevant, current knowledge before model generation; describe retrieval coverage and freshness as system dependencies rather than promising that RAG prevents hallucinations.
+2. **People Analytics — Choose materialization and partitioning by workload**: materialize dimensions consistently and partition high-volume facts on event time, with clustering selected from actual filter patterns.
+3. **People Analytics — Separate source conformance from analytical semantics**: assign source parsing/type normalization and deduplication to Silver, then business facts and dimensions to Gold.
+4. **Gobrax HubSpot — Declare model grain before joining entities**: avoid fan-out and invalid measures by defining keys, grain, temporal meaning, and bridge relationships before aggregation.
 
 Do not turn the notes into a glossary or internal ADR dump. Keep each story understandable to a senior engineering reader without private source links. Do not expose employee data, internal identifiers, security controls, or implementation details beyond the approved high-level project descriptions.
 
@@ -268,6 +268,7 @@ Keep the face clearly visible on large and small screens; use responsive croppin
 - **FR-020**: The Selected Work section MUST contain exactly four blocks, in the order and scope approved in Section 6.3: Lumi employee assistant, People Analytics platform through Gold, HubSpot CRM modeling in BigQuery, and COPAPA market sizing. It MUST NOT include the private source repository name, URL, or link.
 - **FR-021**: Engineering Notes MUST use technically precise, evidence-based decision narratives that identify constraints, alternatives, the selected design, trade-offs, and evidence for revisiting a decision; they MUST avoid generic advice and unsupported guarantees.
 - **FR-022**: Every Engineering Note MUST identify its company and project first, then state the motivating business problem before presenting technical analysis.
+- **FR-023**: Engineering Notes MUST list the Lumi decision first and reverse the previous note order, keeping the same order in both locales and the static HTML baseline.
 
 ## 9. Content, privacy, and trust requirements
 
