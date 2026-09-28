@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="dark" name="color-scheme"/>
+  <meta content="I established the data foundation for a new People Analytics domain, evolving uncurated source data toward a Gold layer for analytical use." name="description"/>
+  <meta content="Carlos Dutra" name="author"/>
+  <title>People Analytics · raw to Gold · Carlos Dutra</title>
+    <link href="../../assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/theme.css?v=4" rel="stylesheet"/>
+ </head>
+ <body data-page="project" data-project-id="people-analytics" data-root="../../">
+  <a class="skip-link" data-copy="interface.skipLink" href="#main-content">Skip to content</a>
+  <header class="site-header sticky-top">
+   <nav aria-label="Main navigation" class="navbar navbar-expand-lg" data-copy-attribute="interface.mainNavigation:aria-label">
+    <div class="container py-2">
+     <a class="navbar-brand fw-bold" data-route="home" href="../../">Carlos Dutra<span aria-hidden="true" class="brand-mark">.</span></a>
+     <button aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#portfolioNav" data-bs-toggle="collapse" data-copy-attribute="interface.toggleNavigation:aria-label" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="portfolioNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.about" data-route="about" href="../../#about">About</a>
+       </li>
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link active" data-copy="nav.work" data-route="projects" href="../../projects/">Projects</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.experience" data-route="experience" href="../../#experience">Experience</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.contact" data-route="contact" href="../../#contact">Contact</a>
+       </li>
+       <li class="nav-item language-switcher">
+        <span class="visually-hidden" id="language-label">Language</span>
+        <div aria-labelledby="language-label" class="btn-group btn-group-sm" role="group">
+         <button aria-pressed="true" class="btn btn-language active" data-locale="en" type="button">EN</button>
+         <button aria-pressed="false" class="btn btn-language" data-locale="pt-BR" type="button">PT-BR</button>
+        </div>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <main class="container" id="main-content">
+   <nav aria-label="Breadcrumb" class="pt-4">
+    <ol class="breadcrumb">
+     <li class="breadcrumb-item">
+      <a data-copy="pages.project.breadcrumbHome" data-route="home" href="../../">Home</a>
+     </li>
+     <li class="breadcrumb-item">
+      <a data-copy="pages.project.breadcrumbProjects" data-route="projects" href="../">Projects</a>
+     </li>
+     <li aria-current="page" class="breadcrumb-item active" data-project-name="">People Analytics · raw to Gold</li>
+    </ol>
+   </nav>
+   <div id="project-detail">
+    <header class="project-detail-header mb-5">
+     <p class="section-kicker">MadeiraMadeira / People Analytics · raw to Gold</p>
+     <h1 class="display-4 fw-bold">People Analytics · raw to Gold</h1>
+     <p class="lead project-lead fw-semibold">Building a People Analytics platform from source to Gold</p>
+     <p class="project-lead">I established the data foundation for a new People Analytics domain, evolving uncurated source data toward a Gold layer for analytical use.</p>
+    </header>
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+     <div class="col">
+      <article class="project-fact h-100 p-4">
+       <h2 class="h4">Business problem</h2>
+       <p class="mb-0">A new People Analytics domain needed a dependable path from fragmented source records to reusable analytical models.</p>
+      </article>
+     </div>
+     <div class="col">
+      <article class="project-fact h-100 p-4">
+       <h2 class="h4">My contribution</h2>
+       <p class="mb-0">I designed the GCP foundations and delivery flow across BigQuery, Cloud Run, Cloud Composer, Dataform, and Terraform, separating source ingestion, conformance, and analytical modeling.</p>
+      </article>
+     </div>
+     <div class="col">
+      <article class="project-fact h-100 p-4">
+       <h2 class="h4">Approach</h2>
+       <p class="mb-0">I shaped the GCP foundation and delivery flow across ingestion, source conformance, and analytical modeling. BigQuery, Cloud Run, Cloud Composer, Dataform, and Terraform have distinct responsibilities; Bronze, Silver, and Gold describe the conceptual data boundaries.</p>
+      </article>
+     </div>
+     <div class="col">
+      <article class="project-fact h-100 p-4">
+       <h2 class="h4">Result and status</h2>
+       <p class="mb-0">Established platform foundations; the path from source systems toward Gold analytical models continues to evolve.</p>
+      </article>
+     </div>
+    </div>
+    <section class="content-section py-5">
+     <h2 class="h3">Tools and methods</h2>
+     <p class="project-technologies">BigQuery · Dataform · Cloud Composer · Cloud Run · Terraform</p>
+    </section>
+    <section class="content-section py-5">
+     <h2 class="h3 mb-4">Engineering decisions</h2>
+     <article class="decision-story mb-5">
+      <p class="section-kicker">MadeiraMadeira / People Analytics data platform</p>
+      <h3 class="h4">Materialize for access patterns; partition on event time</h3>
+      <p class="case-detail mb-3">
+       <strong>Business problem:</strong>
+       People Analytics consumers needed responsive queries over growing facts while keeping operational cost and data freshness manageable.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Technical constraint:</strong>
+       Repeated full scans of high-volume facts incur avoidable work, while dimensions have a different refresh and read pattern.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Design alternatives:</strong>
+       Use views for every model, materialize every model arbitrarily, or choose storage by model role and query shape.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Decision:</strong>
+       Materialize dimensions as tables and high-volume facts as tables partitioned by event date; cluster only on recurring filter or join keys.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Engineering trade-off:</strong>
+       Materialization costs storage and rebuild work but lets recurring queries prune irrelevant partitions.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Revisit when:</strong>
+       Scan cost, freshness requirements, or consumer filter patterns change.
+      </p>
+     </article>
+     <article class="decision-story mb-5">
+      <p class="section-kicker">MadeiraMadeira / People Analytics data platform</p>
+      <h3 class="h4">Separate source conformance from business semantics</h3>
+      <p class="case-detail mb-3">
+       <strong>Business problem:</strong>
+       People Analytics needed dependable, reusable data products built from fragmented source systems, from raw records through business-ready Gold models.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Technical constraint:</strong>
+       Source schemas differ in types, naming, and history; mixing cleanup with business rules makes each consumer reimplement them.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Design alternatives:</strong>
+       Expose source-shaped tables directly to BI, or separate source normalization from analytical modeling.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Decision:</strong>
+       Use Bronze to retain source shape, Silver to cast, deduplicate, and normalize, and Gold to publish facts and dimensions in business terms.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Engineering trade-off:</strong>
+       An extra transformation boundary increases model count but gives each model a narrower, testable responsibility.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Revisit when:</strong>
+       Source contracts change or a workload needs source-level detail.
+      </p>
+     </article>
+    </section>
+    <nav class="d-flex flex-wrap gap-3 py-4">
+     <a class="btn btn-outline-light" data-route="projects" href="../">← All projects</a>
+     <a class="btn btn-primary" data-route="contact" href="../../#contact">Start a conversation</a>
+    </nav>
+   </div>
+   <section aria-labelledby="contact-title" class="contact-section my-5 p-4 p-md-5" id="contact">
+    <div class="row g-4 align-items-end">
+     <div class="col-12 col-lg-7">
+      <p class="section-kicker" data-copy="interface.contactKicker">06 / SAY HELLO</p>
+      <h2 class="display-6 fw-bold" data-copy="contact.title" id="contact-title">Have a good data problem?</h2>
+      <p class="section-intro mb-0" data-copy="contact.intro">I’m always interested in thoughtful engineering, useful data products, and conversations that start with a real question.</p>
+     </div>
+     <div class="col-12 col-lg-5">
+      <div class="d-flex flex-wrap gap-2 justify-content-lg-end contact-links">
+       <a class="btn btn-primary" data-copy="contact.email" href="mailto:henrique.r.dutra@gmail.com">Email</a>
+       <a class="btn btn-outline-light" data-copy="contact.linkedin" href="https://www.linkedin.com/in/carlos-henrique-dutra/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+       <a class="btn btn-outline-light" data-copy="contact.github" href="https://github.com/carloshenriquedutra" rel="noopener noreferrer" target="_blank">GitHub</a>
+       <a class="btn btn-outline-light" data-copy="contact.whatsapp" href="https://wa.me/5541992545537" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="container site-footer py-4">
+   <p class="mb-0" data-copy="contact.footer">Built with curiosity, a little healthy skepticism, and fewer spreadsheets than strictly necessary.</p>
+  </footer>
+  <script defer="" src="../../assets/vendor/bootstrap/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../src/main.js" type="module">
+  </script>
+ </body>
+</html>

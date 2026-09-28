@@ -1,125 +1,256 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="dark">
-    <meta name="description" content="Senior Data Engineer building dependable data foundations for better decisions.">
-    <meta name="author" content="Carlos Dutra">
-    <title>Carlos Dutra · Senior Data Engineer</title>
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/theme.css?v=3" rel="stylesheet">
-</head>
-<body>
-<a class="skip-link" href="#main-content" data-copy="interface.skipLink">Skip to content</a>
-<header class="site-header sticky-top">
-    <nav class="navbar navbar-expand-lg" aria-label="Main navigation" data-copy-attribute="interface.mainNavigation:aria-label">
-        <div class="container py-2">
-            <a class="navbar-brand fw-bold" href="#home">Carlos Dutra<span class="brand-mark" aria-hidden="true">.</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav" aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation" data-copy-attribute="interface.toggleNavigation:aria-label">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="portfolioNav">
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-                    <li class="nav-item"><a class="nav-link" href="#about" data-copy="nav.about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#work" data-copy="nav.work">Selected work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience" data-copy="nav.experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact" data-copy="nav.contact">Contact</a></li>
-                    <li class="nav-item language-switcher">
-                        <span class="visually-hidden" id="language-label">Language</span>
-                        <div class="btn-group btn-group-sm" role="group" aria-labelledby="language-label">
-                            <button class="btn btn-language active" type="button" data-locale="en" aria-pressed="true">EN</button>
-                            <button class="btn btn-language" type="button" data-locale="pt-BR" aria-pressed="false">PT-BR</button>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="dark" name="color-scheme"/>
+  <meta content="Senior Data Engineer building dependable data foundations for better decisions." name="description"/>
+  <meta content="Carlos Dutra" name="author"/>
+  <title>Carlos Dutra · Senior Data Engineer</title>
+    <link href="./assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+  <link href="./assets/css/theme.css?v=4" rel="stylesheet"/>
+ </head>
+ <body data-page="home" data-project-id="" data-root="./">
+  <a class="skip-link" data-copy="interface.skipLink" href="#main-content">Skip to content</a>
+  <header class="site-header sticky-top">
+   <nav aria-label="Main navigation" class="navbar navbar-expand-lg" data-copy-attribute="interface.mainNavigation:aria-label">
+    <div class="container py-2">
+     <a class="navbar-brand fw-bold" data-route="home" href="./">Carlos Dutra<span aria-hidden="true" class="brand-mark">.</span></a>
+     <button aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#portfolioNav" data-bs-toggle="collapse" data-copy-attribute="interface.toggleNavigation:aria-label" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="portfolioNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.about" data-route="about" href="./#about">About</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.work" data-route="projects" href="./projects/">Projects</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.experience" data-route="experience" href="./#experience">Experience</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.contact" data-route="contact" href="./#contact">Contact</a>
+       </li>
+       <li class="nav-item language-switcher">
+        <span class="visually-hidden" id="language-label">Language</span>
+        <div aria-labelledby="language-label" class="btn-group btn-group-sm" role="group">
+         <button aria-pressed="true" class="btn btn-language active" data-locale="en" type="button">EN</button>
+         <button aria-pressed="false" class="btn btn-language" data-locale="pt-BR" type="button">PT-BR</button>
         </div>
-    </nav>
-</header>
-
-<main id="main-content" class="container">
-    <section id="home" class="hero-section row align-items-center g-5 py-5 py-lg-6" aria-labelledby="hero-title">
-        <div class="col-12 col-lg-7 order-2 order-lg-1">
-            <h1 id="hero-title" class="display-3 fw-bold mb-4" data-copy="hero.title">I build the data foundation behind better decisions.</h1>
-            <p class="hero-intro lead mb-3" data-copy="hero.intro">I like the part before the dashboard: figuring out what the numbers mean, where they came from, and what someone can safely do with them.</p>
-            <p class="hero-note mb-4" data-copy="hero.note">Curious by default. Particular about definitions. I enjoy making complex systems easier to reason about.</p>
-            <div class="d-flex flex-wrap gap-3">
-                <a class="btn btn-primary btn-lg" href="#work" data-copy="hero.workAction">Explore selected work</a>
-                <a class="btn btn-outline-light btn-lg" href="#contact" data-copy="hero.contactAction">Get in touch</a>
-            </div>
-        </div>
-        <div class="col-12 col-lg-5 order-1 order-lg-2 text-center">
-            <div class="portrait-frame mx-auto">
-                <img src="assets/images/profile.jpg" class="profile-portrait" alt="Carlos Dutra smiling in his official profile portrait" width="1920" height="1920" fetchpriority="high">
-            </div>
-            <p class="portrait-title mt-3 mb-0" data-copy="interface.portraitTitle">Carlos Dutra, Senior Data Engineer</p>
-        </div>
-    </section>
-
-    <section id="about" class="content-section row g-4 py-5" aria-labelledby="about-title">
-        <div class="col-12 col-lg-4"><p class="section-kicker" data-copy="interface.aboutKicker">01 / THE THREAD</p><h2 id="about-title" data-copy="about.title">From business question to dependable data</h2></div>
-        <div class="col-12 col-lg-8 section-copy"><p data-copy="about.body">My path runs through RevOps, Data Analytics and Data Engineering. That mix taught me to ask what a number will help someone decide before choosing how to build the pipeline that produces it.</p><p data-copy="about.detail">I work as a senior technical individual contributor: shaping architecture, building useful data products, and staying close to the business problem. A dashboard is only as trustworthy as the definitions and systems underneath it.</p></div>
-    </section>
-
-    <section id="work" class="content-section py-5" aria-labelledby="work-title">
-        <div class="row mb-4 align-items-end"><div class="col-12 col-lg-8"><p class="section-kicker" data-copy="interface.workKicker">02 / SELECTED WORK</p><h2 id="work-title" data-copy="work.title">Selected work</h2></div><div class="col-12 col-lg-4"><p class="section-intro mb-0" data-copy="work.intro">A few examples of the questions I enjoy untangling. Sensitive implementation details stay where they belong: private.</p></div></div>
-        <div id="case-studies" class="row row-cols-1 row-cols-lg-2 g-4" aria-live="polite">
-            <article class="col"><div class="card case-card h-100"><div class="card-body p-4"><span class="badge rounded-pill text-bg-primary mb-3">MadeiraMadeira · Lumi · People AI assistant</span><h3 class="h4 card-title">An employee assistant grounded in People knowledge</h3><p class="case-detail"><strong>The work:</strong> Lumi helps employees find answers about People policies and processes through a conversational assistant.</p><p class="case-detail"><strong>My contribution:</strong> I designed and built the Python service, retrieving relevant knowledge passages and supplying them as context for Gemini responses.</p><ul class="list-inline mb-0"><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Python</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">RAG</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Google Chat</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Gemini</li></ul></div></div></article>
-            <article class="col"><div class="card case-card h-100"><div class="card-body p-4"><span class="badge rounded-pill text-bg-primary mb-3">MadeiraMadeira · People Analytics · raw to Gold</span><h3 class="h4 card-title">Building a People Analytics platform from source to Gold</h3><p class="case-detail"><strong>The work:</strong> I established the data foundation for a new People Analytics domain, evolving uncurated source data toward a Gold layer for analytical use.</p><p class="case-detail"><strong>My contribution:</strong> I designed the GCP foundations and delivery flow across BigQuery, Cloud Run, Cloud Composer, Dataform, and Terraform, separating source ingestion, conformance, and analytical modeling.</p><ul class="list-inline mb-0"><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">BigQuery</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Dataform</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Cloud Composer</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Cloud Run</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Terraform</li></ul></div></div></article>
-            <article class="col"><div class="card case-card h-100"><div class="card-body p-4"><span class="badge rounded-pill text-bg-primary mb-3">Gobrax · HubSpot CRM modeling in BigQuery</span><h3 class="h4 card-title">Turning CRM entities into analysis-ready models</h3><p class="case-detail"><strong>The work:</strong> HubSpot exposes flexible properties and linked objects; analytical use needs stable types, keys, relationships, and event grain.</p><p class="case-detail"><strong>My contribution:</strong> I built dbt models in BigQuery for companies, contacts, deals, and engagements: normalizing source properties, deduplicating mutable records, resolving CRM associations, and publishing curated deal and activity views.</p><ul class="list-inline mb-0"><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">BigQuery</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">dbt</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">SQL</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">CRM data modeling</li></ul></div></div></article>
-            <article class="col"><div class="card case-card h-100"><div class="card-body p-4"><span class="badge rounded-pill text-bg-primary mb-3">COPAPA · Market sizing · sales territory planning</span><h3 class="h4 card-title">Estimating market potential to redesign sales territories</h3><p class="case-detail"><strong>The work:</strong> Commercial planning lacked a consistent view of category demand and market share across Brazilian municipalities.</p><p class="case-detail"><strong>My contribution:</strong> I combined IBGE demographics, ERP sales records, and industry data to model municipal demand and share estimates for a proposed territory redesign, keeping estimates distinct from realized sales.</p><ul class="list-inline mb-0"><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Market modeling</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">IBGE</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">TOTVS Protheus</li><li class="list-inline-item badge rounded-pill text-bg-dark border mb-2">Geospatial analysis</li></ul></div></div></article>
-        </div>
-        <div class="decision-panel mt-4 p-4 p-lg-5">
-            <p class="section-kicker" data-copy="interface.decisionsKicker">ENGINEERING NOTES</p><h3 class="h3 mb-4">Models, boundaries &amp; reliability</h3>
-            <div id="decision-stories" class="row row-cols-1 row-cols-lg-2 g-4">
-                <div class="col"><article class="decision-story h-100"><p class="section-kicker mb-2">MadeiraMadeira · Lumi · People AI assistant</p><h4>Make retrieval an explicit input to generation</h4><p class="case-detail"><strong>Business problem:</strong> Employees needed timely, consistent answers to People policies without relying on a separate manual search for every question.</p><p class="case-detail"><strong>Technical constraint:</strong> A language model’s parametric knowledge does not identify which approved source supports an answer to a policy question.</p><p class="case-detail"><strong>Design alternatives:</strong> Provide policy text in a fixed prompt, or retrieve relevant passages from a maintained knowledge base for each question.</p><p class="case-detail"><strong>Decision:</strong> Retrieve ranked knowledge chunks from a vector index and pass them as context to the language model, keeping knowledge updates independent of model deployment.</p><p class="case-detail"><strong>Engineering trade-off:</strong> Retrieval adds components, and response quality remains bounded by corpus freshness, coverage, and ranking quality.</p><p class="case-detail"><strong>Revisit when:</strong> Evaluation shows poor recall, stale sources, or recurring knowledge gaps.</p></article></div>
-                <div class="col"><article class="decision-story h-100"><p class="section-kicker mb-2">MadeiraMadeira · People Analytics data platform</p><h4>Materialize for access patterns; partition on event time</h4><p class="case-detail"><strong>Business problem:</strong> People Analytics consumers needed responsive queries over growing facts while keeping operational cost and data freshness manageable.</p><p class="case-detail"><strong>Technical constraint:</strong> Repeated full scans of high-volume facts incur avoidable work, while dimensions have a different refresh and read pattern.</p><p class="case-detail"><strong>Design alternatives:</strong> Use views for every model, materialize every model arbitrarily, or choose storage by model role and query shape.</p><p class="case-detail"><strong>Decision:</strong> Materialize dimensions as tables and high-volume facts as tables partitioned by event date; cluster only on recurring filter or join keys.</p><p class="case-detail"><strong>Engineering trade-off:</strong> Materialization costs storage and rebuild work but lets recurring queries prune irrelevant partitions.</p><p class="case-detail"><strong>Revisit when:</strong> Scan cost, freshness requirements, or consumer filter patterns change.</p></article></div>
-                <div class="col"><article class="decision-story h-100"><p class="section-kicker mb-2">MadeiraMadeira · People Analytics data platform</p><h4>Separate source conformance from business semantics</h4><p class="case-detail"><strong>Business problem:</strong> People Analytics needed dependable, reusable data products built from fragmented source systems, from raw records through business-ready Gold models.</p><p class="case-detail"><strong>Technical constraint:</strong> Source schemas differ in types, naming, and history; mixing cleanup with business rules makes each consumer reimplement them.</p><p class="case-detail"><strong>Design alternatives:</strong> Expose source-shaped tables directly to BI, or separate source normalization from analytical modeling.</p><p class="case-detail"><strong>Decision:</strong> Use Bronze to retain source shape, Silver to cast, deduplicate, and normalize, and Gold to publish facts and dimensions in business terms.</p><p class="case-detail"><strong>Engineering trade-off:</strong> An extra transformation boundary increases model count but gives each model a narrower, testable responsibility.</p><p class="case-detail"><strong>Revisit when:</strong> Source contracts change or a workload needs source-level detail.</p></article></div>
-                <div class="col"><article class="decision-story h-100"><p class="section-kicker mb-2">Gobrax · HubSpot CRM modeling in BigQuery</p><h4>Declare grain before joining entities</h4><p class="case-detail"><strong>Business problem:</strong> Commercial teams needed a consistent way to analyze HubSpot deals and engagements across linked, mutable CRM entities.</p><p class="case-detail"><strong>Technical constraint:</strong> A CRM deal can link to multiple contacts, products, and activities; unrestricted joins can fan out rows and inflate measures.</p><p class="case-detail"><strong>Design alternatives:</strong> Aggregate source rows directly, or define each fact’s grain and key and model many-to-many associations before aggregation.</p><p class="case-detail"><strong>Decision:</strong> I declare grain and business key per model, represent many-to-many relations through bridge models, and apply deterministic deduplication to mutable snapshots.</p><p class="case-detail"><strong>Engineering trade-off:</strong> More models and assertions upstream; less silent fan-out and clearer temporal semantics downstream.</p><p class="case-detail"><strong>Revisit when:</strong> Source cardinality, business identity, or event lifecycle changes.</p></article></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="content-section py-5" aria-labelledby="skills-title">
-        <p class="section-kicker" data-copy="interface.skillsKicker">03 / TOOLBOX</p><h2 id="skills-title" data-copy="skills.title">Tools are useful. Judgment is the job.</h2>
-        <div id="skill-groups" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3 mt-2">
-            <div class="col"><article class="skill-group h-100"><h3 class="h5">Data platforms</h3><p class="mb-0">Google Cloud · BigQuery · Databricks · AWS</p></article></div>
-            <div class="col"><article class="skill-group h-100"><h3 class="h5">Engineering</h3><p class="mb-0">Python · SQL · Airflow · Dataform · dbt · Airbyte</p></article></div>
-            <div class="col"><article class="skill-group h-100"><h3 class="h5">Modeling &amp; reliability</h3><p class="mb-0">Data warehouse · Dimensional modeling · ELT · Data quality · Governance</p></article></div>
-            <div class="col"><article class="skill-group h-100"><h3 class="h5">Applied AI</h3><p class="mb-0">RAG · Embeddings · Vertex AI · Gemini · Vector search</p></article></div>
-            <div class="col"><article class="skill-group h-100"><h3 class="h5">Business context</h3><p class="mb-0">People Analytics · RevOps · Logistics · Customer Success · Commercial intelligence</p></article></div>
-        </div>
-    </section>
-
-    <section id="experience" class="content-section py-5" aria-labelledby="experience-title">
-        <p class="section-kicker" data-copy="interface.experienceKicker">04 / CAREER</p><h2 id="experience-title" data-copy="experience.title">A career close to the problem</h2>
-        <div id="experience-list" class="timeline mt-4">
-            <article class="timeline-item"><p class="timeline-dates">2026–present</p><h3 class="h5">MadeiraMadeira</h3><p class="mb-1 fw-semibold">Data engineering</p><p>Building data products and platform capabilities in a large digital business.</p></article>
-            <article class="timeline-item"><p class="timeline-dates">2023–2026</p><h3 class="h5">Gobrax</h3><p class="mb-1 fw-semibold">Data engineering</p><p>Worked across operational data, analytics engineering, and platform foundations in a logistics technology context.</p></article>
-            <article class="timeline-item"><p class="timeline-dates">2020–2022</p><h3 class="h5">Leads2b</h3><p class="mb-1 fw-semibold">Customer Success analytics</p><p>Connected customer and commercial questions with analysis and operational insight.</p></article>
-            <article class="timeline-item"><p class="timeline-dates">2013–2018</p><h3 class="h5">COPAPA</h3><p class="mb-1 fw-semibold">Commercial intelligence</p><p>Built an early foundation in automation, sales information, and practical business analysis.</p></article>
-        </div>
-    </section>
-
-    <section id="education" class="content-section row g-4 py-5" aria-labelledby="education-title">
-        <div class="col-12 col-lg-4"><p class="section-kicker" data-copy="interface.educationKicker">05 / LEARNING</p><h2 id="education-title" data-copy="education.title">Education</h2></div>
-        <div id="education-list" class="col-12 col-lg-8 education-list"><article><h3 class="h5">Computer Science</h3><p>Descomplica Faculdade Digital · 2025–2028 · In progress</p></article><article><h3 class="h5">Data Analytics · Lato Sensu postgraduate degree</h3><p>Descomplica Faculdade Digital · 2021–2022 · Completed</p></article><article><h3 class="h5">Business Administration</h3><p>UNOPAR · 2015–2018 · Completed</p></article></div>
-    </section>
-
-    <section id="contact" class="contact-section my-5 p-4 p-md-5" aria-labelledby="contact-title">
-        <div class="row g-4 align-items-end"><div class="col-12 col-lg-7"><p class="section-kicker" data-copy="interface.contactKicker">06 / SAY HELLO</p><h2 id="contact-title" class="display-6 fw-bold" data-copy="contact.title">Have a good data problem?</h2><p class="section-intro mb-0" data-copy="contact.intro">I’m always interested in thoughtful engineering, useful data products, and conversations that start with a real question.</p></div>
-        <div class="col-12 col-lg-5"><div class="d-flex flex-wrap gap-2 justify-content-lg-end contact-links">
-            <a class="btn btn-primary" href="mailto:henrique.r.dutra@gmail.com" data-copy="contact.email">Email</a>
-            <a class="btn btn-outline-light" href="https://www.linkedin.com/in/carlos-henrique-dutra/" target="_blank" rel="noopener noreferrer" data-copy="contact.linkedin">LinkedIn</a>
-            <a class="btn btn-outline-light" href="https://github.com/carloshenriquedutra" target="_blank" rel="noopener noreferrer" data-copy="contact.github">GitHub</a>
-            <a class="btn btn-outline-light" href="https://wa.me/5541992545537" target="_blank" rel="noopener noreferrer" data-copy="contact.whatsapp">WhatsApp</a>
-        </div></div></div>
-    </section>
-</main>
-<footer class="container site-footer py-4"><p class="mb-0" data-copy="contact.footer">Built with curiosity, a little healthy skepticism, and fewer spreadsheets than strictly necessary.</p></footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-<script type="module" src="src/main.js"></script>
-</body>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <main class="container" id="main-content">
+   <section aria-labelledby="hero-title" class="hero-section pt-4 pb-4" id="home">
+    <div class="row align-items-center g-4">
+     <div class="col-12 col-lg-7">
+      <p class="section-kicker mb-3" data-copy="hero.roleLine">CARLOS DUTRA / SENIOR DATA ENGINEER</p>
+      <h1 class="display-3 fw-bold mb-3" data-copy="hero.title" id="hero-title">I build the data foundation behind better decisions.</h1>
+      <p class="hero-intro lead mb-3" data-copy="hero.intro">I trace numbers back to their definitions and systems, then build data people can use to decide.</p>
+      <p class="hero-note mb-3" data-copy="hero.note">Curious by default. Particular about definitions.</p>
+      <div class="d-flex flex-wrap gap-3">
+       <a class="btn btn-primary btn-lg" data-copy="hero.workAction" data-route="projects" href="projects/">Explore selected work</a>
+       <a class="btn btn-outline-light btn-lg" data-copy="hero.contactAction" data-route="contact" href="#contact">Get in touch</a>
+      </div>
+     </div>
+     <div class="col-12 col-lg-5 text-center">
+      <div class="portrait-frame mx-auto">
+       <img alt="Carlos Dutra smiling in his official profile portrait" class="profile-portrait" fetchpriority="high" height="1920" src="assets/images/profile.jpg" width="1920"/>
+      </div>
+      <p class="portrait-title mt-3 mb-0" data-copy="interface.portraitTitle">Carlos Dutra, Senior Data Engineer</p>
+     </div>
+    </div>
+    <div class="compass-shell mt-4 p-4">
+     <div class="row align-items-end g-3 mb-4">
+      <div class="col-lg-7">
+       <p class="section-kicker" data-copy="compass.kicker">THE CHALLENGE COMPASS</p>
+       <h2 class="h2 mb-0" data-copy="compass.title">Where does the question lead?</h2>
+      </div>
+      <div class="col-lg-5">
+       <p class="section-intro mb-0" data-copy="compass.intro">Follow the business question to the engineering behind it.</p>
+      </div>
+     </div>
+     <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-3" id="challenge-compass">
+      <div class="col">
+       <a class="compass-path card h-100 text-decoration-none" data-route="lumi" href="projects/lumi/">
+        <span class="compass-index">01</span>
+        <span class="compass-question">Employees need answers</span>
+        <span class="compass-destination">Lumi ↗</span>
+       </a>
+      </div>
+      <div class="col">
+       <a class="compass-path card h-100 text-decoration-none" data-route="people-analytics" href="projects/people-analytics/">
+        <span class="compass-index">02</span>
+        <span class="compass-question">Data needs a foundation</span>
+        <span class="compass-destination">People Analytics ↗</span>
+       </a>
+      </div>
+      <div class="col">
+       <a class="compass-path card h-100 text-decoration-none" data-route="hubspot-crm" href="projects/hubspot-crm/">
+        <span class="compass-index">03</span>
+        <span class="compass-question">CRM needs a clear model</span>
+        <span class="compass-destination">HubSpot ↗</span>
+       </a>
+      </div>
+      <div class="col">
+       <a class="compass-path card h-100 text-decoration-none" data-route="copapa-market-sizing" href="projects/copapa-market-sizing/">
+        <span class="compass-index">04</span>
+        <span class="compass-question">Markets need a map</span>
+        <span class="compass-destination">COPAPA ↗</span>
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section aria-labelledby="about-title" class="content-section row g-4 py-5" id="about">
+    <div class="col-12 col-lg-4">
+     <p class="section-kicker" data-copy="interface.aboutKicker">01 / THE THREAD</p>
+     <h2 data-copy="about.title" id="about-title">From business question to dependable data</h2>
+    </div>
+    <div class="col-12 col-lg-8 section-copy">
+     <p data-copy="about.body">My path runs through RevOps, Data Analytics and Data Engineering. That mix taught me to ask what a number will help someone decide before choosing how to build the pipeline that produces it.</p>
+     <p data-copy="about.detail">I work as a senior technical individual contributor: shaping architecture, building useful data products, and staying close to the business problem. A dashboard is only as trustworthy as the definitions and systems underneath it.</p>
+    </div>
+   </section>
+   <section aria-labelledby="work-title" class="content-section py-5" id="work">
+    <div class="row mb-4 align-items-end">
+     <div class="col-lg-8">
+      <p class="section-kicker" data-copy="interface.workKicker">02 / SELECTED WORK</p>
+      <h2 data-copy="work.title" id="work-title">Selected work</h2>
+     </div>
+     <div class="col-lg-4">
+      <p class="section-intro mb-0" data-copy="work.intro">Four projects where business questions shaped data products and engineering decisions.</p>
+     </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4" id="case-studies">
+     <div class="col">
+      <article class="card case-card h-100">
+       <div class="card-body p-4 d-flex flex-column">
+        <span class="project-overline mb-3">01 / MadeiraMadeira · Lumi · People AI assistant</span>
+        <h3 class="h4 card-title">Lumi · People AI assistant</h3>
+        <p class="card-text">Lumi helps employees find answers about People policies and processes through a conversational assistant.</p>
+        <a class="stretched-link project-card-link mt-auto" data-route="lumi" href="projects/lumi/">Explore project: Lumi · People AI assistant ↗</a>
+       </div>
+      </article>
+     </div>
+     <div class="col">
+      <article class="card case-card h-100">
+       <div class="card-body p-4 d-flex flex-column">
+        <span class="project-overline mb-3">02 / MadeiraMadeira · People Analytics · raw to Gold</span>
+        <h3 class="h4 card-title">People Analytics · raw to Gold</h3>
+        <p class="card-text">I established the data foundation for a new People Analytics domain, evolving uncurated source data toward a Gold layer for analytical use.</p>
+        <a class="stretched-link project-card-link mt-auto" data-route="people-analytics" href="projects/people-analytics/">Explore project: People Analytics · raw to Gold ↗</a>
+       </div>
+      </article>
+     </div>
+     <div class="col">
+      <article class="card case-card h-100">
+       <div class="card-body p-4 d-flex flex-column">
+        <span class="project-overline mb-3">03 / Gobrax · HubSpot CRM modeling in BigQuery</span>
+        <h3 class="h4 card-title">HubSpot CRM modeling in BigQuery</h3>
+        <p class="card-text">HubSpot exposes flexible properties and linked objects; analytical use needs stable types, keys, relationships, and event grain.</p>
+        <a class="stretched-link project-card-link mt-auto" data-route="hubspot-crm" href="projects/hubspot-crm/">Explore project: HubSpot CRM modeling in BigQuery ↗</a>
+       </div>
+      </article>
+     </div>
+     <div class="col">
+      <article class="card case-card h-100">
+       <div class="card-body p-4 d-flex flex-column">
+        <span class="project-overline mb-3">04 / COPAPA · Market sizing · sales territory planning</span>
+        <h3 class="h4 card-title">Market sizing · sales territory planning</h3>
+        <p class="card-text">Commercial planning lacked a consistent view of category demand and market share across Brazilian municipalities.</p>
+        <a class="stretched-link project-card-link mt-auto" data-route="copapa-market-sizing" href="projects/copapa-market-sizing/">Explore project: Market sizing · sales territory planning ↗</a>
+       </div>
+      </article>
+     </div>
+    </div>
+    <a class="btn btn-outline-light mt-4" data-copy="hero.workAction" data-route="projects" href="projects/">Explore selected work</a>
+   </section>
+   <section class="content-section py-5" id="skills">
+    <p class="section-kicker" data-copy="interface.skillsKicker">03 / TOOLBOX</p>
+    <h2 data-copy="skills.title">Tools are useful. Judgment is the job.</h2>
+    <p class="skill-summary mb-0" data-copy="skills.summary">Python · SQL · BigQuery · Google Cloud · Terraform · dbt · Dataform · RAG</p>
+   </section>
+   <section aria-labelledby="experience-title" class="content-section py-5" id="experience">
+    <p class="section-kicker" data-copy="interface.experienceKicker">04 / CAREER</p>
+    <h2 data-copy="experience.title" id="experience-title">A career close to the problem</h2>
+    <div class="timeline mt-4" id="experience-list">
+     <article class="timeline-item">
+      <p class="timeline-dates">2026–present</p>
+      <h3 class="h5">MadeiraMadeira</h3>
+      <p class="mb-1 fw-semibold">Data engineering</p>
+      <p class="mb-0">Building data products and platform capabilities in a large digital business.</p>
+     </article>
+     <article class="timeline-item">
+      <p class="timeline-dates">2023–2026</p>
+      <h3 class="h5">Gobrax</h3>
+      <p class="mb-1 fw-semibold">Data engineering</p>
+      <p class="mb-0">Worked across operational data, analytics engineering, and platform foundations in a logistics technology context.</p>
+     </article>
+     <article class="timeline-item">
+      <p class="timeline-dates">2020–2022</p>
+      <h3 class="h5">Leads2b</h3>
+      <p class="mb-1 fw-semibold">Customer Success analytics</p>
+      <p class="mb-0">Connected customer and commercial questions with analysis and operational insight.</p>
+     </article>
+     <article class="timeline-item">
+      <p class="timeline-dates">2013–2018</p>
+      <h3 class="h5">COPAPA</h3>
+      <p class="mb-1 fw-semibold">Commercial intelligence</p>
+      <p class="mb-0">Built an early foundation in automation, sales information, and practical business analysis.</p>
+     </article>
+    </div>
+   </section>
+   <section aria-labelledby="education-title" class="content-section row g-4 py-5" id="education">
+    <div class="col-12 col-lg-4">
+     <p class="section-kicker" data-copy="interface.educationKicker">05 / LEARNING</p>
+     <h2 data-copy="education.title" id="education-title">Education</h2>
+    </div>
+    <div class="col-12 col-lg-8 education-list" id="education-list">
+     <article>
+      <h3 class="h5">Computer Science</h3>
+      <p>Descomplica Faculdade Digital · 2025–2028 · In progress</p>
+     </article>
+     <article>
+      <h3 class="h5">Data Analytics · Lato Sensu postgraduate degree</h3>
+      <p>Descomplica Faculdade Digital · 2021–2022 · Completed</p>
+     </article>
+     <article>
+      <h3 class="h5">Business Administration</h3>
+      <p>UNOPAR · 2015–2018 · Completed</p>
+     </article>
+    </div>
+   </section>
+   <section aria-labelledby="contact-title" class="contact-section my-5 p-4 p-md-5" id="contact">
+    <div class="row g-4 align-items-end">
+     <div class="col-12 col-lg-7">
+      <p class="section-kicker" data-copy="interface.contactKicker">06 / SAY HELLO</p>
+      <h2 class="display-6 fw-bold" data-copy="contact.title" id="contact-title">Have a good data problem?</h2>
+      <p class="section-intro mb-0" data-copy="contact.intro">I’m always interested in thoughtful engineering, useful data products, and conversations that start with a real question.</p>
+     </div>
+     <div class="col-12 col-lg-5">
+      <div class="d-flex flex-wrap gap-2 justify-content-lg-end contact-links">
+       <a class="btn btn-primary" data-copy="contact.email" href="mailto:henrique.r.dutra@gmail.com">Email</a>
+       <a class="btn btn-outline-light" data-copy="contact.linkedin" href="https://www.linkedin.com/in/carlos-henrique-dutra/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+       <a class="btn btn-outline-light" data-copy="contact.github" href="https://github.com/carloshenriquedutra" rel="noopener noreferrer" target="_blank">GitHub</a>
+       <a class="btn btn-outline-light" data-copy="contact.whatsapp" href="https://wa.me/5541992545537" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="container site-footer py-4">
+   <p class="mb-0" data-copy="contact.footer">Built with curiosity, a little healthy skepticism, and fewer spreadsheets than strictly necessary.</p>
+  </footer>
+  <script defer="" src="./assets/vendor/bootstrap/bootstrap.bundle.min.js">
+  </script>
+  <script src="./src/main.js" type="module">
+  </script>
+ </body>
 </html>

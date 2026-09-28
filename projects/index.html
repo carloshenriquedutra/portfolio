@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="dark" name="color-scheme"/>
+  <meta content="Four selected data engineering and analytical projects by Carlos Dutra." name="description"/>
+  <meta content="Carlos Dutra" name="author"/>
+  <title>Projects · Carlos Dutra</title>
+    <link href="../assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/theme.css?v=4" rel="stylesheet"/>
+ </head>
+ <body data-page="projects" data-project-id="" data-root="../">
+  <a class="skip-link" data-copy="interface.skipLink" href="#main-content">Skip to content</a>
+  <header class="site-header sticky-top">
+   <nav aria-label="Main navigation" class="navbar navbar-expand-lg" data-copy-attribute="interface.mainNavigation:aria-label">
+    <div class="container py-2">
+     <a class="navbar-brand fw-bold" data-route="home" href="../">Carlos Dutra<span aria-hidden="true" class="brand-mark">.</span></a>
+     <button aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#portfolioNav" data-bs-toggle="collapse" data-copy-attribute="interface.toggleNavigation:aria-label" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="portfolioNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.about" data-route="about" href="../#about">About</a>
+       </li>
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link active" data-copy="nav.work" data-route="projects" href="../projects/">Projects</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.experience" data-route="experience" href="../#experience">Experience</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.contact" data-route="contact" href="../#contact">Contact</a>
+       </li>
+       <li class="nav-item language-switcher">
+        <span class="visually-hidden" id="language-label">Language</span>
+        <div aria-labelledby="language-label" class="btn-group btn-group-sm" role="group">
+         <button aria-pressed="true" class="btn btn-language active" data-locale="en" type="button">EN</button>
+         <button aria-pressed="false" class="btn btn-language" data-locale="pt-BR" type="button">PT-BR</button>
+        </div>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <main class="container" id="main-content">
+   <section class="page-intro py-5">
+    <nav aria-label="Breadcrumb">
+     <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+       <a data-copy="pages.project.breadcrumbHome" data-route="home" href="../">Home</a>
+      </li>
+      <li aria-current="page" class="breadcrumb-item active" data-copy="pages.project.breadcrumbProjects">Projects</li>
+     </ol>
+    </nav>
+    <p class="section-kicker" data-copy="pages.projects.kicker">SELECTED PROJECTS</p>
+    <h1 class="display-4 fw-bold" data-copy="pages.projects.heading">Choose a problem. See how I approached it.</h1>
+    <p class="lead project-lead" data-copy="pages.projects.intro">A short route to the work behind the headline. Each project has its own business context and technical decisions.</p>
+   </section>
+   <section aria-label="Selected projects" class="content-section py-5" data-copy-attribute="pages.projects.listLabel:aria-label">
+    <div class="row row-cols-1 row-cols-md-2 g-4" id="project-list">
+     <div class="col">
+      <article class="card case-card h-100">
+       <div class="card-body p-4 d-flex flex-column">
+        <span class="project-overline mb-3">01 / MadeiraMadeira · Lumi · People AI assistant</span>
+        <h3 class="h4 card-title">Lumi · People AI assistant</h3>
+        <p class="card-text">Lumi helps employees find answers about People policies and processes through a conversational assistant.</p>
+        <p class="card-text">I designed and built the Python service, retrieving relevant knowledge passages and supplying them as context for Gemini responses.</p>
+        <p class="project-technologies mt-auto">Python · RAG · Google Chat · Gemini</p>
+        <a class="stretched-link project-card-link mt-auto" data-route="lumi" href="../projects/lumi/">Explore project: Lumi · People AI assistant ↗</a>
+       </div>
+      </article>
+     </div>
+     <div class="col">
+      <article class="card case-card h-100">
+       <div class="card-body p-4 d-flex flex-column">
+        <span class="project-overline mb-3">02 / MadeiraMadeira · People Analytics · raw to Gold</span>
+        <h3 class="h4 card-title">People Analytics · raw to Gold</h3>
+        <p class="card-text">I established the data foundation for a new People Analytics domain, evolving uncurated source data toward a Gold layer for analytical use.</p>
+        <p class="card-text">I designed the GCP foundations and delivery flow across BigQuery, Cloud Run, Cloud Composer, Dataform, and Terraform, separating source ingestion, conformance, and analytical modeling.</p>
+        <p class="project-technologies mt-auto">BigQuery · Dataform · Cloud Composer · Cloud Run · Terraform</p>
+        <a class="stretched-link project-card-link mt-auto" data-route="people-analytics" href="../projects/people-analytics/">Explore project: People Analytics · raw to Gold ↗</a>
+       </div>
+      </article>
+     </div>
+     <div class="col">
+      <article class="card case-card h-100">
+       <div class="card-body p-4 d-flex flex-column">
+        <span class="project-overline mb-3">03 / Gobrax · HubSpot CRM modeling in BigQuery</span>
+        <h3 class="h4 card-title">HubSpot CRM modeling in BigQuery</h3>
+        <p class="card-text">HubSpot exposes flexible properties and linked objects; analytical use needs stable types, keys, relationships, and event grain.</p>
+        <p class="card-text">I built dbt models in BigQuery for companies, contacts, deals, and engagements: normalizing source properties, deduplicating mutable records, resolving CRM associations, and publishing curated deal and activity views.</p>
+        <p class="project-technologies mt-auto">BigQuery · dbt · SQL · CRM data modeling</p>
+        <a class="stretched-link project-card-link mt-auto" data-route="hubspot-crm" href="../projects/hubspot-crm/">Explore project: HubSpot CRM modeling in BigQuery ↗</a>
+       </div>
+      </article>
+     </div>
+     <div class="col">
+      <article class="card case-card h-100">
+       <div class="card-body p-4 d-flex flex-column">
+        <span class="project-overline mb-3">04 / COPAPA · Market sizing · sales territory planning</span>
+        <h3 class="h4 card-title">Market sizing · sales territory planning</h3>
+        <p class="card-text">Commercial planning lacked a consistent view of category demand and market share across Brazilian municipalities.</p>
+        <p class="card-text">I combined IBGE demographics, ERP sales records, and industry data to model municipal demand and share estimates for a proposed territory redesign, keeping estimates distinct from realized sales.</p>
+        <p class="project-technologies mt-auto">Market modeling · IBGE · TOTVS Protheus · Geospatial analysis</p>
+        <a class="stretched-link project-card-link mt-auto" data-route="copapa-market-sizing" href="../projects/copapa-market-sizing/">Explore project: Market sizing · sales territory planning ↗</a>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section aria-labelledby="contact-title" class="contact-section my-5 p-4 p-md-5" id="contact">
+    <div class="row g-4 align-items-end">
+     <div class="col-12 col-lg-7">
+      <p class="section-kicker" data-copy="interface.contactKicker">06 / SAY HELLO</p>
+      <h2 class="display-6 fw-bold" data-copy="contact.title" id="contact-title">Have a good data problem?</h2>
+      <p class="section-intro mb-0" data-copy="contact.intro">I’m always interested in thoughtful engineering, useful data products, and conversations that start with a real question.</p>
+     </div>
+     <div class="col-12 col-lg-5">
+      <div class="d-flex flex-wrap gap-2 justify-content-lg-end contact-links">
+       <a class="btn btn-primary" data-copy="contact.email" href="mailto:henrique.r.dutra@gmail.com">Email</a>
+       <a class="btn btn-outline-light" data-copy="contact.linkedin" href="https://www.linkedin.com/in/carlos-henrique-dutra/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+       <a class="btn btn-outline-light" data-copy="contact.github" href="https://github.com/carloshenriquedutra" rel="noopener noreferrer" target="_blank">GitHub</a>
+       <a class="btn btn-outline-light" data-copy="contact.whatsapp" href="https://wa.me/5541992545537" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="container site-footer py-4">
+   <p class="mb-0" data-copy="contact.footer">Built with curiosity, a little healthy skepticism, and fewer spreadsheets than strictly necessary.</p>
+  </footer>
+  <script defer="" src="../assets/vendor/bootstrap/bootstrap.bundle.min.js">
+  </script>
+  <script src="../src/main.js" type="module">
+  </script>
+ </body>
+</html>

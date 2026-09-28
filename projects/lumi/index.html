@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="dark" name="color-scheme"/>
+  <meta content="Lumi helps employees find answers about People policies and processes through a conversational assistant." name="description"/>
+  <meta content="Carlos Dutra" name="author"/>
+  <title>Lumi · People AI assistant · Carlos Dutra</title>
+    <link href="../../assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/theme.css?v=4" rel="stylesheet"/>
+ </head>
+ <body data-page="project" data-project-id="lumi" data-root="../../">
+  <a class="skip-link" data-copy="interface.skipLink" href="#main-content">Skip to content</a>
+  <header class="site-header sticky-top">
+   <nav aria-label="Main navigation" class="navbar navbar-expand-lg" data-copy-attribute="interface.mainNavigation:aria-label">
+    <div class="container py-2">
+     <a class="navbar-brand fw-bold" data-route="home" href="../../">Carlos Dutra<span aria-hidden="true" class="brand-mark">.</span></a>
+     <button aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#portfolioNav" data-bs-toggle="collapse" data-copy-attribute="interface.toggleNavigation:aria-label" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="portfolioNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.about" data-route="about" href="../../#about">About</a>
+       </li>
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link active" data-copy="nav.work" data-route="projects" href="../../projects/">Projects</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.experience" data-route="experience" href="../../#experience">Experience</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.contact" data-route="contact" href="../../#contact">Contact</a>
+       </li>
+       <li class="nav-item language-switcher">
+        <span class="visually-hidden" id="language-label">Language</span>
+        <div aria-labelledby="language-label" class="btn-group btn-group-sm" role="group">
+         <button aria-pressed="true" class="btn btn-language active" data-locale="en" type="button">EN</button>
+         <button aria-pressed="false" class="btn btn-language" data-locale="pt-BR" type="button">PT-BR</button>
+        </div>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <main class="container" id="main-content">
+   <nav aria-label="Breadcrumb" class="pt-4">
+    <ol class="breadcrumb">
+     <li class="breadcrumb-item">
+      <a data-copy="pages.project.breadcrumbHome" data-route="home" href="../../">Home</a>
+     </li>
+     <li class="breadcrumb-item">
+      <a data-copy="pages.project.breadcrumbProjects" data-route="projects" href="../">Projects</a>
+     </li>
+     <li aria-current="page" class="breadcrumb-item active" data-project-name="">Lumi · People AI assistant</li>
+    </ol>
+   </nav>
+   <div id="project-detail">
+    <header class="project-detail-header mb-5">
+     <p class="section-kicker">MadeiraMadeira / Lumi · People AI assistant</p>
+     <h1 class="display-4 fw-bold">Lumi · People AI assistant</h1>
+     <p class="lead project-lead fw-semibold">An employee assistant grounded in People knowledge</p>
+     <p class="project-lead">Lumi helps employees find answers about People policies and processes through a conversational assistant.</p>
+    </header>
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+     <div class="col">
+      <article class="project-fact h-100 p-4">
+       <h2 class="h4">Business problem</h2>
+       <p class="mb-0">Employees need a way to find answers about People policies and processes through a familiar conversational interface.</p>
+      </article>
+     </div>
+     <div class="col">
+      <article class="project-fact h-100 p-4">
+       <h2 class="h4">My contribution</h2>
+       <p class="mb-0">I designed and built the Python service, retrieving relevant knowledge passages and supplying them as context for Gemini responses.</p>
+      </article>
+     </div>
+     <div class="col">
+      <article class="project-fact h-100 p-4">
+       <h2 class="h4">Approach</h2>
+       <p class="mb-0">I built a Python service that retrieves relevant passages from maintained knowledge and supplies them as context for Gemini responses in Google Chat. The retrieval boundary makes the source of an answer a design concern rather than an implicit assumption.</p>
+      </article>
+     </div>
+     <div class="col">
+      <article class="project-fact h-100 p-4">
+       <h2 class="h4">Result and status</h2>
+       <p class="mb-0">Built the retrieval-based Python service that grounds the employee assistant's answers in People knowledge.</p>
+      </article>
+     </div>
+    </div>
+    <section class="content-section py-5">
+     <h2 class="h3">Tools and methods</h2>
+     <p class="project-technologies">Python · RAG · Google Chat · Gemini</p>
+    </section>
+    <section class="content-section py-5">
+     <h2 class="h3 mb-4">Engineering decisions</h2>
+     <article class="decision-story mb-5">
+      <p class="section-kicker">MadeiraMadeira / Lumi · People AI assistant</p>
+      <h3 class="h4">Make retrieval an explicit input to generation</h3>
+      <p class="case-detail mb-3">
+       <strong>Business problem:</strong>
+       Employees needed timely, consistent answers to People policies without relying on a separate manual search for every question.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Technical constraint:</strong>
+       A language model's parametric knowledge does not identify which approved source supports an answer to a policy question.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Design alternatives:</strong>
+       Provide policy text in a fixed prompt, or retrieve relevant passages from a maintained knowledge base for each question.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Decision:</strong>
+       Retrieve ranked knowledge chunks from a vector index and pass them as context to the language model, keeping knowledge updates independent of model deployment.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Engineering trade-off:</strong>
+       Retrieval adds components, and response quality remains bounded by corpus freshness, coverage, and ranking quality.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Revisit when:</strong>
+       Evaluation shows poor recall, stale sources, or recurring knowledge gaps.
+      </p>
+     </article>
+    </section>
+    <nav class="d-flex flex-wrap gap-3 py-4">
+     <a class="btn btn-outline-light" data-route="projects" href="../">← All projects</a>
+     <a class="btn btn-primary" data-route="contact" href="../../#contact">Start a conversation</a>
+    </nav>
+   </div>
+   <section aria-labelledby="contact-title" class="contact-section my-5 p-4 p-md-5" id="contact">
+    <div class="row g-4 align-items-end">
+     <div class="col-12 col-lg-7">
+      <p class="section-kicker" data-copy="interface.contactKicker">06 / SAY HELLO</p>
+      <h2 class="display-6 fw-bold" data-copy="contact.title" id="contact-title">Have a good data problem?</h2>
+      <p class="section-intro mb-0" data-copy="contact.intro">I’m always interested in thoughtful engineering, useful data products, and conversations that start with a real question.</p>
+     </div>
+     <div class="col-12 col-lg-5">
+      <div class="d-flex flex-wrap gap-2 justify-content-lg-end contact-links">
+       <a class="btn btn-primary" data-copy="contact.email" href="mailto:henrique.r.dutra@gmail.com">Email</a>
+       <a class="btn btn-outline-light" data-copy="contact.linkedin" href="https://www.linkedin.com/in/carlos-henrique-dutra/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+       <a class="btn btn-outline-light" data-copy="contact.github" href="https://github.com/carloshenriquedutra" rel="noopener noreferrer" target="_blank">GitHub</a>
+       <a class="btn btn-outline-light" data-copy="contact.whatsapp" href="https://wa.me/5541992545537" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="container site-footer py-4">
+   <p class="mb-0" data-copy="contact.footer">Built with curiosity, a little healthy skepticism, and fewer spreadsheets than strictly necessary.</p>
+  </footer>
+  <script defer="" src="../../assets/vendor/bootstrap/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../src/main.js" type="module">
+  </script>
+ </body>
+</html>

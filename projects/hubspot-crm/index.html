@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="dark" name="color-scheme"/>
+  <meta content="HubSpot exposes flexible properties and linked objects; analytical use needs stable types, keys, relationships, and event grain." name="description"/>
+  <meta content="Carlos Dutra" name="author"/>
+  <title>HubSpot CRM modeling in BigQuery · Carlos Dutra</title>
+    <link href="../../assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/theme.css?v=4" rel="stylesheet"/>
+ </head>
+ <body data-page="project" data-project-id="hubspot-crm" data-root="../../">
+  <a class="skip-link" data-copy="interface.skipLink" href="#main-content">Skip to content</a>
+  <header class="site-header sticky-top">
+   <nav aria-label="Main navigation" class="navbar navbar-expand-lg" data-copy-attribute="interface.mainNavigation:aria-label">
+    <div class="container py-2">
+     <a class="navbar-brand fw-bold" data-route="home" href="../../">Carlos Dutra<span aria-hidden="true" class="brand-mark">.</span></a>
+     <button aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#portfolioNav" data-bs-toggle="collapse" data-copy-attribute="interface.toggleNavigation:aria-label" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="portfolioNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.about" data-route="about" href="../../#about">About</a>
+       </li>
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link active" data-copy="nav.work" data-route="projects" href="../../projects/">Projects</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.experience" data-route="experience" href="../../#experience">Experience</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-copy="nav.contact" data-route="contact" href="../../#contact">Contact</a>
+       </li>
+       <li class="nav-item language-switcher">
+        <span class="visually-hidden" id="language-label">Language</span>
+        <div aria-labelledby="language-label" class="btn-group btn-group-sm" role="group">
+         <button aria-pressed="true" class="btn btn-language active" data-locale="en" type="button">EN</button>
+         <button aria-pressed="false" class="btn btn-language" data-locale="pt-BR" type="button">PT-BR</button>
+        </div>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <main class="container" id="main-content">
+   <nav aria-label="Breadcrumb" class="pt-4">
+    <ol class="breadcrumb">
+     <li class="breadcrumb-item">
+      <a data-copy="pages.project.breadcrumbHome" data-route="home" href="../../">Home</a>
+     </li>
+     <li class="breadcrumb-item">
+      <a data-copy="pages.project.breadcrumbProjects" data-route="projects" href="../">Projects</a>
+     </li>
+     <li aria-current="page" class="breadcrumb-item active" data-project-name="">HubSpot CRM modeling in BigQuery</li>
+    </ol>
+   </nav>
+   <div id="project-detail">
+    <header class="project-detail-header mb-5">
+     <p class="section-kicker">Gobrax / HubSpot CRM modeling in BigQuery</p>
+     <h1 class="display-4 fw-bold">HubSpot CRM modeling in BigQuery</h1>
+     <p class="lead project-lead fw-semibold">Turning CRM entities into analysis-ready models</p>
+     <p class="project-lead">HubSpot exposes flexible properties and linked objects; analytical use needs stable types, keys, relationships, and event grain.</p>
+    </header>
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+     <div class="col">
+      <article class="project-fact h-100 p-4">
+       <h2 class="h4">Business problem</h2>
+       <p class="mb-0">Commercial analysis needed consistent entities and measures despite flexible CRM properties, mutable records, and many-to-many associations.</p>
+      </article>
+     </div>
+     <div class="col">
+      <article class="project-fact h-100 p-4">
+       <h2 class="h4">My contribution</h2>
+       <p class="mb-0">I built dbt models in BigQuery for companies, contacts, deals, and engagements: normalizing source properties, deduplicating mutable records, resolving CRM associations, and publishing curated deal and activity views.</p>
+      </article>
+     </div>
+     <div class="col">
+      <article class="project-fact h-100 p-4">
+       <h2 class="h4">Approach</h2>
+       <p class="mb-0">I modeled companies, contacts, deals, and engagements with dbt and SQL in BigQuery. The work normalizes source properties, deduplicates mutable records, resolves associations, and declares grain before aggregating activities or deals.</p>
+      </article>
+     </div>
+     <div class="col">
+      <article class="project-fact h-100 p-4">
+       <h2 class="h4">Result and status</h2>
+       <p class="mb-0">Published curated deal and activity views for consistent analysis across CRM entities.</p>
+      </article>
+     </div>
+    </div>
+    <section class="content-section py-5">
+     <h2 class="h3">Tools and methods</h2>
+     <p class="project-technologies">BigQuery · dbt · SQL · CRM data modeling</p>
+    </section>
+    <section class="content-section py-5">
+     <h2 class="h3 mb-4">Engineering decisions</h2>
+     <article class="decision-story mb-5">
+      <p class="section-kicker">Gobrax / HubSpot CRM modeling in BigQuery</p>
+      <h3 class="h4">Declare grain before joining entities</h3>
+      <p class="case-detail mb-3">
+       <strong>Business problem:</strong>
+       Commercial teams needed a consistent way to analyze HubSpot deals and engagements across linked, mutable CRM entities.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Technical constraint:</strong>
+       A CRM deal can link to multiple contacts, products, and activities; unrestricted joins can fan out rows and inflate measures.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Design alternatives:</strong>
+       Aggregate source rows directly, or define each fact's grain and key and model many-to-many associations before aggregation.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Decision:</strong>
+       I declare grain and business key per model, represent many-to-many relations through bridge models, and apply deterministic deduplication to mutable snapshots.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Engineering trade-off:</strong>
+       More models and assertions upstream; less silent fan-out and clearer temporal semantics downstream.
+      </p>
+      <p class="case-detail mb-3">
+       <strong>Revisit when:</strong>
+       Source cardinality, business identity, or event lifecycle changes.
+      </p>
+     </article>
+    </section>
+    <nav class="d-flex flex-wrap gap-3 py-4">
+     <a class="btn btn-outline-light" data-route="projects" href="../">← All projects</a>
+     <a class="btn btn-primary" data-route="contact" href="../../#contact">Start a conversation</a>
+    </nav>
+   </div>
+   <section aria-labelledby="contact-title" class="contact-section my-5 p-4 p-md-5" id="contact">
+    <div class="row g-4 align-items-end">
+     <div class="col-12 col-lg-7">
+      <p class="section-kicker" data-copy="interface.contactKicker">06 / SAY HELLO</p>
+      <h2 class="display-6 fw-bold" data-copy="contact.title" id="contact-title">Have a good data problem?</h2>
+      <p class="section-intro mb-0" data-copy="contact.intro">I’m always interested in thoughtful engineering, useful data products, and conversations that start with a real question.</p>
+     </div>
+     <div class="col-12 col-lg-5">
+      <div class="d-flex flex-wrap gap-2 justify-content-lg-end contact-links">
+       <a class="btn btn-primary" data-copy="contact.email" href="mailto:henrique.r.dutra@gmail.com">Email</a>
+       <a class="btn btn-outline-light" data-copy="contact.linkedin" href="https://www.linkedin.com/in/carlos-henrique-dutra/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+       <a class="btn btn-outline-light" data-copy="contact.github" href="https://github.com/carloshenriquedutra" rel="noopener noreferrer" target="_blank">GitHub</a>
+       <a class="btn btn-outline-light" data-copy="contact.whatsapp" href="https://wa.me/5541992545537" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="container site-footer py-4">
+   <p class="mb-0" data-copy="contact.footer">Built with curiosity, a little healthy skepticism, and fewer spreadsheets than strictly necessary.</p>
+  </footer>
+  <script defer="" src="../../assets/vendor/bootstrap/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../src/main.js" type="module">
+  </script>
+ </body>
+</html>

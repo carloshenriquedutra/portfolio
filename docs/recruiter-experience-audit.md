@@ -2,17 +2,21 @@
 
 [Versão em português (Brasil)](auditoria-experiencia-recrutador.md)
 
-_Reviewed: 2026-09-27 · Scope: content, information architecture, and recruiter journeys · Status: recommendations for a future Spec Kit iteration_
+_Reviewed: 2026-09-27 · Scope: content, information architecture, and recruiter journeys · Baseline: the single-page site before feature 002_
+
+The single-page observations below document the baseline. The multi-page recommendation and Challenge Compass are implemented under [feature 002](../specs/002-recruiter-project-journey/spec.md); the résumé and other future ideas remain separate work.
 
 ## 1. Executive assessment
 
 **“Selected Work” is a suitable heading for this portfolio.** It is short, professional, and accurate for four employer projects that include an assistant, a data platform, CRM modeling, and market sizing. “Projects” would also be understandable, but changing the label alone would have little effect. The larger opportunity is to make each project immediately recognizable by company, project name, business problem, Carlos's contribution, and evidence of value. Keep the four approved projects and their current order.
 
+**Direction confirmed by Carlos:** the home page is for a recruiter to read quickly. Full project cases and technical decisions belong on dedicated pages reached through clear links. A technical manager should be able to open the Projects index directly, choose a case, and explore it in depth. The multi-page structure and concise home page are requirements; the exact URLs and the order of short home-page sections remain design choices.
+
 The page already has a credible foundation: it identifies Carlos as a Senior Data Engineer, explains his business-to-engineering path, names employers and projects, separates his contribution from the project description, groups tools by purpose, offers English and Brazilian Portuguese, and makes contact possible from the hero. Its personality comes through in the voice and restrained humor.
 
-The main recruiter problem is **information priority**. Four detailed Engineering Notes follow four project cards before the visitor reaches the skills and career timeline. In the English page reviewed, the Selected Work content is approximately 280 words and the Engineering Notes approximately 490 words. Those notes are useful for a technical reader, but their position and density make the page ask for technical attention before it has answered several quick screening questions: exact roles, relevant tools, project outcomes, and where to find a résumé. The word counts are approximate, based on the rendered page's extracted text, including headings and labels; they are a comparison of reading weight, not a usability measurement.
+The main recruiter problem is **the single-page architecture**. The home page currently contains four project descriptions followed by four detailed Engineering Notes before the visitor reaches the skills and career timeline. In the English page reviewed, the Selected Work content is approximately 280 words and the Engineering Notes approximately 490 words. These detailed narratives deserve dedicated pages: their placement on the home page asks for technical attention before answering quick screening questions about roles, tools, outcomes, and a résumé. The word counts are approximate, based on the rendered page's extracted text, including headings and labels; they compare reading weight and are not a usability measurement.
 
-**Recommended direction:** keep the page as a concise professional entry point, let the four projects carry the proof, move detailed technical reasoning into a clearly secondary layer, make experience and skills faster to locate, and add a one-click résumé when an approved file exists. Preserve the user-approved About copy and portrait caption.
+**Recommended direction:** make the home page a concise recruiter entry point and create a dedicated Projects index plus one detail page for each of the four approved projects. Keep technical decisions on the relevant project pages or on linked technical-note pages. A recruiter should understand the profile without opening a detail page; a technical manager should reach Projects directly, select a case, and read the full reasoning there. Make experience and skills faster to locate and add a one-click résumé when an approved file exists. Preserve the user-approved About copy and portrait caption.
 
 ## 2. What was reviewed and what was not measured
 
@@ -92,11 +96,11 @@ This sequence already covers most essential content. Its weakest transition is b
 
 **Primary issue:** Company and project appear in small badge text, while the large card headings are more generic. The headings that attract the eye first say “An employee assistant grounded in People knowledge,” “Building a People Analytics platform from source to Gold,” “Turning CRM entities into analysis-ready models,” and “Estimating market potential to redesign sales territories.” A reader may need to return to the badges to map these to Lumi, MadeiraMadeira, Gobrax, and COPAPA. This is an inference from the visual hierarchy of the markup; verify it visually. NN/g recommends headings that carry the essential information early and accurately describe their chunk. [Source: NN/g](https://www.nngroup.com/articles/layer-cake-pattern-scanning/).
 
-**Second issue:** The four cards mainly describe what was built. They do not consistently say what changed for a user or decision-maker, what stage the work is in, or what public evidence the reader can inspect. None of the current four cards has a project-specific link. This matters most to a technical reader who wants to go from a claim to a deeper explanation. The goal is honest evidence, including qualitative evidence when numbers or employer artifacts are unavailable; invented metrics would damage credibility.
+**Second issue:** The four cards mainly describe what was built. They do not consistently say what changed for a user or decision-maker, what stage the work is in, or what public evidence the reader can inspect. None of the current four cards has a project-specific link or detail page. A technical reader needs a clear route from a short preview to the full case. The goal is honest evidence, including qualitative evidence when numbers or employer artifacts are unavailable; invented metrics would damage credibility.
 
 **Third issue:** The section introduction says that sensitive implementation details remain private. The privacy boundary is appropriate, but foregrounding it before the projects spends prominent copy on a limitation. The page can demonstrate that boundary by publishing safe summaries and omitting restricted details. A proposed replacement is: “Four projects where business questions shaped the data products and engineering decisions.” Treat that line as editorial draft, not approved copy.
 
-**Recommended card reading order:** company and project name → business problem in plain English → Carlos's specific contribution → honest outcome or current status → three to five relevant technologies → link to permitted public evidence or a deeper case study. Keep each card scannable; reserve alternatives, constraints, and detailed architecture for a deeper layer. Use the same information order in English and pt-BR.
+**Recommended home-page card reading order:** company and project name → one-sentence business problem → Carlos's specific contribution or verified result → “View project” link to its dedicated page. Keep the home-page card brief; place technology lists, status, evidence, alternatives, constraints, and architecture on the detail page where they can be read deliberately. The Projects index can offer slightly fuller previews and filters or categories only if they help visitors choose a project. Use the same information order in English and pt-BR.
 
 | Card | Strongest immediate label to test | Specific editorial check |
 |---|---|---|
@@ -113,9 +117,9 @@ The example labels above are editorial proposals. Confirm any project status, ou
 
 **Issue:** The notes sit inside Selected Work and together require more reading than the project cards. The heading “Models, boundaries & reliability” does not immediately tell a recruiter that the panel contains engineering decisions. The notes repeat project context already introduced above, while Career and Toolbox remain below them. A recruiter can skip the panel, but the amount and placement still define the page's rhythm.
 
-**Recommendation:** Treat notes as a second depth level. On the home page, show a short “Engineering decisions” section after Experience or Skills with one or two concise previews, each linked to the relevant full note or case study. Keep all four full narratives available in a dedicated page or in clearly labeled disclosures. If Bootstrap Accordion is used for optional details, give each collapsed item a descriptive title; the essential project value should remain visible before interaction. A technical hiring manager should be able to reach the full trade-off in one click from the related project card.
+**Recommendation:** Remove the four full notes from the home page. Place each decision in the relevant project detail page, or give it a separate technical-note page linked from that project. The home page needs only a short, clearly labeled path to deeper engineering content, such as a link after the project previews; it does not need note previews or accordions containing the full text. A technical hiring manager should be able to open Projects from the navigation, choose a case, and reach its technical decisions without searching the home page.
 
-**Do not remove the reasoning itself.** It differentiates Carlos from a stack-only profile. Reduce duplication on the landing page and improve the connection between a project and its decision.
+**Keep the reasoning itself.** It differentiates Carlos from a stack-only profile. Dedicated pages make it easier to connect each decision to its project while keeping the home page light.
 
 ### 6.5 Toolbox / skills
 
@@ -123,7 +127,7 @@ The example labels above are editorial proposals. Confirm any project status, ou
 
 **Issue:** The skill groups appear after the long notes, and the main navigation has no Skills anchor. A recruiter checking a role's requirements may need to scroll or use browser find. The lists also give equal visual weight to a core daily tool and a peripheral technology; the page does not explain depth or recency.
 
-**Recommendation:** Move Skills before the detailed notes, and consider a “Skills” or “Tools” navigation link. Keep the groups, but order the most representative technologies first. If depth matters, express it through specific projects or concise experience notes, not invented percentages or skill bars; Arc's guidance notes that percentage bars lack clear meaning. [Source: Arc](https://arc.dev/talent-blog/software-engineer-portfolio/). Avoid adding every tool Carlos has touched; `about-me.md` can hold the fuller tool-by-tool context for readers who want it.
+**Recommendation:** Keep a compact Skills summary on the home page and consider a “Skills” or “Tools” navigation link. Order the most representative technologies first and connect them to the project pages that demonstrate their use. If depth matters, express it through specific projects or concise experience notes, not invented percentages or skill bars; Arc's guidance notes that percentage bars lack clear meaning. [Source: Arc](https://arc.dev/talent-blog/software-engineer-portfolio/). Avoid adding every tool Carlos has touched; `about-me.md` can hold the fuller tool-by-tool context for readers who want it.
 
 ### 6.6 Career timeline
 
@@ -131,7 +135,7 @@ The example labels above are editorial proposals. Confirm any project status, ou
 
 **Issue:** Two entries use the broad label “Data engineering,” and the earlier entries also use domain labels rather than verified official job titles. This is safe editorially, but a recruiter comparing the page with a résumé may still need exact positions and clearer scope. The timeline's position after the engineering notes delays a quick employer-and-date scan.
 
-**Recommendation:** Move Career above full Engineering Notes. When the résumé is ready, align employer names, dates, role titles, and current/previous status across the page, résumé, LinkedIn, and public `about-me.md`. Use official titles only after verification; where an official title fails to convey the engineering scope, present it separately from a one-sentence description of actual work. Do not fill unexplained gaps with invented roles or force personal explanations onto the page.
+**Recommendation:** Keep a compact Career timeline on the home page, before or near the project previews; move full Engineering Notes to project or technical-note pages. When the résumé is ready, align employer names, dates, role titles, and current/previous status across the site, résumé, LinkedIn, and public `about-me.md`. Use official titles only after verification; where an official title fails to convey the engineering scope, present it separately from a one-sentence description of actual work. Do not fill unexplained gaps with invented roles or force personal explanations onto the page.
 
 ### 6.7 Education
 
@@ -151,7 +155,7 @@ The example labels above are editorial proposals. Confirm any project status, ou
 
 **Current state:** The nav is short, the page has semantic landmarks and a skip link, the language toggle updates visible content and `html lang`, and the English baseline is meaningful without the content script. These are good foundations.
 
-**Recommendation:** If Career and Skills become quick screening destinations, expose both in navigation while keeping the menu compact on mobile. Use the same section labels in nav and headings. For any new case-study links, write the destination into the link label, such as “Read the Lumi case study,” rather than relying on repeated “Learn more” links. W3C guidance explains why a link's purpose should be clear from its text or programmatic context. [Source: W3C](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html).
+**Recommendation:** Change the current Selected Work navigation anchor into a link to the dedicated Projects index. If Career and Skills become quick screening destinations, expose both in navigation while keeping the menu compact on mobile. Use the same section labels in nav and headings. For project links, write the destination into the label, such as “Read the Lumi case study,” rather than relying on repeated “Learn more” links. W3C guidance explains why a link's purpose should be clear from its text or programmatic context. [Source: W3C](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html).
 
 The HTML currently has a page title and description but no visible Open Graph or other social-preview metadata in its `<head>`. Because a recruiter may share the portfolio link with a hiring manager, add a deliberate preview title, description, image, and canonical URL in a later metadata pass. This is a secondary improvement; it should not delay the résumé or project-content work.
 
@@ -167,9 +171,10 @@ The HTML currently has a page title and description but no visible Open Graph or
 
 | Priority | Missing piece | Why it matters | Publication boundary |
 |---|---|---|---|
+| High | Dedicated project pages | The current home page carries both recruitment summary and technical detail. Separate pages give recruiters a short path and technical managers a deliberate path into each case. | Create a Projects index and one page for each approved project; publish only reviewed, non-sensitive material. |
 | High | Downloadable résumé | Intuit explicitly includes a résumé link among easy contact paths. It lets a recruiter carry a concise, standardized record into a hiring workflow. [Source: Intuit](https://www.intuit.com/blog/global-stories/software-engineer-portfolio/). | The repository's `todo.md` specifies Markdown as the maintained source and PDF as the downloadable format. The experience should be one click from a current, approved version. |
 | High | Project outcomes or status | The current cards show activities and technology better than the resulting capability, adoption, decision, or present stage. | Use verified qualitative outcomes when metrics are unavailable; keep proposed/ongoing work visibly distinct from completed results. |
-| High | Deeper evidence from cards | The cards offer no direct path to a case study, public artifact, or relevant Engineering Note. | A sanitized case study is valid evidence even when employer code and metrics cannot be published. Never link private repositories or internal material. |
+| High | Deeper evidence from cards | The cards offer no direct path to a case study, public artifact, or relevant Engineering Note. | Each home and index card should link to its project page. That page can link permitted evidence and related technical notes; never link private repositories or internal material. |
 | Medium | Exact, verified role information | Recruiters may compare the portfolio with résumé and LinkedIn. | Confirm official titles and dates before changing the timeline. |
 | Medium | Top-level access to core skills | The tool groups are currently below a long technical panel and absent from nav. | Add a Skills anchor or a compact skill snapshot without repeating a large logo wall. |
 | Medium | Public `about-me.md` entry point | The repository already has an extensive Markdown profile and FAQ, but the web page has no link to it. | Offer it as an optional “Ask your AI assistant about my work” resource after the core recruiter actions; explain that it is a downloadable text file. |
@@ -181,7 +186,7 @@ The résumé and AI profile are different resources. The résumé should be the 
 
 ## 8. What to remove, shorten, or defer
 
-1. **Remove duplicated project explanation from the landing-page reading path.** Keep full Engineering Notes available elsewhere or behind an explicit “Read the technical decision” action. Shorten their home-page presentation.
+1. **Remove project and decision detail from the home page.** Keep only concise previews there; publish the full cases on project pages and technical reasoning on those pages or linked technical-note pages.
 2. **Shorten the Selected Work introduction.** Lead with the range of problems and value. Privacy constraints can be enforced editorially without occupying the first line of the section.
 3. **Avoid repeated generic card headings.** Put recognizable project names into the headings; keep company labels prominent.
 4. **Avoid technology proficiency percentages, progress bars, and decorative charts.** They offer little credible evidence of professional depth. Use project contributions and technical decisions to demonstrate skill. [Source: Arc](https://arc.dev/talent-blog/software-engineer-portfolio/).
@@ -189,44 +194,90 @@ The résumé and AI profile are different resources. The résumé should be the 
 6. **Keep raw social feeds and the introduction video out of the primary recruiter path.** They remain valid future ideas in `todo.md`; introduce them as optional content after the main evidence and career details are clear.
 7. **Do not manufacture numerical impact.** A modest verified statement is stronger than a precise but unsupported metric. Keep confidentiality and individual-vs-team attribution intact.
 
-These are recommendations about the page's information density, not a proposal to delete valuable professional history from the repository or the public Markdown profile.
+These are recommendations about the site's information architecture and density, not a proposal to delete valuable professional history from the repository or the public Markdown profile.
 
-## 9. Recommended page sequence
+## 9. Recommended multi-page information architecture
 
-The following order keeps the four projects prominent while answering a recruiter's screening questions sooner:
+The two primary reading paths share the same project pages:
 
-1. **Hero:** name and role with the official portrait, value proposition, one project CTA, one contact CTA, and a résumé CTA once the PDF is available.
-2. **About:** the two approved paragraphs, with no extra biography before the projects.
-3. **Career snapshot:** employer, verified role or scope, dates, and a single meaningful contribution per position. A compact timeline can serve both recruiter and hiring manager.
-4. **Selected Work:** the four approved projects, each readable as a short case preview and each linked to permitted deeper evidence when available.
-5. **Skills / Toolbox:** grouped capabilities, ordered by relevance and connected back to projects.
-6. **Engineering decisions:** one or two short home-page previews with paths to full notes; the four full notes can live on a separate page or behind deliberate disclosure controls.
-7. **Education:** compact qualifications and status.
-8. **Optional resources:** public Markdown profile, later curated publications and introduction video. The video placement from `todo.md` remains immediately before Contact.
-9. **Contact:** clear email and LinkedIn routes, GitHub as evidence, optional WhatsApp, and a résumé link.
+```mermaid
+flowchart LR
+    R["Recruiter"] --> H["Home: fast professional summary"]
+    H --> C["Contact or résumé"]
+    H --> D["Project detail"]
+    M["Technical manager"] --> I["Projects index"]
+    H --> I
+    I --> D
+    D --> N["Related engineering decision"]
+    D --> C
+```
 
-Moving Career ahead of Selected Work is a recommendation to test, not a requirement. If the design keeps Selected Work immediately after About, the necessary adjustment is to move the long Engineering Notes below Career and Skills. That smaller change may deliver most of the benefit with less disruption. A recruiter can also reach Career directly from the current nav; preserve that path.
+### 9.1 Home page: the recruiter route
+
+The home page is the fast professional summary. A recruiter should be able to scan it, decide whether Carlos fits a role, obtain the résumé, and contact him without opening a project page. Recommended order:
+
+1. **Hero:** official portrait, approved name and role caption, value proposition, Projects and Contact actions, and résumé action once available.
+2. **About:** the two approved paragraphs, kept brief.
+3. **Career snapshot:** verified employers, roles or scope, dates, and one meaningful line per entry.
+4. **Selected Work previews:** four short cards in the approved order, each with a descriptive link to its own project page; include a “View all projects” path to the Projects index.
+5. **Skills summary:** grouped capabilities that can be scanned quickly; deeper context comes from the project pages.
+6. **Education and optional resources:** concise qualifications and a secondary link to the public Markdown profile. The planned video remains immediately before Contact when implemented.
+7. **Contact:** email and LinkedIn first, GitHub as evidence, optional WhatsApp, and résumé link.
+
+The home page should contain **no full project case study and no full Engineering Note**. A small “How I approach engineering decisions” link can point to the Projects index or a technical-notes index, without reproducing those decisions on the home page. Moving Career before the project previews is worth testing; keeping the four previews near the top is also reasonable if Career remains one click away in navigation.
+
+### 9.2 Projects index: the technical manager's entry point
+
+The primary navigation should offer a direct “Projects” or “Selected Work” destination that opens a dedicated index page, not merely a home-page anchor. The index presents the four approved projects in their current order. Each entry needs a recognizable company and project name, a short problem statement, Carlos's contribution, relevant domains or technologies, and a clear “View project” link. Visitors should be able to choose a case without reading a full technical decision first.
+
+A recruiter who wants more context may arrive from a home-page teaser; a technical manager may enter the Projects index directly from navigation or a shared URL. Both paths must lead to the same project pages. Keep the index curated at four cases unless Carlos approves a change in scope.
+
+### 9.3 Project detail pages: one page per approved case
+
+Create one dedicated page for each case: Lumi, the People Analytics data platform, HubSpot CRM modeling in BigQuery, and COPAPA market sizing. Suggested paths under the GitHub Pages `/portfolio/` base are `projects/lumi/`, `projects/people-analytics/`, `projects/hubspot-crm/`, and `projects/copapa-market-sizing/`. These are proposed routes, not an implementation decision; the final paths must work when opened directly or shared.
+
+Each page should lead with company, project, business problem, Carlos's own role, and a truthful result or current status. Follow with the approach, a safe level of architecture or data-flow detail, technologies, constraints, alternatives, trade-offs, related engineering decisions, and public evidence when available. Use headings so a recruiter can skim while a manager can read deeply. Include a visible route back to the Projects index and a contact action; the reader should not need to return to the home-page top to continue.
+
+Technical decisions should live within the relevant project page when the context is inseparable from the case. If one decision needs substantial independent treatment, give it a separate technical-note page linked from the project. Do not place the four full decisions in a home-page accordion or a long home-page section.
+
+### 9.4 Navigation and localization across pages
+
+Keep the main navigation consistent on the home page, Projects index, and project details. The Projects/Selected Work navigation item must lead to the index; each home preview may link directly to its detail page. Provide clear page titles and breadcrumbs or a “Back to projects” link on detail pages. Preserve English as the default and make pt-BR available for every published page, including the technical content; a chosen language should remain consistent while moving between pages. Translate page metadata and link labels along with the visible content.
+
+On GitHub Pages, every proposed route must resolve after a direct reload and under the repository's `/portfolio/` base path. The future Spec Kit implementation should choose the static-file or build approach that meets this behavior without breaking existing links.
+
+### 9.5 First impression: the Challenge Compass
+
+The home page should open with a compact, visually distinctive **Challenge Compass** beside or immediately below the hero message and official portrait. Its prompt is “Find your question. See my work.” Four linked paths translate real projects into business challenges: **Employees need answers** → Lumi; **Data needs a foundation** → People Analytics; **CRM needs a clear model** → HubSpot; **Markets need a map** → COPAPA. Each path is a direct link to the corresponding project page.
+
+This is the proposed “wow” moment: the visitor can understand Carlos's range and choose a relevant proof point before reading a long paragraph. The visual treatment should resemble a precise decision map, with a thin connected route, restrained navy light, strong typography, and responsive Bootstrap grid/card utilities. The official portrait remains unmistakable. Motion, if used, should reveal the route gently and respect reduced-motion preferences; the links must work without animation or JavaScript. The map represents navigation and thinking, not invented data or performance metrics.
+
+On desktop, the first viewport should show the name and role, H1, primary actions, and at least the start of the Challenge Compass. On mobile, prioritize the message and first action; the four paths should stack cleanly without forcing the recruiter through a large decorative image before reaching the projects. The four labels can be refined editorially, but the challenge-to-project mapping and direct navigation are part of the concept.
 
 ## 10. Content contracts for a future implementation
 
-### 10.1 Selected Work card
+### 10.1 Home and Projects-index previews
 
-Each card should answer, in this order:
+Home-page cards should cover the first three items in a heading and at most two short body sentences, then link to the dedicated page. The Projects index can add the remaining items while staying scannable:
 
 1. **Who and what:** company and project name in a heading or equally prominent label.
 2. **Business problem:** one plain-English sentence about the user or decision served.
-3. **My contribution:** one or two sentences naming what Carlos personally designed, built, modeled, or analyzed.
+3. **My contribution:** one concise sentence on the home page naming what Carlos personally designed, built, modeled, or analyzed; the index and detail page may expand it.
 4. **Result or current status:** a verified qualitative or quantitative outcome, or an honest “in progress”/“proposed” description where applicable.
 5. **Core technologies:** a short list relevant to this specific case.
-6. **Evidence:** a permitted case study, technical note, public demo, article, or repository link. Omit the link if there is no legitimate public destination; do not create a dead-end button.
+6. **Next action:** a descriptive link to that project's detail page. The detail page, in turn, can link to a permitted technical note, public demo, article, or repository. Omit external evidence links when there is no legitimate public destination.
 
-The card should be understandable without opening a disclosure or reading the Engineering Notes. Keep language parallel across English and pt-BR; translate meaning rather than mechanically translating each phrase.
+The home card should be understandable without opening the detail page, but short enough that a recruiter can skim all four. Keep language parallel across English and pt-BR; translate meaning rather than mechanically translating each phrase.
 
-### 10.2 Engineering decision
+### 10.2 Project detail page
+
+Use a consistent page contract for all four cases: identifiable company and project; business problem and intended user; Carlos's individual scope; approach and technologies; verified outcome or current status; constraints and trade-offs; related technical decisions; permitted evidence; and a clear route back to Projects or to Contact. The page may be long because the visitor deliberately chose to read it. It must distinguish proposed, ongoing, and completed work and respect employer confidentiality.
+
+### 10.3 Engineering decision
 
 A full note should retain the existing technical structure: company and project → business problem → technical constraint → alternatives → decision and Carlos's role in it → trade-off → revisit trigger. This structure is especially useful for a technical interview. Link it from the related project so the reader can understand why that decision appears. The page should distinguish an actual project decision from a general engineering principle whenever the source material does not support a claim of personal ownership.
 
-### 10.3 Career entry
+### 10.4 Career entry
 
 Each entry should have organization, verified dates, official role when approved, relevant technical scope, and one distinctive contribution. The timeline should not imply completed work where the project is ongoing. Its wording should agree with the résumé, LinkedIn, the Selected Work cards, and `about-me.md`.
 
@@ -234,22 +285,22 @@ Each entry should have organization, verified dates, official role when approved
 
 ### 11.1 Priority 1 — make screening easy
 
-1. Move the full Engineering Notes out of the path between Selected Work and Career/Skills, while preserving access to all four decisions.
-2. Promote recognizable company and project names in every Selected Work card.
-3. Add a verified status or outcome line where the source material permits it.
+1. Create a dedicated Projects index and four project detail pages, with working direct links from navigation, the short home-page previews, and the Challenge Compass.
+2. Remove full project explanations and Engineering Notes from the home page; place decisions on the relevant project pages or linked technical-note pages.
+3. Promote recognizable company and project names in every preview and add a verified status or outcome to the detail pages where the source material permits it.
 4. Put a one-click résumé link in the hero or near it after the approved PDF exists.
 5. Check the first mobile viewport and adjust portrait sizing/order if the H1 and primary action are obscured.
 
-**Acceptance:** A reader scanning headings and card titles can identify Carlos, his role, four projects and companies, core skills, employer history, and contact route without reading a full Engineering Note. Each project can be matched to its deeper evidence when that evidence exists. No claim exceeds the approved public source material.
+**Acceptance:** A recruiter can identify Carlos, his role, four projects and companies, core skills, employer history, résumé, and contact route from the home page without reading technical detail. The first impression includes an accessible four-choice Challenge Compass that leads directly to the matching cases. A technical manager can open Projects directly, select any of the four cases, and read its full case and related decisions on dedicated pages. Every direct project URL works after reload. No claim exceeds the approved public source material.
 
 ### 11.2 Priority 2 — improve depth and consistency
 
-1. Provide a clear route from project cards to sanitized case studies or related technical decisions.
+1. Add permitted artifacts and linked technical-note pages to the project details where they improve the evidence.
 2. Align verified dates and titles across the site, résumé, LinkedIn, and public Markdown profile.
 3. Add a secondary download/link for `about-me.md` with a concise explanation of its use with an AI assistant.
 4. Review navigation labels, add Skills if needed, and make the social-sharing preview deliberate.
 
-**Acceptance:** A technical reader can follow a project to its decision rationale in one deliberate action; a recruiter can reach skills, career, résumé, and contact directly. Link labels describe their destinations. Both locales present the same essential facts.
+**Acceptance:** A technical reader can follow a project to its decision rationale from the project page; a recruiter can reach skills, career, résumé, and contact directly. Link labels describe their destinations. Both locales present the same essential facts on the home page, Projects index, and every project page, and language choice persists across navigation.
 
 ### 11.3 Priority 3 — optional expression
 

@@ -2,17 +2,21 @@
 
 [English version](recruiter-experience-audit.md)
 
-_Revisão: 27/09/2026 · Escopo: conteúdo, arquitetura da informação e jornada de recrutamento · Situação: recomendações para uma futura iteração com Spec Kit_
+_Revisão: 27/09/2026 · Escopo: conteúdo, arquitetura da informação e jornada de recrutamento · Linha de base: site de página única antes da funcionalidade 002_
+
+As observações sobre a página única documentam a versão anterior. A recomendação de múltiplas páginas e a Bússola de Desafios foram implementadas na [funcionalidade 002](../specs/002-recruiter-project-journey/spec.md); currículo e outras ideias futuras seguem como trabalho separado.
 
 ## 1. Avaliação geral
 
 **“Selected Work” é um título adequado para este portfólio.** É curto, profissional e representa bem os quatro projetos desenvolvidos em empresas: um assistente, uma plataforma de dados, modelagem de CRM e dimensionamento de mercado. “Projects” também seria compreensível, mas trocar apenas o nome da seção teria pouco efeito. A oportunidade maior é permitir que o leitor identifique imediatamente, em cada projeto, empresa, iniciativa, problema de negócio, contribuição de Carlos e evidências de valor. A recomendação é manter os quatro projetos aprovados e sua ordem atual.
 
+**Direção confirmada por Carlos:** a home é para a recrutadora ler rapidamente. Casos completos e decisões técnicas devem ficar em páginas próprias, acessíveis por links claros. O gestor técnico precisa conseguir abrir diretamente o índice de Projetos, escolher um caso e aprofundar a leitura. A estrutura com várias páginas e a home concisa são requisitos; URLs exatas e ordem dos blocos curtos da home continuam escolhas de desenho.
+
 A página já tem uma base sólida: apresenta Carlos como Senior Data Engineer, explica a passagem do contexto de negócios para a engenharia, identifica empresas e projetos, diferencia a contribuição individual da descrição do trabalho, agrupa ferramentas por finalidade, oferece inglês e português brasileiro e permite chegar ao contato a partir da abertura. A personalidade aparece na voz do texto e em doses discretas de humor.
 
-O principal problema para recrutadores é a **prioridade da informação**. Quatro Notas de Engenharia detalhadas aparecem logo após os quatro cartões de projetos, antes das ferramentas e da trajetória profissional. Na página em inglês analisada, a seção Selected Work contém aproximadamente 280 palavras, enquanto as Notas de Engenharia contêm aproximadamente 490. As notas são úteis para um leitor técnico, mas sua posição e extensão exigem atenção especializada antes de responder a perguntas comuns de triagem: cargos, ferramentas relevantes, resultados dos projetos e onde encontrar um currículo. Essas contagens são aproximadas, obtidas do texto extraído da página publicada e incluem títulos e rótulos; servem para comparar o volume de leitura, não como medição de usabilidade.
+O principal problema para recrutadores é a **arquitetura de página única**. A home contém quatro descrições de projetos seguidas de quatro Notas de Engenharia detalhadas antes das ferramentas e da trajetória profissional. Na página em inglês analisada, Selected Work contém aproximadamente 280 palavras e as Notas de Engenharia, cerca de 490. Essas narrativas merecem páginas próprias: sua presença na home exige atenção técnica antes de responder a perguntas rápidas sobre cargos, ferramentas, resultados e currículo. As contagens são aproximadas, obtidas do texto extraído da página publicada e incluem títulos e rótulos; comparam o volume de leitura e não são uma medição de usabilidade.
 
-**Direção recomendada:** preservar a página como uma apresentação profissional de leitura rápida, fazer os quatro projetos sustentarem as evidências, oferecer o raciocínio técnico detalhado numa camada de aprofundamento, facilitar o acesso à experiência e às competências e acrescentar o download do currículo quando houver um arquivo aprovado. O texto da seção Sobre e a legenda da foto, aprovados pelo usuário, devem ser preservados.
+**Direção recomendada:** transformar a home numa apresentação rápida para recrutadores e criar um índice de Projetos com uma página própria para cada um dos quatro trabalhos aprovados. As decisões técnicas devem ficar nas páginas dos projetos correspondentes ou em páginas de notas técnicas ligadas a eles. A recrutadora deve compreender o perfil sem abrir um projeto; o gestor técnico deve conseguir ir diretamente aos Projetos, escolher um caso e ler ali o raciocínio completo. A experiência e as competências devem ficar mais acessíveis, e o currículo deve ter download em um clique quando houver arquivo aprovado. O texto da seção Sobre e a legenda da foto, aprovados pelo usuário, devem ser preservados.
 
 ## 2. Material analisado e limites da avaliação
 
@@ -92,11 +96,11 @@ Essa sequência já contempla quase todo o conteúdo essencial. Sua transição 
 
 **Problema principal:** Empresa e projeto aparecem em um selo pequeno; os títulos maiores são genéricos. Os títulos que primeiro chamam atenção são “An employee assistant grounded in People knowledge”, “Building a People Analytics platform from source to Gold”, “Turning CRM entities into analysis-ready models” e “Estimating market potential to redesign sales territories”. O leitor talvez precise voltar aos selos para relacioná-los a Lumi, MadeiraMadeira, Gobrax e COPAPA. Isso é uma inferência a partir da hierarquia visual do HTML; deve ser conferido visualmente. O NN/g recomenda títulos que tragam logo as informações essenciais e descrevam corretamente o bloco que apresentam. [Fonte: NN/g](https://www.nngroup.com/articles/layer-cake-pattern-scanning/).
 
-**Segundo problema:** Os quatro cartões descrevem principalmente o que foi construído. Eles não informam de modo consistente o que mudou para um usuário ou tomador de decisão, em que estágio está o trabalho, nem qual evidência pública o leitor pode examinar. Nenhum dos quatro cartões atuais tem um link específico do projeto. Isso pesa sobretudo para o leitor técnico que quer passar de uma afirmação a uma explicação mais profunda. Evidências honestas podem ser qualitativas quando números ou artefatos da empresa não podem ser divulgados; métricas inventadas reduziriam a credibilidade.
+**Segundo problema:** Os quatro cartões descrevem principalmente o que foi construído. Eles não informam de modo consistente o que mudou para um usuário ou tomador de decisão, em que estágio está o trabalho, nem qual evidência pública o leitor pode examinar. Nenhum dos quatro cartões atuais tem link específico ou página própria do projeto. O leitor técnico precisa de um caminho claro da prévia curta ao caso completo. Evidências honestas podem ser qualitativas quando números ou artefatos da empresa não podem ser divulgados; métricas inventadas reduziriam a credibilidade.
 
 **Terceiro problema:** A introdução da seção diz que detalhes sensíveis de implementação permanecerão privados. A restrição é correta, mas colocá-la antes dos projetos usa um espaço de destaque para falar de uma limitação. A página pode respeitar essa fronteira publicando resumos seguros e omitindo detalhes restritos. Uma proposta de substituição é: “Four projects where business questions shaped data products and engineering decisions.” Essa frase é um rascunho editorial, não um texto aprovado.
 
-**Ordem de leitura sugerida para cada cartão:** empresa e projeto → problema de negócio em linguagem simples → contribuição específica de Carlos → resultado honesto ou estágio atual → três a cinco tecnologias relevantes → link para evidência pública permitida ou estudo de caso aprofundado. O cartão deve ser compreensível rapidamente; alternativas, restrições e arquitetura detalhada ficam numa camada seguinte. A ordem das informações deve ser equivalente em inglês e pt-BR.
+**Ordem sugerida para cada cartão da home:** empresa e projeto → problema de negócio em uma frase → contribuição específica de Carlos ou resultado verificado → link “Ver projeto” para uma página própria. O cartão da home deve ser breve; listas de tecnologias, situação do trabalho, evidências, alternativas, restrições e arquitetura ficam na página de detalhes, onde o visitante escolheu ler com atenção. O índice de Projetos pode trazer prévias um pouco mais completas; filtros ou categorias só fazem sentido se ajudarem a escolher entre os casos. A ordem das informações deve ser equivalente em inglês e pt-BR.
 
 | Cartão | Rótulo inicial a experimentar | Cuidado editorial específico |
 |---|---|---|
@@ -113,9 +117,9 @@ Os rótulos da tabela são propostas editoriais. Qualquer situação do projeto,
 
 **Problema:** As notas ficam dentro de Selected Work e, juntas, exigem mais leitura que os cartões de projetos. O título “Models, boundaries & reliability” não sinaliza imediatamente para um recrutador que o painel contém decisões de engenharia. As notas repetem parte do contexto já apresentado, enquanto Carreira e Ferramentas permanecem abaixo. O recrutador pode pular o painel, mas seu volume e posição ainda determinam o ritmo da página.
 
-**Recomendação:** Tratar as notas como uma segunda camada de profundidade. Na página inicial, mostrar uma seção breve de “Engineering decisions” após Carreira ou Ferramentas, com uma ou duas prévias concisas ligadas à nota completa ou ao estudo de caso. Manter as quatro narrativas integrais em uma página própria ou em painéis de detalhes claramente identificados. Se o Bootstrap Accordion for usado para conteúdo opcional, cada item recolhido deve ter um título descritivo; o valor essencial do projeto precisa ficar visível antes da interação. Um gestor técnico deve chegar ao raciocínio completo com uma ação a partir do projeto relacionado.
+**Recomendação:** Retirar as quatro notas completas da home. Colocar cada decisão na página do projeto correspondente ou numa página própria de nota técnica ligada a ele. A home precisa apenas de um caminho curto e bem identificado para o conteúdo de engenharia, como um link após as prévias dos projetos; não precisa de prévias das notas nem de accordions com o texto integral. O gestor técnico deve conseguir abrir Projetos pela navegação, escolher um caso e chegar às decisões sem procurar pela home.
 
-**Não apagar o raciocínio técnico.** Ele diferencia Carlos de um perfil que apenas enumera ferramentas. A mudança recomendada reduz duplicação na página inicial e fortalece a ligação entre projeto e decisão.
+**Preservar o raciocínio técnico.** Ele diferencia Carlos de um perfil que apenas enumera ferramentas. Páginas próprias permitem associar cada decisão ao respectivo projeto e manter a home leve.
 
 ### 6.5 Ferramentas e competências
 
@@ -123,7 +127,7 @@ Os rótulos da tabela são propostas editoriais. Qualquer situação do projeto,
 
 **Problema:** Os grupos aparecem depois das notas extensas e não há um item Skills na navegação principal. O recrutador que confere os requisitos de uma vaga talvez precise rolar bastante ou usar a busca do navegador. As listas também atribuem peso visual semelhante a ferramentas centrais e periféricas; a página não esclarece profundidade nem recência de uso.
 
-**Recomendação:** Posicionar Skills antes das notas completas e considerar um link “Skills” ou “Tools” na navegação. Manter os grupos, ordenando primeiro as tecnologias mais representativas. Quando a profundidade de experiência for importante, demonstrá-la por meio de projetos e relatos curtos, não por porcentagens ou barras de proficiência inventadas; a Arc observa que essas barras têm significado pouco claro. [Fonte: Arc](https://arc.dev/talent-blog/software-engineer-portfolio/). Evitar listar toda ferramenta com a qual Carlos já teve contato; o `about-me.md` pode oferecer o contexto completo por tecnologia.
+**Recomendação:** Manter na home um resumo compacto de Skills e considerar um link “Skills” ou “Tools” na navegação. Ordenar primeiro as tecnologias mais representativas e ligá-las às páginas dos projetos que demonstram seu uso. Quando a profundidade de experiência for importante, demonstrá-la por meio de projetos e relatos curtos, não por porcentagens ou barras de proficiência inventadas; a Arc observa que essas barras têm significado pouco claro. [Fonte: Arc](https://arc.dev/talent-blog/software-engineer-portfolio/). Evitar listar toda ferramenta com a qual Carlos já teve contato; o `about-me.md` pode oferecer o contexto completo por tecnologia.
 
 ### 6.6 Linha do tempo profissional
 
@@ -131,7 +135,7 @@ Os rótulos da tabela são propostas editoriais. Qualquer situação do projeto,
 
 **Problema:** Duas experiências usam o rótulo amplo “Data engineering”; as anteriores também usam áreas de atuação em vez de cargos oficiais verificados. Isso é editorialmente prudente, mas um recrutador que compare a página com o currículo ainda pode precisar dos títulos exatos e de um escopo mais claro. A posição da linha do tempo depois das notas técnicas atrasa a leitura rápida de empresas e períodos.
 
-**Recomendação:** Posicionar Carreira antes das Notas de Engenharia completas. Quando o currículo estiver pronto, alinhar nomes das empresas, datas, títulos de cargo e situação atual/anterior entre página, currículo, LinkedIn e `about-me.md` público. Usar cargos oficiais apenas após confirmação; quando o nome formal não comunicar o escopo de engenharia, separar o cargo de uma frase sobre o trabalho realizado. Não preencher intervalos da trajetória com posições inventadas nem impor explicações pessoais à página.
+**Recomendação:** Manter na home uma linha do tempo compacta, antes das prévias dos projetos ou próxima delas; levar as Notas de Engenharia completas para páginas de projetos ou de notas técnicas. Quando o currículo estiver pronto, alinhar nomes das empresas, datas, títulos de cargo e situação atual/anterior entre site, currículo, LinkedIn e `about-me.md` público. Usar cargos oficiais apenas após confirmação; quando o nome formal não comunicar o escopo de engenharia, separar o cargo de uma frase sobre o trabalho realizado. Não preencher intervalos da trajetória com posições inventadas nem impor explicações pessoais à página.
 
 ### 6.7 Formação
 
@@ -151,7 +155,7 @@ Os rótulos da tabela são propostas editoriais. Qualquer situação do projeto,
 
 **Situação atual:** A navegação é curta, a página tem regiões semânticas e um link para pular ao conteúdo, a troca de idioma atualiza o conteúdo visível e o atributo `lang` do HTML, e a versão inicial em inglês faz sentido sem o script de conteúdo. São boas bases.
 
-**Recomendação:** Se Carreira e Competências se tornarem destinos importantes de triagem, oferecer acesso direto a ambas na navegação sem tornar o menu extenso no celular. Usar rótulos consistentes entre menu e títulos. Para novos links de estudos de caso, informar o destino no próprio texto, como “Read the Lumi case study”, em vez de repetir “Learn more”. A orientação do W3C explica por que o propósito de um link deve ficar claro pelo texto ou pelo contexto programático. [Fonte: W3C](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html).
+**Recomendação:** Transformar a atual âncora Selected Work da navegação num link para o índice de Projetos. Se Carreira e Competências se tornarem destinos importantes de triagem, oferecer acesso direto a ambas sem tornar o menu extenso no celular. Usar rótulos consistentes entre menu e títulos. Nos links dos projetos, informar o destino no próprio texto, como “Read the Lumi case study”, em vez de repetir “Learn more”. A orientação do W3C explica por que o propósito de um link deve ficar claro pelo texto ou pelo contexto programático. [Fonte: W3C](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html).
 
 O HTML atual contém título e descrição da página, mas não apresenta metadados Open Graph ou equivalentes para prévia de compartilhamento no `<head>`. Como um recrutador pode encaminhar o link a um gestor técnico, uma rodada futura deveria definir título, descrição, imagem e URL canônica para essa prévia. É uma melhoria secundária: não deve atrasar currículo nem conteúdo dos projetos.
 
@@ -167,9 +171,10 @@ O HTML atual contém título e descrição da página, mas não apresenta metada
 
 | Prioridade | Item ausente | Por que importa | Limite de publicação |
 |---|---|---|---|
+| Alta | Páginas próprias dos projetos | A home atual mistura resumo para recrutamento com explicação técnica. Páginas separadas oferecem um percurso curto à recrutadora e um aprofundamento deliberado ao gestor técnico. | Criar um índice de Projetos e uma página para cada trabalho aprovado; publicar apenas material revisado e sem informações sensíveis. |
 | Alta | Currículo para download | A Intuit inclui o link do currículo entre os caminhos fáceis para o recrutador. Ele permite levar um registro conciso e padronizado ao processo seletivo. [Fonte: Intuit](https://www.intuit.com/blog/global-stories/software-engineer-portfolio/). | O `todo.md` define Markdown como fonte mantida no repositório e PDF como formato de download. A experiência deve exigir um clique e entregar uma versão atual e aprovada. |
 | Alta | Resultados ou situação dos projetos | Os cartões comunicam atividades e tecnologias melhor do que a capacidade resultante, a adoção, a decisão apoiada ou o estágio atual. | Usar resultados qualitativos verificados quando não houver métricas publicáveis; diferenciar propostas e trabalhos em andamento de resultados concluídos. |
-| Alta | Aprofundamento a partir dos cartões | Os cartões não levam diretamente a estudo de caso, artefato público ou Nota de Engenharia relacionada. | Um estudo de caso sanitizado pode servir como evidência mesmo quando código e métricas da empresa não podem ser publicados. Nunca inserir links de repositórios privados ou material interno. |
+| Alta | Aprofundamento a partir dos cartões | Os cartões não levam diretamente a estudo de caso, artefato público ou Nota de Engenharia relacionada. | Cada cartão da home e do índice deve levar à página do projeto. Ela pode apontar para evidências permitidas e notas técnicas relacionadas; nunca inserir links de repositórios privados ou material interno. |
 | Média | Informações exatas e verificadas de cargos | Recrutadores podem comparar portfólio, currículo e LinkedIn. | Confirmar títulos oficiais e períodos antes de mudar a linha do tempo. |
 | Média | Acesso mais rápido às competências centrais | Os grupos de ferramentas aparecem abaixo de um painel técnico longo e não constam da navegação. | Acrescentar uma âncora Skills ou um resumo compacto de competências sem repetir uma parede de logotipos. |
 | Média | Acesso ao `about-me.md` público | O repositório já possui um perfil extenso em Markdown com perguntas frequentes, mas a página não aponta para ele. | Oferecê-lo como recurso opcional, por exemplo “Ask your AI assistant about my work”, depois das ações essenciais; explicar que é um arquivo de texto para leitura ou download. |
@@ -181,7 +186,7 @@ Currículo e perfil para IA cumprem papéis diferentes. O currículo deve ser o 
 
 ## 8. O que remover, encurtar ou adiar
 
-1. **Retirar a explicação duplicada dos projetos do percurso principal da página inicial.** Manter as Notas de Engenharia completas acessíveis em outro lugar ou por uma ação explícita de leitura técnica. Encurtar sua apresentação na página inicial.
+1. **Retirar da home os detalhes dos projetos e das decisões.** Manter nela apenas prévias curtas; publicar os casos completos nas páginas de projetos e o raciocínio técnico nessas páginas ou em notas técnicas ligadas a elas.
 2. **Encurtar a introdução de Selected Work.** Começar pela variedade de problemas e pelo valor produzido. As restrições de privacidade podem ser aplicadas na edição do conteúdo sem ocupar a primeira frase da seção.
 3. **Evitar títulos genéricos nos cartões.** Colocar nomes reconhecíveis dos projetos nos títulos e manter a empresa em destaque.
 4. **Evitar porcentagens de domínio técnico, barras de progresso e gráficos decorativos.** Eles pouco demonstram a profundidade profissional. Projetos e decisões técnicas são evidências melhores. [Fonte: Arc](https://arc.dev/talent-blog/software-engineer-portfolio/).
@@ -189,44 +194,90 @@ Currículo e perfil para IA cumprem papéis diferentes. O currículo deve ser o 
 6. **Manter feeds sociais automáticos e vídeo fora do percurso principal de triagem.** São ideias futuras válidas no `todo.md`; devem aparecer como conteúdo opcional depois que evidências e carreira estiverem claras.
 7. **Não fabricar impacto numérico.** Uma afirmação modesta e verificável é mais forte que uma métrica precisa sem sustentação. Preservar confidencialidade e distinguir contribuição individual de resultado coletivo.
 
-Estas são recomendações sobre densidade de informação da página, não uma proposta de apagar a trajetória profissional do repositório ou do perfil público em Markdown.
+Estas são recomendações sobre arquitetura do site e densidade de informação, não uma proposta de apagar a trajetória profissional do repositório ou do perfil público em Markdown.
 
-## 9. Sequência de página recomendada
+## 9. Arquitetura da informação recomendada para várias páginas
 
-A ordem abaixo mantém os quatro projetos em destaque e antecipa as respostas às perguntas de triagem:
+Os dois percursos principais chegam às mesmas páginas de projetos:
 
-1. **Abertura:** nome e cargo junto ao retrato oficial, proposta de valor, ação para projetos, ação de contato e, quando existir, ação para currículo.
-2. **Sobre:** os dois parágrafos aprovados, sem adicionar uma biografia extensa antes dos projetos.
-3. **Resumo da carreira:** empresa, cargo ou escopo verificado, período e uma contribuição relevante por experiência. Uma linha do tempo compacta atende tanto ao recrutador quanto ao gestor técnico.
-4. **Selected Work:** quatro projetos aprovados, cada um como prévia de estudo de caso, com caminho para evidência pública permitida quando houver.
-5. **Skills / Toolbox:** competências agrupadas, ordenadas por relevância e ligadas aos projetos.
-6. **Decisões de engenharia:** uma ou duas prévias curtas na página inicial, com acesso às notas completas; as quatro notas integrais podem ficar numa página própria ou atrás de controles de expansão deliberados.
-7. **Formação:** qualificações e situação em formato compacto.
-8. **Recursos opcionais:** perfil público em Markdown e, futuramente, publicações selecionadas e vídeo de apresentação. A posição prevista no `todo.md` para o vídeo continua imediatamente antes de Contato.
-9. **Contato:** e-mail e LinkedIn em destaque, GitHub como evidência, WhatsApp opcional e link para o currículo.
+```mermaid
+flowchart LR
+    R["Recrutadora"] --> H["Home: resumo profissional rápido"]
+    H --> C["Contato ou currículo"]
+    H --> D["Detalhe de projeto"]
+    M["Gestor técnico"] --> I["Índice de Projetos"]
+    H --> I
+    I --> D
+    D --> N["Decisão técnica relacionada"]
+    D --> C
+```
 
-Mover Carreira para antes de Selected Work é uma recomendação a experimentar, não uma exigência. Se o desenho mantiver Selected Work logo após Sobre, o ajuste necessário é posicionar as Notas de Engenharia extensas depois de Carreira e Ferramentas. Essa mudança menor pode trazer a maior parte do benefício com menos alteração. O recrutador também já consegue chegar a Carreira pela navegação; esse caminho deve ser mantido.
+### 9.1 Home: percurso da recrutadora
+
+A home é o resumo profissional rápido. A recrutadora deve conseguir percorrê-la, avaliar se Carlos corresponde a uma vaga, obter o currículo e entrar em contato sem abrir uma página de projeto. Ordem recomendada:
+
+1. **Abertura:** retrato oficial, legenda aprovada com nome e cargo, proposta de valor, ações para Projetos e Contato e, quando existir, currículo.
+2. **Sobre:** os dois parágrafos aprovados, mantidos breves.
+3. **Resumo da carreira:** empresas, cargos ou escopos verificados, períodos e uma frase relevante por experiência.
+4. **Prévias de Selected Work:** quatro cartões curtos na ordem aprovada, cada um com link descritivo para sua página; incluir também um caminho “Ver todos os projetos” para o índice.
+5. **Resumo de competências:** grupos fáceis de examinar rapidamente; o contexto aprofundado fica nas páginas dos projetos.
+6. **Formação e recursos opcionais:** qualificações concisas e link secundário para o perfil público em Markdown. O vídeo planejado continua imediatamente antes de Contato quando for implementado.
+7. **Contato:** e-mail e LinkedIn primeiro, GitHub como evidência, WhatsApp opcional e link para o currículo.
+
+A home deve trazer apenas resumos: **nenhum estudo de caso completo nem Nota de Engenharia integral**. Um link curto como “Como tomo decisões de engenharia” pode levar ao índice de Projetos ou a um índice de notas técnicas, sem reproduzir essas decisões na home. Vale experimentar Carreira antes das prévias, mas também é razoável manter os quatro projetos perto do topo se Carreira continuar a um clique na navegação.
+
+### 9.2 Índice de Projetos: entrada do gestor técnico
+
+A navegação principal deve oferecer um destino direto “Projects” ou “Selected Work” que abra uma página de índice dedicada, e não apenas uma âncora da home. O índice apresenta os quatro projetos aprovados na ordem atual. Cada entrada precisa de nome reconhecível da empresa e do projeto, problema curto, contribuição de Carlos, tecnologias ou domínios relevantes e link claro “Ver projeto”. A pessoa deve conseguir escolher um caso sem ler antes uma decisão técnica completa.
+
+A recrutadora que deseja mais contexto pode chegar pelo cartão da home; o gestor técnico pode abrir o índice diretamente pela navegação ou por um link compartilhado. Os dois caminhos devem chegar às mesmas páginas de projeto. O índice continua com quatro casos, salvo nova aprovação de Carlos para mudar o escopo.
+
+### 9.3 Páginas de detalhes: uma por projeto aprovado
+
+Criar uma página própria para cada caso: Lumi, plataforma de People Analytics, modelagem de CRM HubSpot no BigQuery e dimensionamento de mercado da COPAPA. Exemplos de caminhos sob a base `/portfolio/` do GitHub Pages: `projects/lumi/`, `projects/people-analytics/`, `projects/hubspot-crm/` e `projects/copapa-market-sizing/`. São propostas de rota, não uma decisão de implementação; os caminhos finais devem funcionar quando abertos diretamente ou compartilhados.
+
+Cada página deve começar por empresa, projeto, problema de negócio, atuação individual de Carlos e resultado ou situação atual descritos com precisão. Em seguida, pode trazer abordagem, arquitetura ou fluxo de dados em nível publicável, tecnologias, restrições, alternativas, compromissos, decisões de engenharia relacionadas e evidências públicas disponíveis. Usar títulos para permitir leitura rápida por recrutadores e leitura profunda por gestores. Incluir retorno visível ao índice de Projetos e ação de contato; ninguém deve precisar voltar ao topo da home para continuar.
+
+Decisões técnicas devem ficar na página do projeto correspondente quando dependerem do contexto do caso. Se uma decisão exigir tratamento independente extenso, criar uma página própria de nota técnica ligada ao projeto. Não colocar as quatro decisões completas em um accordion ou bloco longo da home.
+
+### 9.4 Navegação e idiomas entre páginas
+
+Manter a navegação principal consistente na home, no índice de Projetos e nos detalhes. O item Projects/Selected Work deve levar ao índice; cada prévia da home pode apontar diretamente para o respectivo detalhe. Dar títulos claros às páginas e usar breadcrumbs ou link “Voltar aos projetos” nas páginas aprofundadas. Manter inglês como padrão e oferecer pt-BR em toda página publicada, inclusive no conteúdo técnico; o idioma escolhido deve permanecer consistente ao navegar. Traduzir metadados e rótulos dos links junto com o conteúdo visível.
+
+No GitHub Pages, cada rota proposta deve abrir corretamente após recarregamento direto e sob a base `/portfolio/` do repositório. A futura implementação com Spec Kit deve escolher uma abordagem de arquivos estáticos ou build que cumpra esse comportamento sem quebrar links existentes.
+
+### 9.5 Primeira impressão: a Bússola de Desafios
+
+A home deve abrir com uma **Bússola de Desafios** compacta e visualmente marcante, ao lado ou logo abaixo da mensagem principal e do retrato oficial. A chamada em inglês será “Find your question. See my work.” Quatro caminhos relacionam projetos reais a desafios de negócio: **Employees need answers** → Lumi; **Data needs a foundation** → People Analytics; **CRM needs a clear model** → HubSpot; **Markets need a map** → COPAPA. Cada caminho é um link direto para a página do respectivo projeto.
+
+Este é o momento “wow” proposto: o visitante percebe rapidamente a variedade do trabalho de Carlos e escolhe uma evidência relevante antes de ler parágrafos longos. O desenho deve lembrar um mapa de decisões preciso, com uma linha fina conectando os caminhos, luz azul-marinho discreta, tipografia forte e utilitários responsivos de grid/cards do Bootstrap. O retrato oficial continua claramente visível. Se houver movimento, ele deve revelar o percurso suavemente e respeitar a preferência por movimento reduzido; os links devem funcionar sem animação ou JavaScript. O mapa representa navegação e modo de pensar, não dados ou métricas de desempenho inventados.
+
+No desktop, a primeira tela deve mostrar nome e cargo, H1, ações principais e ao menos o início da Bússola de Desafios. No celular, priorizar mensagem e primeira ação; os quatro caminhos devem se empilhar com clareza, sem obrigar a recrutadora a atravessar uma imagem decorativa grande para chegar aos projetos. Os quatro rótulos podem ser refinados editorialmente, mas o vínculo entre desafio, projeto e navegação direta faz parte do conceito.
 
 ## 10. Contratos de conteúdo para uma futura implementação
 
-### 10.1 Cartão de Selected Work
+### 10.1 Prévias da home e do índice de Projetos
 
-Cada cartão deve responder, nesta ordem:
+Os cartões da home devem cobrir os três primeiros itens com um título e, no máximo, duas frases curtas no corpo, seguidas de link para a página própria. O índice de Projetos pode acrescentar os demais sem perder a leitura rápida:
 
 1. **Quem e o quê:** empresa e nome do projeto no título ou em rótulo com destaque equivalente.
 2. **Problema de negócio:** uma frase simples sobre o usuário ou a decisão atendida.
-3. **Minha contribuição:** uma ou duas frases que nomeiem o que Carlos pessoalmente desenhou, construiu, modelou ou analisou.
+3. **Minha contribuição:** uma frase concisa na home que nomeie o que Carlos pessoalmente desenhou, construiu, modelou ou analisou; o índice e a página de detalhes podem ampliar a explicação.
 4. **Resultado ou situação atual:** efeito qualitativo ou quantitativo verificado, ou descrição honesta de “em andamento”/“proposto” quando aplicável.
 5. **Tecnologias centrais:** lista curta, relevante para esse caso específico.
-6. **Evidência:** estudo de caso, nota técnica, demonstração, artigo ou repositório público permitido. Omitir o link se não houver destino legítimo; não criar botão sem conteúdo.
+6. **Próxima ação:** link descritivo para a página desse projeto. A página de detalhes pode, por sua vez, apontar para nota técnica, demonstração, artigo ou repositório público permitido. Omitir links externos para evidências quando não houver destino legítimo.
 
-O cartão precisa fazer sentido sem abrir detalhes ou ler as Notas de Engenharia. Os dois idiomas devem apresentar fatos equivalentes; traduzir o significado, não mecanicamente cada palavra.
+O cartão da home precisa fazer sentido sem abrir a página de detalhes, mas ser curto o suficiente para examinar os quatro projetos rapidamente. Os dois idiomas devem apresentar fatos equivalentes; traduzir o significado, não mecanicamente cada palavra.
 
-### 10.2 Decisão de engenharia
+### 10.2 Página de detalhes do projeto
+
+Usar um contrato consistente nos quatro casos: empresa e projeto identificáveis; problema de negócio e usuário atendido; atuação individual de Carlos; abordagem e tecnologias; resultado verificado ou situação atual; restrições e compromissos; decisões técnicas relacionadas; evidências permitidas; caminho claro de volta a Projetos ou para Contato. A página pode ser longa porque o visitante escolheu lê-la. Precisa distinguir trabalho proposto, em andamento e concluído e respeitar a confidencialidade das empresas.
+
+### 10.3 Decisão de engenharia
 
 Uma nota completa deve conservar a estrutura técnica atual: empresa e projeto → problema de negócio → restrição técnica → alternativas → decisão e papel de Carlos nela → compromisso assumido → condição para reavaliar. Essa estrutura é especialmente útil numa entrevista técnica. Vincular a nota ao projeto correspondente para que o leitor entenda por que a decisão aparece. A página deve distinguir uma decisão real do projeto de um princípio geral de engenharia sempre que o material de origem não sustentar uma afirmação de autoria pessoal.
 
-### 10.3 Experiência profissional
+### 10.4 Experiência profissional
 
 Cada entrada deve informar organização, período verificado, cargo oficial quando aprovado, escopo técnico relevante e uma contribuição distintiva. A linha do tempo não deve apresentar trabalho em andamento como concluído. Sua redação deve concordar com currículo, LinkedIn, cartões de Selected Work e `about-me.md`.
 
@@ -234,22 +285,22 @@ Cada entrada deve informar organização, período verificado, cargo oficial qua
 
 ### 11.1 Prioridade 1 — facilitar a triagem
 
-1. Retirar as Notas de Engenharia completas do percurso entre Selected Work e Carreira/Ferramentas, preservando acesso às quatro decisões.
-2. Dar destaque aos nomes reconhecíveis de empresa e projeto em todos os cartões.
-3. Acrescentar situação ou resultado verificado quando as fontes permitirem.
+1. Criar um índice de Projetos e quatro páginas de detalhes, com links diretos funcionais a partir da navegação, das prévias curtas da home e da Bússola de Desafios.
+2. Retirar da home as explicações completas dos projetos e as Notas de Engenharia; colocar as decisões nas páginas dos respectivos projetos ou em páginas de notas técnicas ligadas a eles.
+3. Dar destaque aos nomes reconhecíveis de empresa e projeto em todas as prévias e acrescentar situação ou resultado verificado nas páginas de detalhes quando as fontes permitirem.
 4. Incluir um link para currículo em um clique na abertura ou perto dela após existir um PDF aprovado.
 5. Conferir a primeira tela no celular e ajustar tamanho/ordem do retrato se H1 e ação principal estiverem escondidos.
 
-**Aceite:** Quem percorre títulos e nomes dos cartões identifica Carlos, seu cargo, quatro projetos e empresas, competências centrais, histórico profissional e caminho de contato sem ler uma Nota de Engenharia inteira. Cada projeto pode ser relacionado à sua evidência aprofundada quando ela existir. Nenhuma afirmação ultrapassa o material público aprovado.
+**Aceite:** A recrutadora identifica pela home Carlos, seu cargo, quatro projetos e empresas, competências centrais, histórico profissional, currículo e caminho de contato sem ler detalhes técnicos. A primeira impressão inclui uma Bússola de Desafios acessível com quatro opções que levam diretamente aos casos correspondentes. O gestor técnico abre Projetos diretamente, escolhe qualquer um dos quatro casos e lê o estudo completo e as decisões relacionadas em páginas próprias. Cada URL de projeto funciona após recarregamento direto. Nenhuma afirmação ultrapassa o material público aprovado.
 
 ### 11.2 Prioridade 2 — melhorar profundidade e consistência
 
-1. Criar um caminho claro dos cartões para estudos de caso sanitizados ou decisões técnicas relacionadas.
+1. Acrescentar artefatos permitidos e páginas de notas técnicas ligadas aos detalhes dos projetos quando fortalecerem as evidências.
 2. Alinhar cargos e datas verificados entre site, currículo, LinkedIn e perfil público em Markdown.
 3. Adicionar link ou download secundário para `about-me.md` com explicação concisa sobre seu uso com um assistente de IA.
 4. Revisar nomes da navegação, incluir Skills se necessário e planejar a prévia de compartilhamento.
 
-**Aceite:** Um leitor técnico acessa o raciocínio de uma decisão a partir do projeto com uma ação deliberada; um recrutador alcança competências, carreira, currículo e contato diretamente. Os links descrevem seus destinos. Os dois idiomas apresentam os mesmos fatos essenciais.
+**Aceite:** Um leitor técnico acessa o raciocínio de uma decisão a partir da página do projeto; um recrutador alcança competências, carreira, currículo e contato diretamente. Os links descrevem seus destinos. Os dois idiomas apresentam os mesmos fatos essenciais na home, no índice de Projetos e em cada página de detalhes, e a escolha do idioma persiste durante a navegação.
 
 ### 11.3 Prioridade 3 — expressão opcional
 
