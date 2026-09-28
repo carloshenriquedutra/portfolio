@@ -1,5 +1,7 @@
 # Recruiter experience audit of Carlos Dutra's portfolio
 
+[Versão em português (Brasil)](auditoria-experiencia-recrutador.md)
+
 _Reviewed: 2026-09-27 · Scope: content, information architecture, and recruiter journeys · Status: recommendations for a future Spec Kit iteration_
 
 ## 1. Executive assessment
