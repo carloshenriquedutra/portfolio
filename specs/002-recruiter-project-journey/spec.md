@@ -1,5 +1,7 @@
 # Feature Specification: Recruiter-First Multi-Page Portfolio
 
+> Historical feature record: Carlos later rejected the Challenge Compass. [Feature 003](../003-remove-challenge-compass/spec.md) supersedes only its Compass requirements; the multi-page project journey remains approved.
+
 **Branch**: `main` (personal repository) · **Created**: 2026-09-27 · **Status**: Approved direction from Carlos · **Input**: recruiter experience audits and the request for a memorable first impression, separate project pages, implementation, commit, and push
 
 ## 1. Problem and objective

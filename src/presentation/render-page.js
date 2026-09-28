@@ -1,4 +1,4 @@
-import { renderCompass, renderProjectCards, renderProjectDetail } from "./render-projects.js";
+import { renderProjectCards, renderProjectDetail } from "./render-projects.js";
 
 function element(tagName, className, text) {
   const node = document.createElement(tagName);
@@ -57,7 +57,6 @@ export function renderPage(content, locale, page, project) {
 
   if (page === "home") {
     document.querySelector(".profile-portrait").alt = content.hero.portraitAlt;
-    renderCompass(document.querySelector("#challenge-compass"), content);
     renderProjectCards(document.querySelector("#case-studies"), content, true);
     renderExperience(document.querySelector("#experience-list"), content.experience.items);
     renderEducation(document.querySelector("#education-list"), content.education.items);

@@ -4,7 +4,7 @@
 
 _Reviewed: 2026-09-27 · Scope: content, information architecture, and recruiter journeys · Baseline: the single-page site before feature 002_
 
-The single-page observations below document the baseline. The multi-page recommendation and Challenge Compass are implemented under [feature 002](../specs/002-recruiter-project-journey/spec.md); the résumé and other future ideas remain separate work.
+The single-page observations below document the baseline. [Feature 002](../specs/002-recruiter-project-journey/spec.md) created the approved multi-page project journey; [feature 003](../specs/003-remove-challenge-compass/spec.md) retires the Challenge Compass after Carlos rejected it. The résumé and other future ideas remain separate work.
 
 ## 1. Executive assessment
 
@@ -246,13 +246,11 @@ Keep the main navigation consistent on the home page, Projects index, and projec
 
 On GitHub Pages, every proposed route must resolve after a direct reload and under the repository's `/portfolio/` base path. The future Spec Kit implementation should choose the static-file or build approach that meets this behavior without breaking existing links.
 
-### 9.5 First impression: the Challenge Compass
+### 9.5 First impression: a clear professional introduction
 
-The home page should open with a compact, visually distinctive **Challenge Compass** beside or immediately below the hero message and official portrait. Its prompt is “Find your question. See my work.” Four linked paths translate real projects into business challenges: **Employees need answers** → Lumi; **Data needs a foundation** → People Analytics; **CRM needs a clear model** → HubSpot; **Markets need a map** → COPAPA. Each path is a direct link to the corresponding project page.
+Carlos rejected the Challenge Compass after seeing it on the live home page. Keep the opening focused on the official portrait, role, concise value proposition, and clear Projects and Contact actions. The four short Selected Work previews below provide the direct paths to individual project pages. The distinctive quality should come from the specificity of the work and the clarity of the writing, without a second navigation device competing with the hero.
 
-This is the proposed “wow” moment: the visitor can understand Carlos's range and choose a relevant proof point before reading a long paragraph. The visual treatment should resemble a precise decision map, with a thin connected route, restrained navy light, strong typography, and responsive Bootstrap grid/card utilities. The official portrait remains unmistakable. Motion, if used, should reveal the route gently and respect reduced-motion preferences; the links must work without animation or JavaScript. The map represents navigation and thinking, not invented data or performance metrics.
-
-On desktop, the first viewport should show the name and role, H1, primary actions, and at least the start of the Challenge Compass. On mobile, prioritize the message and first action; the four paths should stack cleanly without forcing the recruiter through a large decorative image before reaching the projects. The four labels can be refined editorially, but the challenge-to-project mapping and direct navigation are part of the concept.
+On desktop and mobile, the first screen should make Carlos's role and primary action easy to find. Keep the portrait prominent without delaying the useful action on small screens. The project index and detail pages created by feature 002 remain the approved deeper reading path.
 
 ## 10. Content contracts for a future implementation
 
@@ -285,13 +283,13 @@ Each entry should have organization, verified dates, official role when approved
 
 ### 11.1 Priority 1 — make screening easy
 
-1. Create a dedicated Projects index and four project detail pages, with working direct links from navigation, the short home-page previews, and the Challenge Compass.
+1. Create a dedicated Projects index and four project detail pages, with working direct links from navigation and the short home-page previews.
 2. Remove full project explanations and Engineering Notes from the home page; place decisions on the relevant project pages or linked technical-note pages.
 3. Promote recognizable company and project names in every preview and add a verified status or outcome to the detail pages where the source material permits it.
 4. Put a one-click résumé link in the hero or near it after the approved PDF exists.
 5. Check the first mobile viewport and adjust portrait sizing/order if the H1 and primary action are obscured.
 
-**Acceptance:** A recruiter can identify Carlos, his role, four projects and companies, core skills, employer history, résumé, and contact route from the home page without reading technical detail. The first impression includes an accessible four-choice Challenge Compass that leads directly to the matching cases. A technical manager can open Projects directly, select any of the four cases, and read its full case and related decisions on dedicated pages. Every direct project URL works after reload. No claim exceeds the approved public source material.
+**Acceptance:** A recruiter can identify Carlos, his role, four projects and companies, core skills, employer history, résumé, and contact route from the home page without reading technical detail. The Projects action and short previews lead directly to the matching cases. A technical manager can open Projects directly, select any of the four cases, and read its full case and related decisions on dedicated pages. Every direct project URL works after reload. No claim exceeds the approved public source material.
 
 ### 11.2 Priority 2 — improve depth and consistency
 

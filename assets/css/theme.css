@@ -54,13 +54,6 @@ h2 { font-size: clamp(2rem, 4vw, 3.1rem); }
 .project-card-link:hover { color: #fff; }
 .project-technologies { color: #aeb9c9; font-size: .95rem; }
 .skill-summary { color: #d8deea; font-size: 1.15rem; line-height: 1.8; }
-.compass-shell { position: relative; overflow: hidden; background: radial-gradient(circle at 10% 0%, rgb(23 74 120 / 42%), transparent 38%), #0a1018; border: 1px solid #29415d; border-radius: 1.25rem; }
-.compass-shell::before { content: ""; position: absolute; top: 54%; right: 5%; left: 5%; height: 1px; background: linear-gradient(90deg, transparent, #326596, transparent); pointer-events: none; }
-.compass-path { position: relative; display: flex; flex-direction: column; min-height: 11rem; padding: 1.4rem; background: #0d1724; border: 1px solid #385577; border-radius: .9rem; color: #eef4fb; box-shadow: 0 .8rem 2rem rgb(0 0 0 / 18%); transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
-.compass-path:hover, .compass-path:focus-visible { transform: translateY(-4px); border-color: #365f86; box-shadow: 0 1rem 2.5rem rgb(18 59 99 / 35%); color: #fff; }
-.compass-index { color: #dce5ee; font-size: .78rem; font-weight: 800; letter-spacing: .18em; }
-.compass-question { margin: auto 0 .8rem; max-width: 18ch; font-size: 1.12rem; font-weight: 700; line-height: 1.25; }
-.compass-destination { color: #dce5ee; font-size: .93rem; font-weight: 700; }
 .page-intro { max-width: 60rem; }
 .project-lead { max-width: 56rem; color: #cbd5e2; }
 .project-detail-header { padding-top: 1.5rem; }
@@ -95,7 +88,6 @@ h2 { font-size: clamp(2rem, 4vw, 3.1rem); }
 
 @media (max-width: 991.98px) {
     .portrait-frame { width: min(65vw, 260px); }
-    .compass-shell::before { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

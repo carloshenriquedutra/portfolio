@@ -20,22 +20,6 @@ function projectLink(id, label, className) {
   return link;
 }
 
-export function renderCompass(container, content) {
-  const cards = PROJECTS.map(({ id }, index) => {
-    const item = content.compass.paths[id];
-    const column = node("div", "col");
-    const link = projectLink(id, "", "compass-path card h-100 text-decoration-none");
-    link.append(
-      node("span", "compass-index", String(index + 1).padStart(2, "0")),
-      node("span", "compass-question", item.challenge),
-      node("span", "compass-destination", `${item.project} ↗`)
-    );
-    column.append(link);
-    return column;
-  });
-  container.replaceChildren(...cards);
-}
-
 export function renderProjectCards(container, content, compact) {
   const cards = PROJECTS.map(({ id }, index) => {
     const study = selectProject(id, content).case;
@@ -51,7 +35,7 @@ export function renderProjectCards(container, content, compact) {
       body.append(node("p", "card-text", study.contribution));
       body.append(node("p", "project-technologies mt-auto", study.technologies.join(" · ")));
     }
-    body.append(projectLink(id, `${content.compass.link}: ${study.project} ↗`, "stretched-link project-card-link mt-auto"));
+    body.append(projectLink(id, `${content.work.openProject}: ${study.project} ↗`, "stretched-link project-card-link mt-auto"));
     article.append(body);
     column.append(article);
     return column;

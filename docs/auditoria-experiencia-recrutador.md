@@ -4,7 +4,7 @@
 
 _Revisão: 27/09/2026 · Escopo: conteúdo, arquitetura da informação e jornada de recrutamento · Linha de base: site de página única antes da funcionalidade 002_
 
-As observações sobre a página única documentam a versão anterior. A recomendação de múltiplas páginas e a Bússola de Desafios foram implementadas na [funcionalidade 002](../specs/002-recruiter-project-journey/spec.md); currículo e outras ideias futuras seguem como trabalho separado.
+As observações sobre a página única documentam a versão anterior. A [funcionalidade 002](../specs/002-recruiter-project-journey/spec.md) criou a jornada de projetos aprovada; a [funcionalidade 003](../specs/003-remove-challenge-compass/spec.md) retira a Bússola de Desafios depois da rejeição de Carlos. Currículo e outras ideias futuras seguem como trabalho separado.
 
 ## 1. Avaliação geral
 
@@ -246,13 +246,11 @@ Manter a navegação principal consistente na home, no índice de Projetos e nos
 
 No GitHub Pages, cada rota proposta deve abrir corretamente após recarregamento direto e sob a base `/portfolio/` do repositório. A futura implementação com Spec Kit deve escolher uma abordagem de arquivos estáticos ou build que cumpra esse comportamento sem quebrar links existentes.
 
-### 9.5 Primeira impressão: a Bússola de Desafios
+### 9.5 Primeira impressão: apresentação profissional clara
 
-A home deve abrir com uma **Bússola de Desafios** compacta e visualmente marcante, ao lado ou logo abaixo da mensagem principal e do retrato oficial. A chamada em inglês será “Find your question. See my work.” Quatro caminhos relacionam projetos reais a desafios de negócio: **Employees need answers** → Lumi; **Data needs a foundation** → People Analytics; **CRM needs a clear model** → HubSpot; **Markets need a map** → COPAPA. Cada caminho é um link direto para a página do respectivo projeto.
+Carlos rejeitou a Bússola de Desafios depois de vê-la na home publicada. A abertura deve concentrar-se no retrato oficial, cargo, proposta de valor concisa e ações claras para Projetos e Contato. As quatro prévias curtas de Trabalhos Selecionados mais abaixo oferecem os caminhos diretos para as páginas individuais. A personalidade deve vir da especificidade dos trabalhos e da clareza do texto, sem outro dispositivo de navegação competindo com a apresentação.
 
-Este é o momento “wow” proposto: o visitante percebe rapidamente a variedade do trabalho de Carlos e escolhe uma evidência relevante antes de ler parágrafos longos. O desenho deve lembrar um mapa de decisões preciso, com uma linha fina conectando os caminhos, luz azul-marinho discreta, tipografia forte e utilitários responsivos de grid/cards do Bootstrap. O retrato oficial continua claramente visível. Se houver movimento, ele deve revelar o percurso suavemente e respeitar a preferência por movimento reduzido; os links devem funcionar sem animação ou JavaScript. O mapa representa navegação e modo de pensar, não dados ou métricas de desempenho inventados.
-
-No desktop, a primeira tela deve mostrar nome e cargo, H1, ações principais e ao menos o início da Bússola de Desafios. No celular, priorizar mensagem e primeira ação; os quatro caminhos devem se empilhar com clareza, sem obrigar a recrutadora a atravessar uma imagem decorativa grande para chegar aos projetos. Os quatro rótulos podem ser refinados editorialmente, mas o vínculo entre desafio, projeto e navegação direta faz parte do conceito.
+No desktop e no celular, a primeira tela deve deixar cargo e ação principal fáceis de encontrar. O retrato continua em destaque sem atrasar a primeira ação útil em telas pequenas. O índice e as páginas de projeto criados na funcionalidade 002 permanecem como caminho aprovado para aprofundamento.
 
 ## 10. Contratos de conteúdo para uma futura implementação
 
@@ -285,13 +283,13 @@ Cada entrada deve informar organização, período verificado, cargo oficial qua
 
 ### 11.1 Prioridade 1 — facilitar a triagem
 
-1. Criar um índice de Projetos e quatro páginas de detalhes, com links diretos funcionais a partir da navegação, das prévias curtas da home e da Bússola de Desafios.
+1. Criar um índice de Projetos e quatro páginas de detalhes, com links diretos funcionais a partir da navegação e das prévias curtas da home.
 2. Retirar da home as explicações completas dos projetos e as Notas de Engenharia; colocar as decisões nas páginas dos respectivos projetos ou em páginas de notas técnicas ligadas a eles.
 3. Dar destaque aos nomes reconhecíveis de empresa e projeto em todas as prévias e acrescentar situação ou resultado verificado nas páginas de detalhes quando as fontes permitirem.
 4. Incluir um link para currículo em um clique na abertura ou perto dela após existir um PDF aprovado.
 5. Conferir a primeira tela no celular e ajustar tamanho/ordem do retrato se H1 e ação principal estiverem escondidos.
 
-**Aceite:** A recrutadora identifica pela home Carlos, seu cargo, quatro projetos e empresas, competências centrais, histórico profissional, currículo e caminho de contato sem ler detalhes técnicos. A primeira impressão inclui uma Bússola de Desafios acessível com quatro opções que levam diretamente aos casos correspondentes. O gestor técnico abre Projetos diretamente, escolhe qualquer um dos quatro casos e lê o estudo completo e as decisões relacionadas em páginas próprias. Cada URL de projeto funciona após recarregamento direto. Nenhuma afirmação ultrapassa o material público aprovado.
+**Aceite:** A recrutadora identifica pela home Carlos, seu cargo, quatro projetos e empresas, competências centrais, histórico profissional, currículo e caminho de contato sem ler detalhes técnicos. A ação de Projetos e as prévias curtas levam diretamente aos casos correspondentes. O gestor técnico abre Projetos diretamente, escolhe qualquer um dos quatro casos e lê o estudo completo e as decisões relacionadas em páginas próprias. Cada URL de projeto funciona após recarregamento direto. Nenhuma afirmação ultrapassa o material público aprovado.
 
 ### 11.2 Prioridade 2 — melhorar profundidade e consistência
 

@@ -15,7 +15,7 @@ const en = {
     body: "My path runs through RevOps, Data Analytics and Data Engineering. That mix taught me to ask what a number will help someone decide before choosing how to build the pipeline that produces it.",
     detail: "I work as a senior technical individual contributor: shaping architecture, building useful data products, and staying close to the business problem. A dashboard is only as trustworthy as the definitions and systems underneath it."
   },
-  work: { title: "Selected work", intro: "Four projects where business questions shaped data products and engineering decisions." },
+  work: { title: "Selected work", intro: "Four projects where business questions shaped data products and engineering decisions.", openProject: "Explore project" },
   decisionLabels: { businessProblem: "Business problem", context: "Technical constraint", options: "Design alternatives", choice: "Decision", tradeoff: "Engineering trade-off", revisit: "Revisit when" },
   cases: [
     { id: "lumi", company: "MadeiraMadeira", project: "Lumi · People AI assistant", title: "An employee assistant grounded in People knowledge", summary: "Lumi helps employees find answers about People policies and processes through a conversational assistant.", contribution: "I designed and built the Python service, retrieving relevant knowledge passages and supplying them as context for Gemini responses.", technologies: ["Python", "RAG", "Google Chat", "Gemini"] },
@@ -48,15 +48,6 @@ en.pages = {
   home: { title: "Carlos Dutra · Senior Data Engineer", description: en.description },
   projects: { title: "Projects · Carlos Dutra", description: "Four selected data engineering and analytical projects by Carlos Dutra.", kicker: "SELECTED PROJECTS", heading: "Choose a problem. See how I approached it.", intro: "A short route to the work behind the headline. Each project has its own business context and technical decisions.", listLabel: "Selected projects" },
   project: { breadcrumbHome: "Home", breadcrumbProjects: "Projects", problem: "Business problem", contribution: "My contribution", approach: "Approach", status: "Result and status", technology: "Tools and methods", decisions: "Engineering decisions", back: "All projects", contact: "Start a conversation" }
-};
-en.compass = {
-  kicker: "THE CHALLENGE COMPASS", title: "Where does the question lead?", intro: "Follow the business question to the engineering behind it.", link: "Explore project",
-  paths: {
-    lumi: { challenge: "Employees need answers", project: "Lumi" },
-    "people-analytics": { challenge: "Data needs a foundation", project: "People Analytics" },
-    "hubspot-crm": { challenge: "CRM needs a clear model", project: "HubSpot" },
-    "copapa-market-sizing": { challenge: "Markets need a map", project: "COPAPA" }
-  }
 };
 en.projectDetails = {
   lumi: { problem: "Employees need a way to find answers about People policies and processes through a familiar conversational interface.", approach: "I built a Python service that retrieves relevant passages from maintained knowledge and supplies them as context for Gemini responses in Google Chat. The retrieval boundary makes the source of an answer a design concern rather than an implicit assumption.", status: "Built the retrieval-based Python service that grounds the employee assistant's answers in People knowledge." },

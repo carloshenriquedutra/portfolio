@@ -15,7 +15,7 @@ const ptBR = {
     body: "Minha trajetória passa por RevOps, Análise de Dados e Engenharia de Dados. Essa combinação me ensinou a perguntar que decisão um número pode ajudar alguém a tomar antes de escolher como construir o pipeline que vai produzi-lo.",
     detail: "Atuo como especialista técnico sênior, com foco em contribuição técnica individual: desenho arquiteturas, construo produtos de dados úteis e mantenho proximidade com o problema de negócio. Um dashboard só é tão confiável quanto as definições e os sistemas que o sustentam."
   },
-  work: { title: "Trabalhos selecionados", intro: "Quatro projetos em que perguntas de negócio orientaram produtos de dados e decisões de engenharia." },
+  work: { title: "Trabalhos selecionados", intro: "Quatro projetos em que perguntas de negócio orientaram produtos de dados e decisões de engenharia.", openProject: "Conheça o projeto" },
   decisionLabels: { businessProblem: "Problema de negócio", context: "Restrição técnica", options: "Alternativas de desenho", choice: "Decisão", tradeoff: "Trade-off de engenharia", revisit: "Reavaliar quando" },
   cases: [
     { id: "lumi", company: "MadeiraMadeira", project: "Lumi · assistente de IA de People", title: "Um assistente para colaboradores ancorado no conhecimento de People", summary: "O Lumi ajuda colaboradores a encontrar respostas sobre políticas e processos de People em uma interface conversacional.", contribution: "Projetei e desenvolvi o serviço em Python, recuperando trechos relevantes da base de conhecimento e fornecendo-os como contexto para as respostas do Gemini.", technologies: ["Python", "RAG", "Google Chat", "Gemini"] },
@@ -48,15 +48,6 @@ ptBR.pages = {
   home: { title: "Carlos Dutra · Engenheiro de Dados Sênior", description: ptBR.description },
   projects: { title: "Projetos · Carlos Dutra", description: "Quatro projetos selecionados de engenharia e análise de dados de Carlos Dutra.", kicker: "PROJETOS SELECIONADOS", heading: "Escolha um problema. Veja como eu o abordei.", intro: "Um caminho curto até o trabalho por trás da apresentação. Cada projeto tem seu contexto de negócio e suas decisões técnicas.", listLabel: "Projetos selecionados" },
   project: { breadcrumbHome: "Início", breadcrumbProjects: "Projetos", problem: "Problema de negócio", contribution: "Minha contribuição", approach: "Abordagem", status: "Resultado e situação", technology: "Ferramentas e métodos", decisions: "Decisões de engenharia", back: "Todos os projetos", contact: "Vamos conversar" }
-};
-ptBR.compass = {
-  kicker: "BÚSSOLA DE DESAFIOS", title: "Aonde a pergunta nos leva?", intro: "Siga a pergunta de negócio até a engenharia por trás dela.", link: "Conheça o projeto",
-  paths: {
-    lumi: { challenge: "Pessoas precisam de respostas", project: "Lumi" },
-    "people-analytics": { challenge: "Dados precisam de uma base", project: "People Analytics" },
-    "hubspot-crm": { challenge: "O CRM precisa de um modelo claro", project: "HubSpot" },
-    "copapa-market-sizing": { challenge: "Mercados precisam de um mapa", project: "COPAPA" }
-  }
 };
 ptBR.projectDetails = {
   lumi: { problem: "Colaboradores precisam encontrar respostas sobre políticas e processos de People em uma interface conversacional familiar.", approach: "Desenvolvi um serviço em Python que recupera trechos relevantes de uma base de conhecimento mantida e os fornece como contexto para respostas do Gemini no Google Chat. A fronteira de recuperação torna a fonte da resposta uma decisão explícita de projeto.", status: "Desenvolvi o serviço em Python com recuperação de conhecimento que fundamenta as respostas do assistente para colaboradores." },
