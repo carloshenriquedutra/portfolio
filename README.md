@@ -21,7 +21,7 @@ The site uses a local copy of Bootstrap 5.3.3 and native browser JavaScript modu
 - `index.html` — concise recruiter-facing home with direct paths to Projects and Contact.
 - `projects/index.html` — index of the four selected projects.
 - `projects/<slug>/index.html` — English baseline and technical detail for each project.
-- `assets/css/theme.css` — Bootstrap theme overrides and the black-and-dark-navy visual identity.
+- `assets/css/theme.css` — Bootstrap theme overrides and the black-and-plum visual identity.
 - `assets/vendor/bootstrap/` — pinned Bootstrap 5.3.3 CSS, JavaScript bundle, and MIT license.
 - `assets/images/profile.jpg` — official profile photograph supplied for the portfolio.
 - `src/domain/` and `src/application/` — locale and project selection rules, independent of the browser UI.
