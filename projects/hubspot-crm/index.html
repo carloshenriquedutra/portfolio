@@ -60,10 +60,8 @@
    </nav>
    <div id="project-detail">
     <header class="project-detail-header mb-5">
-     <p class="section-kicker">Gobrax / HubSpot CRM modeling in BigQuery</p>
+     <p class="section-kicker">Gobrax</p>
      <h1 class="display-4 fw-bold">HubSpot CRM modeling in BigQuery</h1>
-     <p class="lead project-lead fw-semibold">Turning CRM entities into analysis-ready models</p>
-     <p class="project-lead">HubSpot exposes flexible properties and linked objects; analytical use needs stable types, keys, relationships, and event grain.</p>
     </header>
     <div class="row row-cols-1 row-cols-lg-2 g-4">
      <div class="col">
@@ -75,19 +73,7 @@
      <div class="col">
       <article class="project-fact h-100 p-4">
        <h2 class="h4">My contribution</h2>
-       <p class="mb-0">I built dbt models in BigQuery for companies, contacts, deals, and engagements: normalizing source properties, deduplicating mutable records, resolving CRM associations, and publishing curated deal and activity views.</p>
-      </article>
-     </div>
-     <div class="col">
-      <article class="project-fact h-100 p-4">
-       <h2 class="h4">Approach</h2>
-       <p class="mb-0">I modeled companies, contacts, deals, and engagements with dbt and SQL in BigQuery. The work normalizes source properties, deduplicates mutable records, resolves associations, and declares grain before aggregating activities or deals.</p>
-      </article>
-     </div>
-     <div class="col">
-      <article class="project-fact h-100 p-4">
-       <h2 class="h4">Result and status</h2>
-       <p class="mb-0">Published curated deal and activity views for consistent analysis across CRM entities.</p>
+       <p class="mb-0">I built models for companies, contacts, deals, and engagements: normalizing properties, deduplicating records, and resolving CRM associations. I published curated deal and activity views for analytical use.</p>
       </article>
      </div>
     </div>
@@ -98,12 +84,7 @@
     <section class="content-section py-5">
      <h2 class="h3 mb-4">Engineering decisions</h2>
      <article class="decision-story mb-5">
-      <p class="section-kicker">Gobrax / HubSpot CRM modeling in BigQuery</p>
       <h3 class="h4">Declare grain before joining entities</h3>
-      <p class="case-detail mb-3">
-       <strong>Business problem:</strong>
-       Commercial teams needed a consistent way to analyze HubSpot deals and engagements across linked, mutable CRM entities.
-      </p>
       <p class="case-detail mb-3">
        <strong>Technical constraint:</strong>
        A CRM deal can link to multiple contacts, products, and activities; unrestricted joins can fan out rows and inflate measures.

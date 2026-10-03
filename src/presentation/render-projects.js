@@ -48,16 +48,13 @@ export function renderProjectDetail(container, project, content) {
   const study = project.case;
   const header = node("header", "project-detail-header mb-5");
   header.append(
-    node("p", "section-kicker", `${study.company} / ${study.project}`),
-    node("h1", "display-4 fw-bold", study.project),
-    node("p", "lead project-lead fw-semibold", study.title),
-    node("p", "project-lead", study.summary)
+    node("p", "section-kicker", study.company),
+    node("h1", "display-4 fw-bold", study.project)
   );
 
   const facts = node("div", "row row-cols-1 row-cols-lg-2 g-4");
   for (const [label, value] of [
-    [labels.problem, project.problem], [labels.contribution, study.contribution],
-    [labels.approach, project.approach], [labels.status, project.status]
+    [labels.problem, project.problem], [labels.contribution, project.contribution]
   ]) {
     const column = node("div", "col");
     const article = node("article", "project-fact h-100 p-4");
@@ -75,9 +72,7 @@ export function renderProjectDetail(container, project, content) {
     for (const decision of project.decisions) {
       const article = node("article", "decision-story mb-5");
       article.append(
-        node("p", "section-kicker", `${decision.company} / ${decision.project}`),
         node("h3", "h4", decision.title),
-        labeledParagraph(content.decisionLabels.businessProblem, decision.businessProblem),
         labeledParagraph(content.decisionLabels.context, decision.situation),
         labeledParagraph(content.decisionLabels.options, decision.options),
         labeledParagraph(content.decisionLabels.choice, decision.choice),

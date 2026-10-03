@@ -60,34 +60,20 @@
    </nav>
    <div id="project-detail">
     <header class="project-detail-header mb-5">
-     <p class="section-kicker">MadeiraMadeira / Lumi · People AI assistant</p>
+     <p class="section-kicker">MadeiraMadeira</p>
      <h1 class="display-4 fw-bold">Lumi · People AI assistant</h1>
-     <p class="lead project-lead fw-semibold">An employee assistant grounded in People knowledge</p>
-     <p class="project-lead">Lumi helps employees find answers about People policies and processes through a conversational assistant.</p>
     </header>
     <div class="row row-cols-1 row-cols-lg-2 g-4">
      <div class="col">
       <article class="project-fact h-100 p-4">
        <h2 class="h4">Business problem</h2>
-       <p class="mb-0">Employees need a way to find answers about People policies and processes through a familiar conversational interface.</p>
+       <p class="mb-0">Employees need consistent, current answers about People policies and processes in Google Chat.</p>
       </article>
      </div>
      <div class="col">
       <article class="project-fact h-100 p-4">
        <h2 class="h4">My contribution</h2>
-       <p class="mb-0">I designed and built the Python service, retrieving relevant knowledge passages and supplying them as context for Gemini responses.</p>
-      </article>
-     </div>
-     <div class="col">
-      <article class="project-fact h-100 p-4">
-       <h2 class="h4">Approach</h2>
-       <p class="mb-0">I built a Python service that retrieves relevant passages from maintained knowledge and supplies them as context for Gemini responses in Google Chat. The retrieval boundary makes the source of an answer a design concern rather than an implicit assumption.</p>
-      </article>
-     </div>
-     <div class="col">
-      <article class="project-fact h-100 p-4">
-       <h2 class="h4">Result and status</h2>
-       <p class="mb-0">Built the retrieval-based Python service that grounds the employee assistant's answers in People knowledge.</p>
+       <p class="mb-0">I designed and built the assistant service, connecting employee questions to maintained People knowledge.</p>
       </article>
      </div>
     </div>
@@ -98,12 +84,7 @@
     <section class="content-section py-5">
      <h2 class="h3 mb-4">Engineering decisions</h2>
      <article class="decision-story mb-5">
-      <p class="section-kicker">MadeiraMadeira / Lumi · People AI assistant</p>
       <h3 class="h4">Make retrieval an explicit input to generation</h3>
-      <p class="case-detail mb-3">
-       <strong>Business problem:</strong>
-       Employees needed timely, consistent answers to People policies without relying on a separate manual search for every question.
-      </p>
       <p class="case-detail mb-3">
        <strong>Technical constraint:</strong>
        A language model's parametric knowledge does not identify which approved source supports an answer to a policy question.
