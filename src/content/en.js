@@ -1,7 +1,7 @@
 const en = {
   locale: "en",
   description: "Senior Data Engineer building dependable data foundations for better decisions.",
-  nav: { about: "About", work: "Projects", experience: "Experience", contact: "Contact", language: "Language" },
+  nav: { about: "About", work: "Projects", experience: "Experience", education: "Education", contact: "Contact", language: "Language" },
   interface: { skipLink: "Skip to content", mainNavigation: "Main navigation", toggleNavigation: "Toggle navigation", aboutKicker: "01 / THE THREAD", workKicker: "02 / SELECTED WORK", skillsKicker: "03 / TOOLBOX", experienceKicker: "04 / CAREER", educationKicker: "05 / LEARNING", contactKicker: "06 / SAY HELLO", portraitTitle: "Carlos Dutra, Senior Data Engineer" },
   hero: {
     roleLine: "CARLOS DUTRA / SENIOR DATA ENGINEER",
@@ -57,7 +57,20 @@ en.projectDetails = {
 };
 
 en.pages.about = {"title": "About · Carlos Dutra · Senior Data Engineer", "description": "Explore Carlos Dutra’s data engineering background: cloud platforms, data modeling, automation, and business understanding."};
+en.pages.experience = { title: "Experience · Carlos Dutra · Senior Data Engineer", description: "Carlos Dutra’s professional experience in data engineering, analytics, and commercial intelligence." };
+en.pages.education = { title: "Education · Carlos Dutra · Senior Data Engineer", description: "Academic background in Computer Science, Data Analytics, and Business Administration." };
 en.about.moreAction = "Explore my background";
+en.experiencePage = { kicker: "PROFESSIONAL EXPERIENCE", heading: "Building data products close to the business", intro: "My work spans data engineering, analytics, customer operations, and commercial intelligence. In recent roles, I have focused on cloud data platforms and technical contribution." };
+en.academicPage = {
+  kicker: "ACADEMIC BACKGROUND",
+  heading: "Education",
+  intro: "My academic background combines current Computer Science studies with completed training in data analytics and business administration.",
+  degrees: [
+    { name: "Bachelor’s degree in Computer Science", school: "Descomplica Faculdade Digital", dates: "2025–2028 · In progress", summary: "Undergraduate degree in progress." },
+    { name: "Postgraduate degree in Data Analytics · Lato Sensu", school: "Descomplica Faculdade Digital", dates: "2021–2022 · Completed", summary: "Completed a 390-hour Lato Sensu postgraduate program." },
+    { name: "Bachelor’s degree in Business Administration", school: "UNOPAR", dates: "2015–2018 · Completed", summary: "Undergraduate degree completed." }
+  ]
+};
 en.aboutPage = {
   "role": "SENIOR DATA ENGINEER / CURITIBA, BRAZIL",
   "heading": "Data engineering with a business perspective.",
@@ -113,5 +126,10 @@ en.aboutPage = {
   "contactTitle": "Let’s talk about your data team.",
   "contactIntro": "If you’re looking for a senior data engineer with experience in cloud platforms, modeling, and automation, we can discuss your team’s context and challenges."
 };
+en.aboutPage.experienceSummaryTitle = "Recent experience";
+en.aboutPage.experienceSummary = "Senior data engineering at MadeiraMadeira and data platform engineering at Gobrax, with an earlier foundation in customer analytics and commercial intelligence.";
+en.aboutPage.experienceAction = "Full professional experience";
+en.aboutPage.educationSummary = "Computer Science studies in progress, with completed postgraduate studies in Data Analytics and a degree in Business Administration.";
+en.aboutPage.educationAction = "Full academic background";
 
 export default en;

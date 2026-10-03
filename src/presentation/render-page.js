@@ -31,6 +31,18 @@ function renderEducation(container, items) {
   }));
 }
 
+function renderAcademicDegrees(container, degrees) {
+  container.replaceChildren(...degrees.map((degree) => {
+    const article = element("article", "education-entry mb-4");
+    article.append(
+      element("h3", "h4", degree.name),
+      element("p", "mb-1 fw-semibold", `${degree.school} · ${degree.dates}`),
+      element("p", "mb-0", degree.summary)
+    );
+    return article;
+  }));
+}
+
 function setCopy(content) {
   for (const node of document.querySelectorAll("[data-copy]")) {
     const value = node.dataset.copy.split(".").reduce((current, key) => current?.[key], content);
@@ -58,14 +70,16 @@ export function renderPage(content, locale, page, project) {
   if (page === "home") {
     document.querySelector(".profile-portrait").alt = content.hero.portraitAlt;
     renderProjectCards(document.querySelector("#case-studies"), content, true);
-    renderExperience(document.querySelector("#experience-list"), content.experience.items);
-    renderEducation(document.querySelector("#education-list"), content.education.items);
+    renderExperience(document.querySelector("#experience-list"), content.experience.items.slice(0, 2));
+    renderEducation(document.querySelector("#education-list"), content.education.items.slice(0, 1));
   } else if (page === "projects") {
     renderProjectCards(document.querySelector("#project-list"), content, false);
   } else if (page === "about") {
     document.querySelector(".profile-portrait").alt = content.hero.portraitAlt;
-    renderExperience(document.querySelector("#about-experience-list"), content.aboutPage.career);
-    renderEducation(document.querySelector("#about-education-list"), content.education.items);
+  } else if (page === "experience") {
+    renderExperience(document.querySelector("#experience-page-list"), content.aboutPage.career);
+  } else if (page === "education") {
+    renderAcademicDegrees(document.querySelector("#academic-degree-list"), content.academicPage.degrees);
   } else if (page === "project" && project) {
     renderProjectDetail(document.querySelector("#project-detail"), project, content);
   }

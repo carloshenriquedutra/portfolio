@@ -1,7 +1,7 @@
 const ptBR = {
   locale: "pt-BR",
   description: "Engenheiro de Dados Sênior criando bases de dados confiáveis para decisões melhores.",
-  nav: { about: "Sobre", work: "Projetos", experience: "Experiência", contact: "Contato", language: "Idioma" },
+  nav: { about: "Sobre", work: "Projetos", experience: "Experiência", education: "Formação", contact: "Contato", language: "Idioma" },
   interface: { skipLink: "Pular para o conteúdo", mainNavigation: "Navegação principal", toggleNavigation: "Alternar navegação", aboutKicker: "01 / A TRAJETÓRIA", workKicker: "02 / TRABALHOS SELECIONADOS", skillsKicker: "03 / FERRAMENTAS", experienceKicker: "04 / CARREIRA", educationKicker: "05 / FORMAÇÃO", contactKicker: "06 / VAMOS CONVERSAR", portraitTitle: "Carlos Dutra, Engenheiro de Dados Sênior" },
   hero: {
     roleLine: "CARLOS DUTRA / ENGENHEIRO DE DADOS SÊNIOR",
@@ -57,7 +57,20 @@ ptBR.projectDetails = {
 };
 
 ptBR.pages.about = {"title": "Sobre · Carlos Dutra · Engenheiro de Dados Sênior", "description": "Conheça a trajetória de Carlos Dutra em engenharia de dados: plataformas em nuvem, modelagem, automação e entendimento do negócio."};
+ptBR.pages.experience = { title: "Experiência · Carlos Dutra · Engenheiro de Dados Sênior", description: "Experiência profissional de Carlos Dutra em engenharia de dados, análise e inteligência comercial." };
+ptBR.pages.education = { title: "Formação · Carlos Dutra · Engenheiro de Dados Sênior", description: "Formação acadêmica em Ciência da Computação, Data Analytics e Administração." };
 ptBR.about.moreAction = "Conheça minha trajetória";
+ptBR.experiencePage = { kicker: "EXPERIÊNCIA PROFISSIONAL", heading: "Dados perto das necessidades do negócio", intro: "Minha trajetória passa por engenharia de dados, análise, operações de clientes e inteligência comercial. Nas experiências mais recentes, concentrei meu trabalho em plataformas de dados em nuvem e contribuição técnica." };
+ptBR.academicPage = {
+  kicker: "FORMAÇÃO ACADÊMICA",
+  heading: "Formação",
+  intro: "Minha formação combina a graduação em Ciência da Computação, atualmente em andamento, com estudos concluídos em análise de dados e administração.",
+  degrees: [
+    { name: "Bacharelado em Ciência da Computação", school: "Descomplica Faculdade Digital", dates: "2025–2028 · Em andamento", summary: "Graduação em andamento." },
+    { name: "Pós-graduação Lato Sensu em Data Analytics", school: "Descomplica Faculdade Digital", dates: "2021–2022 · Concluída", summary: "Pós-graduação Lato Sensu concluída, com 390 horas." },
+    { name: "Bacharelado em Administração", school: "UNOPAR", dates: "2015–2018 · Concluído", summary: "Graduação concluída." }
+  ]
+};
 ptBR.aboutPage = {
   "role": "ENGENHEIRO DE DADOS SÊNIOR / CURITIBA, BRASIL",
   "heading": "Engenharia de dados com visão de negócio.",
@@ -113,5 +126,10 @@ ptBR.aboutPage = {
   "contactTitle": "Vamos conversar sobre sua equipe de dados.",
   "contactIntro": "Se você procura um engenheiro de dados sênior com experiência em plataformas em nuvem, modelagem e automação, podemos conversar sobre o contexto e os desafios da sua equipe."
 };
+ptBR.aboutPage.experienceSummaryTitle = "Experiência recente";
+ptBR.aboutPage.experienceSummary = "Engenharia de dados sênior na MadeiraMadeira e engenharia de plataforma de dados na Gobrax, com uma base anterior em análise de clientes e inteligência comercial.";
+ptBR.aboutPage.experienceAction = "Experiência profissional completa";
+ptBR.aboutPage.educationSummary = "Graduação em Ciência da Computação em andamento, com pós-graduação concluída em Data Analytics e graduação em Administração.";
+ptBR.aboutPage.educationAction = "Formação acadêmica completa";
 
 export default ptBR;
