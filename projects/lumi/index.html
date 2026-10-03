@@ -84,26 +84,26 @@
     <section class="content-section py-5">
      <h2 class="h3 mb-4">Engineering decisions</h2>
      <article class="decision-story mb-5">
-      <h3 class="h4">Make retrieval an explicit input to generation</h3>
+      <h3 class="h4">Look up company documents before answering</h3>
       <p class="case-detail mb-3">
-       <strong>Technical constraint:</strong>
-       A language model's parametric knowledge does not identify which approved source supports an answer to a policy question.
+       <strong>The challenge:</strong>
+       The AI does not know the company’s current policies on its own. That content changes and needs to be maintained by the People team.
       </p>
       <p class="case-detail mb-3">
-       <strong>Design alternatives:</strong>
-       Provide policy text in a fixed prompt, or retrieve relevant passages from a maintained knowledge base for each question.
+       <strong>Options considered:</strong>
+       Train the AI on the documents, include all the content in a fixed instruction, or find the passages needed for each question.
       </p>
       <p class="case-detail mb-3">
-       <strong>Decision:</strong>
-       Retrieve ranked knowledge chunks from a vector index and pass them as context to the language model, keeping knowledge updates independent of model deployment.
+       <strong>My choice:</strong>
+       Find passages related to the question and give them to the AI to compose its answer. The knowledge base can be updated without changing the assistant’s code or training the AI again.
       </p>
       <p class="case-detail mb-3">
-       <strong>Engineering trade-off:</strong>
-       Retrieval adds components, and response quality remains bounded by corpus freshness, coverage, and ranking quality.
+       <strong>Benefits and limits:</strong>
+       Answers are grounded in documents that can be checked. This requires keeping the content current and the search working; missing information or passages that cannot be found limit the answer.
       </p>
       <p class="case-detail mb-3">
-       <strong>Revisit when:</strong>
-       Evaluation shows poor recall, stale sources, or recurring knowledge gaps.
+       <strong>When to reconsider:</strong>
+       Search misses useful documents, sources become outdated, or recurring questions lack supporting information.
       </p>
      </article>
     </section>

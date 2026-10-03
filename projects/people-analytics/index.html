@@ -84,49 +84,49 @@
     <section class="content-section py-5">
      <h2 class="h3 mb-4">Engineering decisions</h2>
      <article class="decision-story mb-5">
-      <h3 class="h4">Materialize for access patterns; partition on event time</h3>
+      <h3 class="h4">Store prepared results and organize data by date</h3>
       <p class="case-detail mb-3">
-       <strong>Technical constraint:</strong>
-       Consumers needed responsive queries with manageable cost and freshness. Repeated full scans of growing facts incur avoidable work; dimensions have different refresh and read patterns.
+       <strong>The challenge:</strong>
+       Reading the entire history for every query can make analysis slower and more expensive. Reference records and event records also have different update needs.
       </p>
       <p class="case-detail mb-3">
-       <strong>Design alternatives:</strong>
-       Use views for every model, materialize every model arbitrarily, or choose storage by model role and query shape.
+       <strong>Options considered:</strong>
+       Calculate results for each query, store everything the same way, or organize each dataset according to how it is used.
       </p>
       <p class="case-detail mb-3">
-       <strong>Decision:</strong>
-       Materialize dimensions as tables and high-volume facts as tables partitioned by event date; cluster only on recurring filter or join keys.
+       <strong>My choice:</strong>
+       Store reference records in tables and separate large volumes of events by the date they happened. Group records by fields frequently used to filter or connect data.
       </p>
       <p class="case-detail mb-3">
-       <strong>Engineering trade-off:</strong>
-       Materialization costs storage and rebuild work but lets recurring queries prune irrelevant partitions.
+       <strong>Benefits and limits:</strong>
+       Queries can read only the dates they need. Stored results take up space and must be updated.
       </p>
       <p class="case-detail mb-3">
-       <strong>Revisit when:</strong>
-       Scan cost, freshness requirements, or consumer filter patterns change.
+       <strong>When to reconsider:</strong>
+       Query costs increase, data needs more frequent updates, or teams change how they query it.
       </p>
      </article>
      <article class="decision-story mb-5">
-      <h3 class="h4">Separate source conformance from business semantics</h3>
+      <h3 class="h4">Organize data before applying business rules</h3>
       <p class="case-detail mb-3">
-       <strong>Technical constraint:</strong>
-       Source schemas differ in types, naming, and history; mixing cleanup with business rules makes each consumer reimplement them.
+       <strong>The challenge:</strong>
+       Source systems use different formats and names. Mixing data cleanup with business calculations makes each analysis repeat the same work.
       </p>
       <p class="case-detail mb-3">
-       <strong>Design alternatives:</strong>
-       Expose source-shaped tables directly to BI, or separate source normalization from analytical modeling.
+       <strong>Options considered:</strong>
+       Provide data as it arrives from source systems, or separate its preparation from the calculations used in analysis.
       </p>
       <p class="case-detail mb-3">
-       <strong>Decision:</strong>
-       Use Bronze to retain source shape, Silver to cast, deduplicate, and normalize, and Gold to publish facts and dimensions in business terms.
+       <strong>My choice:</strong>
+       Preserve incoming data, correct formats and remove duplicates in a separate step, then build tables around business questions.
       </p>
       <p class="case-detail mb-3">
-       <strong>Engineering trade-off:</strong>
-       An extra transformation boundary increases model count but gives each model a narrower, testable responsibility.
+       <strong>Benefits and limits:</strong>
+       There are more steps to maintain, but each has a clear purpose and can be checked separately. Prepared data can be reused across analyses.
       </p>
       <p class="case-detail mb-3">
-       <strong>Revisit when:</strong>
-       Source contracts change or a workload needs source-level detail.
+       <strong>When to reconsider:</strong>
+       Source systems start sending data in a different form, or an analysis needs the original record.
       </p>
      </article>
     </section>

@@ -84,26 +84,26 @@
     <section class="content-section py-5">
      <h2 class="h3 mb-4">Engineering decisions</h2>
      <article class="decision-story mb-5">
-      <h3 class="h4">Declare grain before joining entities</h3>
+      <h3 class="h4">Define what each row represents before combining data</h3>
       <p class="case-detail mb-3">
-       <strong>Technical constraint:</strong>
-       A CRM deal can link to multiple contacts, products, and activities; unrestricted joins can fan out rows and inflate measures.
+       <strong>The challenge:</strong>
+       A deal can be linked to several contacts, products, and activities. Combining these records can make the same deal appear more than once and inflate totals.
       </p>
       <p class="case-detail mb-3">
-       <strong>Design alternatives:</strong>
-       Aggregate source rows directly, or define each fact's grain and key and model many-to-many associations before aggregation.
+       <strong>Options considered:</strong>
+       Sum source records directly, or define how to identify each record and represent its links before calculating totals.
       </p>
       <p class="case-detail mb-3">
-       <strong>Decision:</strong>
-       I declare grain and business key per model, represent many-to-many relations through bridge models, and apply deterministic deduplication to mutable snapshots.
+       <strong>My choice:</strong>
+       Define what each row represents and how to identify it, store links between records in separate tables, and use a fixed rule to choose which version to keep when duplicates occur.
       </p>
       <p class="case-detail mb-3">
-       <strong>Engineering trade-off:</strong>
-       More models and assertions upstream; less silent fan-out and clearer temporal semantics downstream.
+       <strong>Benefits and limits:</strong>
+       More tables and checks are needed. This reduces the risk of counting the same record more than once and helps distinguish its versions over time.
       </p>
       <p class="case-detail mb-3">
-       <strong>Revisit when:</strong>
-       Source cardinality, business identity, or event lifecycle changes.
+       <strong>When to reconsider:</strong>
+       Relationships between records, how records are identified, or the stages a deal or activity goes through change.
       </p>
      </article>
     </section>
