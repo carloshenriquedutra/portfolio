@@ -62,6 +62,10 @@ export function renderPage(content, locale, page, project) {
     renderEducation(document.querySelector("#education-list"), content.education.items);
   } else if (page === "projects") {
     renderProjectCards(document.querySelector("#project-list"), content, false);
+  } else if (page === "about") {
+    document.querySelector(".profile-portrait").alt = content.hero.portraitAlt;
+    renderExperience(document.querySelector("#about-experience-list"), content.aboutPage.career);
+    renderEducation(document.querySelector("#about-education-list"), content.education.items);
   } else if (page === "project" && project) {
     renderProjectDetail(document.querySelector("#project-detail"), project, content);
   }

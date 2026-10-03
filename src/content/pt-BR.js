@@ -56,4 +56,62 @@ ptBR.projectDetails = {
   "copapa-market-sizing": { problem: "O planejamento comercial não tinha uma visão consistente da demanda da categoria e da participação de mercado nos municípios brasileiros.", contribution: "Combinei dados demográficos, setoriais e vendas do ERP para estimar demanda e participação de mercado por município. Essas estimativas orientaram uma proposta de redesenho dos territórios de vendas.", analysis: { title: "Comparar municípios para orientar os territórios de venda", body: "Comparei os municípios usando estimativas de demanda e vendas registradas. Isso ajudou a discutir onde havia espaço para ampliar a atuação comercial, mantendo claro que uma estimativa de mercado não é uma venda realizada." } }
 };
 
+ptBR.pages.about = {"title": "Sobre · Carlos Dutra · Engenheiro de Dados Sênior", "description": "Conheça a trajetória de Carlos Dutra em engenharia de dados: plataformas em nuvem, modelagem, automação e entendimento do negócio."};
+ptBR.about.moreAction = "Conheça minha trajetória";
+ptBR.aboutPage = {
+  "role": "ENGENHEIRO DE DADOS SÊNIOR / CURITIBA, BRASIL",
+  "heading": "Engenharia de dados com visão de negócio.",
+  "intro": "Sou Carlos Dutra. Projeto e desenvolvo plataformas de dados em nuvem, da integração dos sistemas de origem às tabelas que sustentam análises e decisões.",
+  "perspective": "Minha trajetória começou na inteligência comercial e passou por Customer Success e operações de receita. Essa experiência me ajuda a entender o que as áreas precisam medir, traduzir essas necessidades em modelos de dados e explicar as escolhas técnicas com clareza.",
+  "focusTitle": "Onde concentro minha contribuição",
+  "focus": [
+    {
+      "title": "Plataformas em nuvem",
+      "body": "Estruturo a base para coletar, organizar e disponibilizar dados. Trabalho com Google Cloud, BigQuery e Terraform, além de experiência com Databricks e migração de rotinas para Cloud Run."
+    },
+    {
+      "title": "Modelagem e automação",
+      "body": "Integro bancos, ERPs e APIs, organizo transformações com dbt e Dataform e coordeno execuções com Airflow. Meu foco é construir tabelas reutilizáveis, com definições claras e verificações que ajudem a identificar problemas antes do consumo."
+    },
+    {
+      "title": "IA conectada a dados e documentos",
+      "body": "Desenvolvi o Lumi em Python, com Gemini, busca de conhecimento no Firestore e integração ao Google Chat. Essa frente combina engenharia de software com o cuidado de fundamentar respostas no conteúdo da empresa."
+    }
+  ],
+  "careerTitle": "Uma trajetória construída perto do negócio",
+  "careerIntro": "Comecei a trabalhar com informação comercial em 2013. Nas experiências mais recentes, aprofundei minha atuação em engenharia de dados, arquitetura em nuvem e liderança técnica.",
+  "career": [
+    {
+      "org": "MadeiraMadeira",
+      "dates": "Abril de 2026–atual",
+      "role": "Engenharia de dados sênior · People Analytics e IA",
+      "summary": "Desenhei as fundações e o fluxo de dados de People Analytics, com BigQuery, Dataform, Cloud Composer e infraestrutura em Terraform. Também projetei e desenvolvi o Lumi, assistente de IA para colaboradores, e atuo no direcionamento técnico da equipe."
+    },
+    {
+      "org": "Gobrax",
+      "dates": "Fevereiro de 2023–março de 2026",
+      "role": "Engenharia de dados e liderança técnica",
+      "summary": "Estruturei o Data Warehouse no BigQuery e a migração de dados do PostgreSQL para o Google Cloud. Construí integrações de ERP e CRM com Airbyte, Airflow e dbt, e automatizei a atualização de relatórios usados pela área de Customer Success."
+    },
+    {
+      "org": "Leads2b",
+      "dates": "Novembro de 2020–dezembro de 2022",
+      "role": "Customer Success e análise de dados",
+      "summary": "Analisei bases de leads, métricas de conversão e indicadores de engajamento para apoiar clientes de uma plataforma SaaS B2B. Essa experiência fortaleceu minha capacidade de relacionar dados, operação e necessidades do cliente."
+    },
+    {
+      "org": "COPAPA",
+      "dates": "Dezembro de 2013–agosto de 2018",
+      "role": "Análise de dados e inteligência comercial",
+      "summary": "Desenvolvi análises de mercado, automações de relatórios e controles comerciais. Combinei dados demográficos e vendas do ERP para estimar demanda por município e apoiar uma proposta de redesenho dos territórios de venda."
+    }
+  ],
+  "workingTitle": "Como trabalho",
+  "workingBody": "Atuo como especialista técnico: participo do desenho da solução, escrevo código e acompanho a entrega. Minha experiência em liderança técnica me ajuda a orientar colegas, revisar decisões e alinhar a engenharia com as prioridades das áreas de negócio.",
+  "educationTitle": "Formação",
+  "projectsAction": "Conheça meus projetos",
+  "contactTitle": "Vamos conversar sobre sua equipe de dados.",
+  "contactIntro": "Se você procura um engenheiro de dados sênior com experiência em plataformas em nuvem, modelagem e automação, podemos conversar sobre o contexto e os desafios da sua equipe."
+};
+
 export default ptBR;

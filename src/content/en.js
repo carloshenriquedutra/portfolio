@@ -56,4 +56,62 @@ en.projectDetails = {
   "copapa-market-sizing": { problem: "Commercial planning lacked a consistent view of category demand and market share across Brazilian municipalities.", contribution: "I combined demographic, industry, and ERP sales data to estimate demand and market share by municipality. These estimates informed a proposed sales territory redesign.", analysis: { title: "Compare municipalities to plan sales territories", body: "I compared municipalities using demand estimates and recorded sales. This helped discuss where there was room to expand commercial activity, while keeping clear that a market estimate is not a completed sale." } }
 };
 
+en.pages.about = {"title": "About · Carlos Dutra · Senior Data Engineer", "description": "Explore Carlos Dutra’s data engineering background: cloud platforms, data modeling, automation, and business understanding."};
+en.about.moreAction = "Explore my background";
+en.aboutPage = {
+  "role": "SENIOR DATA ENGINEER / CURITIBA, BRAZIL",
+  "heading": "Data engineering with a business perspective.",
+  "intro": "I’m Carlos Dutra. I design and build cloud data platforms, from integrating source systems to the tables that support analysis and decisions.",
+  "perspective": "My career began in commercial intelligence and included Customer Success and revenue operations. That experience helps me understand what teams need to measure, translate their needs into data models, and explain technical choices clearly.",
+  "focusTitle": "Where I contribute",
+  "focus": [
+    {
+      "title": "Cloud data platforms",
+      "body": "I build the foundation for collecting, organizing, and making data available. I work with Google Cloud, BigQuery, and Terraform, with experience in Databricks and migrating processing jobs to Cloud Run."
+    },
+    {
+      "title": "Data modeling and automation",
+      "body": "I integrate databases, ERPs, and APIs, organize transformations with dbt and Dataform, and coordinate execution with Airflow. I focus on reusable tables, clear definitions, and checks that help identify issues before data reaches its consumers."
+    },
+    {
+      "title": "AI connected to data and documents",
+      "body": "I built Lumi in Python using Gemini, knowledge search in Firestore, and Google Chat integration. This combines software engineering with the care needed to ground answers in company content."
+    }
+  ],
+  "careerTitle": "A career close to the business",
+  "careerIntro": "I began working with commercial information in 2013. In my more recent roles, I deepened my work in data engineering, cloud architecture, and technical leadership.",
+  "career": [
+    {
+      "org": "MadeiraMadeira",
+      "dates": "April 2026–present",
+      "role": "Senior data engineering · People Analytics and AI",
+      "summary": "I designed the foundations and data flow for People Analytics using BigQuery, Dataform, Cloud Composer, and Terraform infrastructure. I also designed and built Lumi, an AI assistant for employees, and help guide the team’s technical work."
+    },
+    {
+      "org": "Gobrax",
+      "dates": "February 2023–March 2026",
+      "role": "Data engineering and technical leadership",
+      "summary": "I built the BigQuery Data Warehouse and migrated data from PostgreSQL to Google Cloud. I developed ERP and CRM integrations with Airbyte, Airflow, and dbt, and automated updates to reports used by Customer Success."
+    },
+    {
+      "org": "Leads2b",
+      "dates": "November 2020–December 2022",
+      "role": "Customer Success and data analysis",
+      "summary": "I analyzed lead datasets, conversion metrics, and engagement indicators to support customers of a B2B SaaS platform. This strengthened my ability to connect data, operations, and customer needs."
+    },
+    {
+      "org": "COPAPA",
+      "dates": "December 2013–August 2018",
+      "role": "Data analysis and commercial intelligence",
+      "summary": "I developed market analyses, reporting automation, and commercial controls. I combined demographic data and ERP sales to estimate demand by municipality and support a proposed sales territory redesign."
+    }
+  ],
+  "workingTitle": "How I work",
+  "workingBody": "I work as a technical individual contributor: I help design the solution, write code, and follow through on delivery. My technical leadership experience helps me guide colleagues, review decisions, and align engineering with business priorities.",
+  "educationTitle": "Education",
+  "projectsAction": "Explore my projects",
+  "contactTitle": "Let’s talk about your data team.",
+  "contactIntro": "If you’re looking for a senior data engineer with experience in cloud platforms, modeling, and automation, we can discuss your team’s context and challenges."
+};
+
 export default en;
