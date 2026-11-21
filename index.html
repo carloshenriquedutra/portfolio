@@ -11,6 +11,14 @@
   <link href="./assets/css/theme.css?v=4" rel="stylesheet"/>
  </head>
  <body data-page="home" data-project-id="" data-root="./">
+  <dialog id="country-picker" aria-labelledby="country-title" style="max-width:32rem;border:1px solid #43516a;border-radius:1rem;background:#0c1119;color:#e8eaf0;padding:2rem">
+   <h2 id="country-title">Choose your country</h2>
+   <p>Your selection will personalize the portfolio language.</p>
+   <label for="country-select">Country</label>
+   <select id="country-select" class="form-select"></select>
+   <div id="canada-language" hidden><label for="portfolio-language">Language</label><select id="portfolio-language" class="form-select"><option value="en">English</option><option value="fr">Français</option></select></div>
+   <button id="country-continue" class="btn btn-primary mt-3">Continue</button>
+  </dialog>
   <a class="skip-link" data-copy="interface.skipLink" href="#main-content">Skip to content</a>
   <header class="site-header sticky-top">
    <nav aria-label="Main navigation" class="navbar navbar-expand-lg" data-copy-attribute="interface.mainNavigation:aria-label">
@@ -214,6 +222,17 @@
   <script defer="" src="./assets/vendor/bootstrap/bootstrap.bundle.min.js">
   </script>
   <script src="./src/main.js" type="module">
+  </script>
+  <script type="module">
+   const codes = 'AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW'.split(' ');
+   const names=new Intl.DisplayNames(['en'],{type:'region'}), select=document.querySelector('#country-select'), dialog=document.querySelector('#country-picker');
+   select.innerHTML='<option value="">Select a country</option>'+[...new Set(codes)].sort((a,b)=>names.of(a).localeCompare(names.of(b))).map(c=>`<option value="${c}">${names.of(c)}</option>`).join('');
+   const saved=localStorage.getItem('portfolio-country'); if(saved){dialog.close();}
+   select.value=saved||''; if(!saved)dialog.showModal();
+   select.onchange=()=>document.querySelector('#canada-language').hidden=select.value!=='CA';
+   document.querySelector('#country-continue').onclick=()=>{if(!select.value)return;localStorage.setItem('portfolio-country',select.value);const lang=select.value==='BR'?'pt-BR':select.value==='CA'?document.querySelector('#portfolio-language').value:'en';const url=new URL(location.href);url.searchParams.set('lang',lang);location.href=url;};
+   document.querySelector('.language-switcher')?.addEventListener('dblclick',()=>{select.value='';dialog.showModal();});
+   if(!saved&&navigator.geolocation)navigator.geolocation.getCurrentPosition(async p=>{try{const u=new URL('https://api.bigdatacloud.net/data/reverse-geocode-client');u.search=new URLSearchParams({latitude:p.coords.latitude,longitude:p.coords.longitude,localityLanguage:'en'});const r=await fetch(u);const d=await r.json();if(codes.includes(d.countryCode)){select.value=d.countryCode;select.dispatchEvent(new Event('change'));}}catch{}},()=>{}, {timeout:10000});
   </script>
  </body>
 </html>
