@@ -229,10 +229,13 @@
    select.innerHTML='<option value="">Select a country</option>'+[...new Set(codes)].sort((a,b)=>names.of(a).localeCompare(names.of(b))).map(c=>`<option value="${c}">${names.of(c)}</option>`).join('');
    const saved=localStorage.getItem('portfolio-country'); if(saved){dialog.close();}
    select.value=saved||''; if(!saved)dialog.showModal();
+   let userInteracting=false;
+   select.addEventListener('pointerdown',()=>{userInteracting=true;});
+   select.addEventListener('keydown',()=>{userInteracting=true;});
+   select.addEventListener('focus',()=>{userInteracting=true;},{once:true});
    select.onchange=()=>document.querySelector('#canada-language').hidden=select.value!=='CA';
    document.querySelector('#country-continue').onclick=()=>{if(!select.value)return;localStorage.setItem('portfolio-country',select.value);const lang=select.value==='BR'?'pt-BR':select.value==='CA'?document.querySelector('#portfolio-language').value:'en';const url=new URL(location.href);url.searchParams.set('lang',lang);location.href=url;};
-   document.querySelector('.language-switcher')?.addEventListener('dblclick',()=>{select.value='';dialog.showModal();});
-   if(!saved&&navigator.geolocation)navigator.geolocation.getCurrentPosition(async p=>{try{const u=new URL('https://api.bigdatacloud.net/data/reverse-geocode-client');u.search=new URLSearchParams({latitude:p.coords.latitude,longitude:p.coords.longitude,localityLanguage:'en'});const r=await fetch(u);const d=await r.json();if(codes.includes(d.countryCode)){select.value=d.countryCode;select.dispatchEvent(new Event('change'));}}catch{}},()=>{}, {timeout:10000});
+   if(!saved&&navigator.geolocation)navigator.geolocation.getCurrentPosition(async p=>{try{const u=new URL('https://api.bigdatacloud.net/data/reverse-geocode-client');u.search=new URLSearchParams({latitude:p.coords.latitude,longitude:p.coords.longitude,localityLanguage:'en'});const r=await fetch(u);const d=await r.json();if(!userInteracting&&codes.includes(d.countryCode)){select.value=d.countryCode;select.dispatchEvent(new Event('change'));}}catch{}},()=>{}, {timeout:10000});
   </script>
  </body>
 </html>
