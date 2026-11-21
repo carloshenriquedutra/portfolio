@@ -16,6 +16,12 @@ Open <http://localhost:8000/>. English is the default. The language switch updat
 
 The site uses a local copy of Bootstrap 5.3.3 and native browser JavaScript modules. No package installation, build step, or CDN connection is required to preview it.
 
+## Résumé downloads
+
+The navigation downloads a PDF in the active language. The four PDFs use the supplied English LinkedIn profile as their editorial source. Update the localized copy in `scripts/resume-copy.mjs`, then run `node scripts/build-resumes.mjs` with Node.js and Chrome installed. Set `CHROME_BIN` if the Chrome executable has a different name.
+
+The download icon is from Bootstrap Icons 1.13.1. Its license is in `assets/vendor/bootstrap-icons/LICENSE`.
+
 ## Structure
 
 - `index.html` — concise recruiter-facing home with paths to Projects, Experience, Education, and Contact.

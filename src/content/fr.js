@@ -7,7 +7,8 @@ export default {
     "experience": "Expérience",
     "education": "Formation",
     "contact": "Contact",
-    "language": "Langue"
+    "language": "Langue",
+    "downloadResume": "Télécharger le CV"
   },
   "interface": {
     "skipLink": "Aller au contenu",

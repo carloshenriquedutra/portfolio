@@ -7,7 +7,8 @@ export default {
     "experience": "Experiencia",
     "education": "Formación",
     "contact": "Contacto",
-    "language": "Idioma"
+    "language": "Idioma",
+    "downloadResume": "Descargar currículum"
   },
   "interface": {
     "skipLink": "Ir al contenido",

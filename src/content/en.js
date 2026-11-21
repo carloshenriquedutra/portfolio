@@ -1,7 +1,7 @@
 const en = {
   locale: "en",
   description: "Senior Data Engineer building dependable data foundations for better decisions.",
-  nav: { about: "About", work: "Projects", experience: "Experience", education: "Education", contact: "Contact", language: "Language" },
+  nav: { about: "About", work: "Projects", experience: "Experience", education: "Education", contact: "Contact", language: "Language", downloadResume: "Download résumé" },
   interface: { skipLink: "Skip to content", mainNavigation: "Main navigation", toggleNavigation: "Toggle navigation", aboutKicker: "01 / THE THREAD", workKicker: "02 / SELECTED WORK", skillsKicker: "03 / TOOLBOX", experienceKicker: "04 / CAREER", educationKicker: "05 / LEARNING", contactKicker: "06 / SAY HELLO", portraitTitle: "Carlos Dutra, Senior Data Engineer" },
   hero: {
     roleLine: "CARLOS DUTRA / SENIOR DATA ENGINEER",

@@ -1,7 +1,7 @@
 const ptBR = {
   locale: "pt-BR",
   description: "Engenheiro de Dados Sênior criando bases de dados confiáveis para decisões melhores.",
-  nav: { about: "Sobre", work: "Projetos", experience: "Experiência", education: "Formação", contact: "Contato", language: "Idioma" },
+  nav: { about: "Sobre", work: "Projetos", experience: "Experiência", education: "Formação", contact: "Contato", language: "Idioma", downloadResume: "Baixar currículo" },
   interface: { skipLink: "Pular para o conteúdo", mainNavigation: "Navegação principal", toggleNavigation: "Alternar navegação", aboutKicker: "01 / A TRAJETÓRIA", workKicker: "02 / TRABALHOS SELECIONADOS", skillsKicker: "03 / FERRAMENTAS", experienceKicker: "04 / CARREIRA", educationKicker: "05 / FORMAÇÃO", contactKicker: "06 / VAMOS CONVERSAR", portraitTitle: "Carlos Dutra, Engenheiro de Dados Sênior" },
   hero: {
     roleLine: "CARLOS DUTRA / ENGENHEIRO DE DADOS SÊNIOR",

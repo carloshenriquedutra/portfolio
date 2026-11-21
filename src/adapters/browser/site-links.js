@@ -9,4 +9,8 @@ export function updateSiteLinks(locale, root = document.body.dataset.root || "./
     if (locale !== "en") url.searchParams.set("lang", locale);
     link.href = route === "contact" ? `${url.href}#${route}` : url.href;
   }
+
+  for (const link of document.querySelectorAll("[data-resume-download]")) {
+    link.href = new URL(`${root}assets/resumes/carlos-dutra-${locale}.pdf`, document.baseURI).href;
+  }
 }
