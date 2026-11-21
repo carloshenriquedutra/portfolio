@@ -16,14 +16,20 @@
    <nav aria-label="Main navigation" class="navbar navbar-expand-lg" data-copy-attribute="interface.mainNavigation:aria-label">
     <div class="container py-2">
      <a class="navbar-brand fw-bold" data-route="home" href="../">Carlos Dutra<span aria-hidden="true" class="brand-mark">.</span></a>
+     <div class="language-switcher btn-group btn-group-sm ms-auto me-2 ms-lg-3 me-lg-0 order-lg-3" role="group" aria-labelledby="language-label">
+      <span class="visually-hidden" id="language-label">Language</span>
+      <button aria-label="English" aria-pressed="true" class="btn btn-language active" data-locale="en" type="button">🇺🇸</button>
+      <button aria-label="Português" aria-pressed="false" class="btn btn-language" data-locale="pt-BR" type="button">🇧🇷</button>
+      <button aria-label="Español" aria-pressed="false" class="btn btn-language" data-locale="es" type="button">🇪🇸</button>
+      <button aria-label="Français" aria-pressed="false" class="btn btn-language" data-locale="fr" type="button">🇫🇷</button>
+     </div>
      <button aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#portfolioNav" data-bs-toggle="collapse" data-copy-attribute="interface.toggleNavigation:aria-label" type="button"><span class="navbar-toggler-icon"></span></button>
-     <div class="collapse navbar-collapse" id="portfolioNav"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+     <div class="collapse navbar-collapse order-lg-2" id="portfolioNav"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
       <li class="nav-item"><a class="nav-link" data-copy="nav.about" data-route="about" href="../about/">About</a></li>
       <li class="nav-item"><a class="nav-link" data-copy="nav.work" data-route="projects" href="../projects/">Projects</a></li>
       <li class="nav-item"><a aria-current="page" class="nav-link active" data-copy="nav.experience" data-route="experience" href="../experience/">Experience</a></li>
       <li class="nav-item"><a class="nav-link" data-copy="nav.education" data-route="education" href="../education/">Education</a></li>
       <li class="nav-item"><a class="nav-link" data-copy="nav.contact" data-route="contact" href="../#contact">Contact</a></li>
-      <li class="nav-item language-switcher"><span class="visually-hidden" id="language-label">Language</span><div aria-labelledby="language-label" class="btn-group btn-group-sm" role="group"><button aria-pressed="true" class="btn btn-language active" data-locale="en" type="button">EN</button><button aria-pressed="false" class="btn btn-language" data-locale="pt-BR" type="button">PT-BR</button></div></li>
      </ul></div>
     </div>
    </nav>
@@ -34,7 +40,7 @@
     <h1 class="display-3 fw-bold mb-3" data-copy="experiencePage.heading" id="experience-heading">Building data products close to the business</h1>
     <p class="hero-intro lead mb-0" data-copy="experiencePage.intro">My work spans data engineering, analytics, customer operations, and commercial intelligence. In recent roles, I have focused on cloud data platforms and technical contribution.</p>
    </section>
-   <section aria-label="Professional experience" class="content-section py-4">
+   <section aria-label="Professional experience" data-copy-attribute="experiencePage.kicker:aria-label" class="content-section py-4">
     <h2 class="visually-hidden">Professional experience timeline</h2>
     <div class="timeline mt-2" id="experience-page-list">
      <article class="timeline-item"><p class="timeline-dates">April 2026–present</p><h2 class="h5">MadeiraMadeira</h2><p class="mb-1 fw-semibold">Senior data engineering · People Analytics and AI</p><p class="mb-0">I designed the foundations and data flow for People Analytics using BigQuery, Dataform, Cloud Composer, and Terraform infrastructure. I also designed and built Lumi, an AI assistant for employees, and help guide the team’s technical work.</p></article>

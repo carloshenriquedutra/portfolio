@@ -1,4 +1,6 @@
 import en from "./content/en.js";
+import es from "./content/es.js";
+import fr from "./content/fr.js";
 import ptBR from "./content/pt-BR.js";
 import { selectLocale } from "./application/select-locale.js";
 import { selectProject } from "./application/select-project.js";
@@ -6,7 +8,7 @@ import { readLocaleFromUrl, writeLocaleToUrl } from "./adapters/browser/locale-u
 import { updateSiteLinks } from "./adapters/browser/site-links.js";
 import { renderPage } from "./presentation/render-page.js";
 
-const contentByLocale = { en, "pt-BR": ptBR };
+const contentByLocale = { en, "pt-BR": ptBR, es, fr };
 const page = document.body.dataset.page || "home";
 const projectId = document.body.dataset.projectId;
 let activeLocale = selectLocale(readLocaleFromUrl(window.location.search), contentByLocale);

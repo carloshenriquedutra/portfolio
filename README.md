@@ -1,6 +1,6 @@
 # Carlos Dutra — Professional Portfolio
 
-An English-first, bilingual (English / Brazilian Portuguese) professional portfolio for Carlos Dutra, Senior Data Engineer. The concise home page gives recruiters a quick introduction. Dedicated About, Experience, and Education pages present his technical focus, professional history, and academic background. A Projects index and four dedicated case pages carry the business context and engineering decisions.
+An English-first, multilingual (English, Brazilian Portuguese, Spanish, and French) professional portfolio for Carlos Dutra, Senior Data Engineer. The concise home page gives recruiters a quick introduction. Dedicated About, Experience, and Education pages present his technical focus, professional history, and academic background. A Projects index and four dedicated case pages carry the business context and engineering decisions.
 
 Visit the live portfolio: <https://carloshenriquedutra.github.io/portfolio/>.
 
@@ -12,7 +12,7 @@ From the repository root, start a static server:
 python3 -m http.server 8000
 ```
 
-Open <http://localhost:8000/>. English is the default. The language switch updates the query string; `?lang=pt-BR` opens the Brazilian Portuguese version and is preserved on internal links. About, Experience, and Education can be opened directly at `/about/`, `/experience/`, and `/education/`; project pages are under `/projects/`.
+Open <http://localhost:8000/>. English is the default. The language switch updates the query string; `?lang=pt-BR` opens the Brazilian Portuguese version, and `?lang=es` and `?lang=fr` open the Spanish and French versions. Internal links preserve the chosen language. About, Experience, and Education can be opened directly at `/about/`, `/experience/`, and `/education/`; project pages are under `/projects/`.
 
 The site uses a local copy of Bootstrap 5.3.3 and native browser JavaScript modules. No package installation, build step, or CDN connection is required to preview it.
 

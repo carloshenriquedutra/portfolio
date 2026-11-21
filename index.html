@@ -16,11 +16,18 @@
    <nav aria-label="Main navigation" class="navbar navbar-expand-lg" data-copy-attribute="interface.mainNavigation:aria-label">
     <div class="container py-2">
      <a class="navbar-brand fw-bold" data-route="home" href="./">Carlos Dutra<span aria-hidden="true" class="brand-mark">.</span></a>
+     <div class="language-switcher btn-group btn-group-sm ms-auto me-2 ms-lg-3 me-lg-0 order-lg-3" role="group" aria-labelledby="language-label">
+      <span class="visually-hidden" id="language-label">Language</span>
+      <button aria-label="English" aria-pressed="true" class="btn btn-language active" data-locale="en" type="button">🇺🇸</button>
+      <button aria-label="Português" aria-pressed="false" class="btn btn-language" data-locale="pt-BR" type="button">🇧🇷</button>
+      <button aria-label="Español" aria-pressed="false" class="btn btn-language" data-locale="es" type="button">🇪🇸</button>
+      <button aria-label="Français" aria-pressed="false" class="btn btn-language" data-locale="fr" type="button">🇫🇷</button>
+     </div>
      <button aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#portfolioNav" data-bs-toggle="collapse" data-copy-attribute="interface.toggleNavigation:aria-label" type="button">
       <span class="navbar-toggler-icon">
       </span>
      </button>
-     <div class="collapse navbar-collapse" id="portfolioNav">
+     <div class="collapse navbar-collapse order-lg-2" id="portfolioNav">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
        <li class="nav-item">
         <a class="nav-link" data-copy="nav.about" data-route="about" href="./about/">About</a>
@@ -34,15 +41,6 @@
        <li class="nav-item"><a class="nav-link" data-copy="nav.education" data-route="education" href="./education/">Education</a></li>
        <li class="nav-item">
         <a class="nav-link" data-copy="nav.contact" data-route="contact" href="./#contact">Contact</a>
-       </li>
-       <li class="nav-item language-switcher">
-        <span class="visually-hidden" id="language-label">Choose language</span>
-        <div aria-labelledby="language-label" class="btn-group btn-group-sm" role="group">
-         <button aria-label="English" aria-pressed="true" class="btn btn-language active" data-locale="en" type="button">🇺🇸</button>
-         <button aria-label="Português" aria-pressed="false" class="btn btn-language" data-locale="pt-BR" type="button">🇧🇷</button>
-         <button aria-label="Español" aria-pressed="false" class="btn btn-language" data-locale="es" type="button">🇪🇸</button>
-         <button aria-label="Français" aria-pressed="false" class="btn btn-language" data-locale="fr" type="button">🇫🇷</button>
-        </div>
        </li>
       </ul>
      </div>
