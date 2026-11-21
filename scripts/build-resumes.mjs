@@ -16,14 +16,14 @@ function escapeHtml(text) {
 
 function renderResume(locale, resume) {
   const [experience, technicalSkills, education] = resume.headings.map(escapeHtml);
-  const jobs = resume.jobs.map(([title, dates, highlights], index) => `
+  const jobs = resume.jobs.map(([title, dates, location, highlights], index) => `
     <section class="job">
       <h3>${escapeHtml(companies[index])} · ${escapeHtml(title)}</h3>
-      <p class="dates">${escapeHtml(dates)}</p>
+      <p class="dates">${escapeHtml(dates)} · ${escapeHtml(location)}</p>
       <ul>${highlights.map(text => `<li>${escapeHtml(text)}</li>`).join("")}</ul>
     </section>`);
   const degrees = resume.education.map((degree, index) =>
-    `<li><strong>${escapeHtml(schools[index])}</strong> · ${escapeHtml(degree)}</li>`);
+    `<li><strong>${escapeHtml(schools[index])}</strong> · ${escapeHtml(degree)} · ${escapeHtml(resume.educationLocations[index])}</li>`);
 
   return `<!doctype html>
 <html lang="${locale}">

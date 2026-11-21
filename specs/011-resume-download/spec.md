@@ -5,4 +5,5 @@ Em qualquer página do portfólio, o visitante pode baixar o currículo pelo men
 - Inglês, português do Brasil, espanhol e francês têm arquivos PDF próprios.
 - O link acompanha o idioma da URL na abertura e muda imediatamente ao selecionar uma bandeira.
 - A fonte dos currículos é o perfil em inglês do LinkedIn fornecido pelo Carlos. Os quatro PDFs mantêm os mesmos cargos, datas, resultados e cursos.
+- Cada experiência profissional apresenta país e cidade/localidade; cada formação apresenta país e cidade ou modalidade remota, em todos os idiomas.
 - O download funciona no GitHub Pages, inclusive a partir das páginas internas.
