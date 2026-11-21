@@ -11,14 +11,6 @@
   <link href="./assets/css/theme.css?v=4" rel="stylesheet"/>
  </head>
  <body data-page="home" data-project-id="" data-root="./">
-  <dialog id="country-picker" aria-labelledby="country-title" style="max-width:32rem;border:1px solid #43516a;border-radius:1rem;background:#0c1119;color:#e8eaf0;padding:2rem">
-   <h2 id="country-title">Choose your country</h2>
-   <p>Your selection will personalize the portfolio language.</p>
-   <label class="form-label" for="country-menu-button">Country</label>
-   <div class="dropdown"><button id="country-menu-button" class="btn btn-outline-light dropdown-toggle w-100 text-start" data-bs-toggle="dropdown" aria-expanded="false" type="button">Select a country</button><div id="country-menu" class="dropdown-menu w-100" style="max-height:16rem;overflow:auto"></div></div>
-   <div id="canada-language" hidden><label for="portfolio-language">Language</label><select id="portfolio-language" class="form-select"><option value="en">English</option><option value="fr">Français</option></select></div>
-   <button id="country-continue" class="btn btn-primary mt-3">Continue</button>
-  </dialog>
   <a class="skip-link" data-copy="interface.skipLink" href="#main-content">Skip to content</a>
   <header class="site-header sticky-top">
    <nav aria-label="Main navigation" class="navbar navbar-expand-lg" data-copy-attribute="interface.mainNavigation:aria-label">
@@ -44,10 +36,12 @@
         <a class="nav-link" data-copy="nav.contact" data-route="contact" href="./#contact">Contact</a>
        </li>
        <li class="nav-item language-switcher">
-        <span class="visually-hidden" id="language-label">Language</span>
+        <span class="visually-hidden" id="language-label">Choose language</span>
         <div aria-labelledby="language-label" class="btn-group btn-group-sm" role="group">
-         <button aria-pressed="true" class="btn btn-language active" data-locale="en" type="button">EN</button>
-         <button aria-pressed="false" class="btn btn-language" data-locale="pt-BR" type="button">PT-BR</button>
+         <button aria-label="English" aria-pressed="true" class="btn btn-language active" data-locale="en" type="button">🇺🇸</button>
+         <button aria-label="Português" aria-pressed="false" class="btn btn-language" data-locale="pt-BR" type="button">🇧🇷</button>
+         <button aria-label="Español" aria-pressed="false" class="btn btn-language" data-locale="es" type="button">🇪🇸</button>
+         <button aria-label="Français" aria-pressed="false" class="btn btn-language" data-locale="fr" type="button">🇫🇷</button>
         </div>
        </li>
       </ul>
@@ -222,18 +216,6 @@
   <script defer="" src="./assets/vendor/bootstrap/bootstrap.bundle.min.js">
   </script>
   <script src="./src/main.js" type="module">
-  </script>
-  <script type="module">
-   const codes = 'AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW'.split(' ');
-   const names=new Intl.DisplayNames(['en'],{type:'region'}), dialog=document.querySelector('#country-picker'), menu=document.querySelector('#country-menu'), button=document.querySelector('#country-menu-button');
-   let selectedCode=localStorage.getItem('portfolio-country')||'', userInteracting=false;
-   const countries=[...new Set(codes)].sort((a,b)=>names.of(a).localeCompare(names.of(b)));
-   button.textContent=selectedCode?names.of(selectedCode):'Select a country';
-   menu.innerHTML=countries.map(c=>`<button class="dropdown-item" type="button" data-country="${c}">${names.of(c)}</button>`).join('');
-   menu.addEventListener('click',e=>{const option=e.target.closest('[data-country]');if(!option)return;userInteracting=true;selectedCode=option.dataset.country;button.textContent=names.of(selectedCode);document.querySelector('#canada-language').hidden=selectedCode!=='CA';bootstrap.Dropdown.getOrCreateInstance(button).hide();});
-   if(selectedCode)dialog.close();else dialog.showModal();
-   document.querySelector('#country-continue').onclick=()=>{if(!selectedCode)return;localStorage.setItem('portfolio-country',selectedCode);const lang=selectedCode==='BR'?'pt-BR':selectedCode==='CA'?document.querySelector('#portfolio-language').value:'en';const url=new URL(location.href);url.searchParams.set('lang',lang);location.href=url;};
-   if(!selectedCode&&navigator.geolocation)navigator.geolocation.getCurrentPosition(async p=>{try{const u=new URL('https://api.bigdatacloud.net/data/reverse-geocode-client');u.search=new URLSearchParams({latitude:p.coords.latitude,longitude:p.coords.longitude,localityLanguage:'en'});const r=await fetch(u);const d=await r.json();if(!userInteracting&&countries.includes(d.countryCode)){selectedCode=d.countryCode;button.textContent=names.of(selectedCode);document.querySelector('#canada-language').hidden=selectedCode!=='CA';}}catch{}},()=>{}, {timeout:10000});
   </script>
  </body>
 </html>
